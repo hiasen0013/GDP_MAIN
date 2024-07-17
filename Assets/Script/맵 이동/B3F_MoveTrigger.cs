@@ -36,11 +36,11 @@ public class B3F_MoveTrigger : MoveTrigger
         {
             b3_CounselingRoom = GameObject.Find("B3_상담실");
         }
-        b3_Lobby.SetActive(false); 
+        b3_Lobby.SetActive(true); 
         b3_Library.SetActive(false); 
         b3_Corridor.SetActive(false); 
         b3_Cafeteria.SetActive(false); 
-        b3_CounselingRoom.SetActive(true);
+        b3_CounselingRoom.SetActive(false);
     }
 
     public override void OnChildTriggerEnter(Collider2D other, int childId)
@@ -51,8 +51,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x, nextChildTransform.position.y - 2f);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-            b3_Corridor.SetActive(true);
             b3_CounselingRoom.SetActive(false);
+            b3_Corridor.SetActive(true);
         }
 
         if(childId == 1) // 복도에서 상담실로
@@ -72,6 +72,7 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x, nextChildTransform.position.y - 2f);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Corridor.SetActive(true);
         }
 
         if(childId == 3) // 복도에서 재활치료실로
@@ -80,6 +81,7 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x, nextChildTransform.position.y + 2f);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Corridor.SetActive(false);
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if(childId == 4) // 복도에서 로비로
@@ -88,6 +90,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x + 2f, nextChildTransform.position.y);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Corridor.SetActive(false);
+            b3_Lobby.SetActive(true);
         }
 
         if(childId == 5) // 로비에서 복도로
@@ -96,6 +100,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x -2f, nextChildTransform.position.y);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Lobby.SetActive(false);
+            b3_Corridor.SetActive(true);
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if(childId == 6) // 로비에서 도서관으로
@@ -104,6 +110,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x + 2f, nextChildTransform.position.y);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Lobby.SetActive(false);
+            b3_Library.SetActive(true);
         }
         
         if(childId == 7) // 도서관에서 로비로
@@ -112,6 +120,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x - 2f, nextChildTransform.position.y);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Library.SetActive(false);
+            b3_Lobby.SetActive(true);
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if(childId == 8) // 복도에서 식당으로
@@ -120,6 +130,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x, nextChildTransform.position.y - 2f);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Corridor.SetActive(false);
+            b3_Cafeteria.SetActive(true);
         }
 
         if(childId == 9) // 식당에서 복도로
@@ -128,6 +140,8 @@ public class B3F_MoveTrigger : MoveTrigger
             Vector2 newPosition = new Vector2(nextChildTransform.position.x, nextChildTransform.position.y + 2f);
             other.transform.position = newPosition;
             Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Cafeteria.SetActive(false);
+            b3_Corridor.SetActive(true);
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
