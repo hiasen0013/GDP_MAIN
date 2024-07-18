@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
-public class CameraManager : MonoBehaviour
+public class CameraManager_2 : MonoBehaviour
 {
-    static public CameraManager instance;
+    static public CameraManager_2 instance;
 
     public GameObject target;
     public float moveSpeed;
@@ -24,22 +25,8 @@ public class CameraManager : MonoBehaviour
     // 카메라의 위치값 설정을 위한 변수
     [SerializeField] private Vector3 roomCameraPosition = new Vector3(9, 0, -10);
 
-    /////////////////////////////////////////////////////////////
-
-    // public BoxCollider2D bound;
-
-    // // BoxCollider 영역의 최소 최대 xyz값을 지님
-    // private Vector3 minBound;
-    // private Vector3 maxBound;
-
-    // // 카메라의 반너비, 반높이 값을 지닐 변수
-    // private float halfWidth;
-    // private float halfHeight;
-
-    // // 카메라의 반높이 값을 구할 속성을 이용하기 위한 변수
-    // private Camera theCamera;
-
-    /////////////////////////////////////////////////////////////
+    // 타임라인 디렉터
+    [SerializeField] private PlayableDirector playableDirector;
 
     private void Awake()
     {
@@ -49,7 +36,6 @@ public class CameraManager : MonoBehaviour
         }
         else
         {
-            // DontDestroyOnLoad(this.gameObject);
             instance = this;
         }
     }
@@ -57,6 +43,10 @@ public class CameraManager : MonoBehaviour
     void Start()
     {
         UpdateSceneInfo();
+        if (playableDirector != null)
+        {
+            playableDirector.stopped += OnPlayableDirectorStopped;
+        }
     }
 
     void OnEnable()
@@ -67,6 +57,10 @@ public class CameraManager : MonoBehaviour
     void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        if (playableDirector != null)
+        {
+            playableDirector.stopped -= OnPlayableDirectorStopped;
+        }
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -113,6 +107,24 @@ public class CameraManager : MonoBehaviour
         else if (currentSceneName == "1_Room" || currentSceneName == "1_RoomCutScene")
         {
             this.transform.position = roomCameraPosition;
+        }
+    }
+
+    void OnPlayableDirectorStopped(PlayableDirector director)
+    {
+        if (director == playableDirector)
+        {
+            // 타임라인이 끝난 후 새로운 타겟을 찾음
+            target = GameObject.FindWithTag(targetTag);
+
+            // CameraManager 스크립트 비활성화
+            if (CameraManager.instance != null)
+            {
+                CameraManager.instance.enabled = false;
+            }
+
+            // 자신을 활성화
+            this.enabled = true;
         }
     }
 }

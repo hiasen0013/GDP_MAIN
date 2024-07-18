@@ -8,7 +8,7 @@ public class TimeLineSceneManager : MonoBehaviour
     public void End_First_CutScene()
     {
         
-        SceneManager.LoadScene("지하_6층_배치도");
+        SceneManager.LoadScene("1_Room");
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

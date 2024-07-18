@@ -41,68 +41,68 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        {
-            h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
-            v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
+    // void Update()
+    // {
+    //     {
+    //         h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
+    //         v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 
-            bool hDown = manager.isAction ? false : Input.GetButtonDown("Horizontal");
-            bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical");
-            bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal");
-            bool vUp = manager.isAction ? false : Input.GetButtonUp("Vertical");                                                                                                                               
+    //         bool hDown = manager.isAction ? false : Input.GetButtonDown("Horizontal");
+    //         bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical");
+    //         bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal");
+    //         bool vUp = manager.isAction ? false : Input.GetButtonUp("Vertical");                                                                                                                               
 
-            if(hDown)
-            {
-                isHorizonMove = true;
-            }
-            else if(vDown)
-            {
-                isHorizonMove = false;
-            }
-            else if(hUp || vUp)
-            {
-                isHorizonMove = h != 0;
-            }
+    //         if(hDown)
+    //         {
+    //             isHorizonMove = true;
+    //         }
+    //         else if(vDown)
+    //         {
+    //             isHorizonMove = false;
+    //         }
+    //         else if(hUp || vUp)
+    //         {
+    //             isHorizonMove = h != 0;
+    //         }
 
-            if(anim.GetInteger("hAxisRaw") != h)
-            {
-                anim.SetBool("isChange", true);
-                anim.SetInteger("hAxisRaw", (int)h);
-            }
-            else if(anim.GetInteger("vAxisRaw") != v)
-            {
-                anim.SetBool("isChange", true);
-                anim.SetInteger("vAxisRaw", (int)v);
-            }
-            else
-            {
-                anim.SetBool("isChange", false);
-            }
+    //         if(anim.GetInteger("hAxisRaw") != h)
+    //         {
+    //             anim.SetBool("isChange", true);
+    //             anim.SetInteger("hAxisRaw", (int)h);
+    //         }
+    //         // else if(anim.GetInteger("vAxisRaw") != v)
+    //         // {
+    //         //     anim.SetBool("isChange", true);
+    //         //     anim.SetInteger("vAxisRaw", (int)v);
+    //         // }
+    //         else
+    //         {
+    //             anim.SetBool("isChange", false);
+    //         }
 
-            if(vDown && v == 1)
-            {
-                dirVec = Vector3.up;
-            }
-            else if (vDown && v == -1)
-            {
-                dirVec = Vector3.down;
-            }
-            else if (hDown && h == -1)
-            {
-                dirVec = Vector3.left;
-            }
-            else if (hDown && h == 1)
-            {
-                dirVec = Vector3.right;
-            }
+    //         if(vDown && v == 1)
+    //         {
+    //             dirVec = Vector3.up;
+    //         }
+    //         else if (vDown && v == -1)
+    //         {
+    //             dirVec = Vector3.down;
+    //         }
+    //         else if (hDown && h == -1)
+    //         {
+    //             dirVec = Vector3.left;
+    //         }
+    //         else if (hDown && h == 1)
+    //         {
+    //             dirVec = Vector3.right;
+    //         }
 
-            if(Input.GetButtonDown("Jump") && scanObject != null)
-            {
-                manager.Action(scanObject);
-            }
-        }
-    }
+    //         if(Input.GetButtonDown("Jump") && scanObject != null)
+    //         {
+    //             manager.Action(scanObject);
+    //         }
+    //     }
+    // }
 
     void FixedUpdate()
     {
