@@ -96,6 +96,12 @@ public class CameraManager : MonoBehaviour
             // 카메라 위치 고정
             this.transform.position = roomCameraPosition;
         }
+        else if(currentSceneName == "3_Elevator_Front")
+        {
+            target = GameObject.FindWithTag(targetTag);
+            sceneMoveSpeed = 5.0f; // 원하는 이동 속도 설정
+            moveSpeed = sceneMoveSpeed;
+        }
         else
         {
             // 기본 이동 속도 설정 (만약 씬별 설정이 없으면 기본값 사용)

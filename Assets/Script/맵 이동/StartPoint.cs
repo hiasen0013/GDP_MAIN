@@ -16,7 +16,7 @@ public class StartPoint : MonoBehaviour
 
         if(startPoint == thePlayer.currentMapName)
         {
-            theCamera.transform.position = new Vector3(0, 0, -10); // 씬이 시작될 때 카메라 위치 조정 가능
+            // theCamera.transform.position = new Vector3(0, 0, -10); // 씬이 시작될 때 카메라 위치 조정 가능
             thePlayer.transform.position = this.transform.position;
             thePlayer.ResetPlayerState(); // 플레이어 상태를 초기화
         }
