@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class PlayerController_상호작용 : MonoBehaviour
 {
@@ -10,8 +11,9 @@ public class PlayerController_상호작용 : MonoBehaviour
     [SerializeField] private Image dialogBox;
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private TextMeshProUGUI dialogNameText;
+    [SerializeField] private float typingSpeed = 100f;
 
-    [SerializeField]private SpriteRenderer spr;
+    [SerializeField] private SpriteRenderer spr;
 
     private ScannableObject currentObject;
     private Vector2 inputDirection = Vector2.zero;
@@ -21,13 +23,16 @@ public class PlayerController_상호작용 : MonoBehaviour
         HandleInput();
         ScanForObject();
 
-        if (Input.GetButtonDown("Jump") && currentObject != null)
+        if (Input.GetButtonDown("Jump"))
         {
-            ShowDialog(currentObject.dialog);
-        }
-        if(CutSceneManager.instance.is_Second_CutScene)
-        {
-            spr.enabled = false;
+            if (dialogBox.gameObject.activeSelf)
+            {
+                dialogBox.gameObject.SetActive(false);
+            }
+            else if (currentObject != null)
+            {
+                ShowDialog(currentObject.dialog);
+            }
         }
     }
 
@@ -75,13 +80,24 @@ public class PlayerController_상호작용 : MonoBehaviour
     {
         dialogBox.gameObject.SetActive(true);
         dialogPortrait.sprite = dialog.portrait;
-        dialogText.text = dialog.dialog;
         dialogNameText.text = dialog.dialog_name;
+        StartCoroutine(TypeEffect(dialog.dialog));
+    }
+
+    IEnumerator TypeEffect(string text)
+    {
+        dialogText.text = "";
+
+        foreach (char c in text)
+        {
+            dialogText.SetText(dialogText.text + c);
+            yield return new WaitForSeconds(1f / typingSpeed);
+        }
 
         StartCoroutine(HideDialog());
     }
 
-    System.Collections.IEnumerator HideDialog()
+    IEnumerator HideDialog()
     {
         yield return new WaitForSeconds(5f); // 대사 표시 시간. 필요에 따라 조정 가능
         dialogBox.gameObject.SetActive(false);

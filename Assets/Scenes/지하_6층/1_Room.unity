@@ -4291,6 +4291,7 @@ MonoBehaviour:
   dialogBox: {fileID: 2042470683}
   dialogText: {fileID: 1042970372}
   dialogNameText: {fileID: 91196972}
+  typingSpeed: 20
   spr: {fileID: 1753113360}
 --- !u!114 &1753113364
 MonoBehaviour:
