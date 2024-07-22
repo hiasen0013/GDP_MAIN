@@ -10,6 +10,7 @@ public class B3F_MoveTrigger : MoveTrigger
     [SerializeField] private GameObject b3_Corridor;
     [SerializeField] private GameObject b3_Cafeteria;
     [SerializeField] private GameObject b3_CounselingRoom;
+    [SerializeField] private GameObject b3_Warehouse;
     void Awake()
     {
         if(b3_Lobby == null)
@@ -36,11 +37,16 @@ public class B3F_MoveTrigger : MoveTrigger
         {
             b3_CounselingRoom = GameObject.Find("B3_상담실");
         }
+        if(b3_Warehouse == null)
+        {
+            b3_Warehouse = GameObject.Find("B3_창고");
+        }
         b3_Lobby.SetActive(true); 
         b3_Library.SetActive(false); 
         b3_Corridor.SetActive(false); 
         b3_Cafeteria.SetActive(false); 
         b3_CounselingRoom.SetActive(false);
+        b3_Warehouse.SetActive(false);
     }
 
     public override void OnChildTriggerEnter(Collider2D other, int childId)
@@ -144,5 +150,31 @@ public class B3F_MoveTrigger : MoveTrigger
             b3_Corridor.SetActive(true);
         }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        if(childId == 10) // 도서관에서 창고로
+        {
+            Transform nextChildTransform = transform.GetChild(11);
+            Vector2 newPosition = new Vector2(nextChildTransform.position.x - 2f, nextChildTransform.position.y);
+            other.transform.position = newPosition;
+            Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Library.SetActive(false);
+            b3_Warehouse.SetActive(true);
+            SpriteRenderer spr = other.gameObject.GetComponent<SpriteRenderer>();
+            Material sprLitD = Resources.Load<Material>("Materials/Sprite-Lit-Default");
+            spr.material = sprLitD;
+            
+        }
+
+        if(childId == 11) // 창고에서 도서관으로
+        {
+            Transform nextChildTransform = transform.GetChild(10);
+            Vector2 newPosition = new Vector2(nextChildTransform.position.x + 2f, nextChildTransform.position.y);
+            other.transform.position = newPosition;
+            Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
+            b3_Warehouse.SetActive(false);
+            b3_Library.SetActive(true);
+            SpriteRenderer spr = other.gameObject.GetComponent<SpriteRenderer>();
+            Material sprLitD = Resources.Load<Material>("Materials/Sprite-Unlit-Default");
+            spr.material = sprLitD;
+        }
     }
 }
