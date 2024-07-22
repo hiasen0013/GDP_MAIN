@@ -3,8 +3,14 @@ using UnityEngine;
 public class test : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private SpriteRenderer spr;
 
     // Update is called once per frame
+
+    void Start()
+    {
+        spr = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         // Get input from the horizontal and vertical axes
