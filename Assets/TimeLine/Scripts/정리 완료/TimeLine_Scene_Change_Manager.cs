@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TimeLineSceneManager : MonoBehaviour
+public class TimeLine_Scene_Change_Manager : MonoBehaviour
 {
     public void End_First_CutScene()
     {

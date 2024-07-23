@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class JK_Dialog_test : MonoBehaviour
+public class Dialog_Manager : MonoBehaviour
 {
     [SerializeField] private UnityEngine.UI.Image dialog_portrait;
     [SerializeField] private UnityEngine.UI.Image dialog_box;

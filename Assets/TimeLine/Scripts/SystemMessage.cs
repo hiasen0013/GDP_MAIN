@@ -29,7 +29,7 @@ public class SystemMessage : MonoBehaviour
 
     void OnEnable()
     {
-        if (system_msg_text == null  || dialog_box == null  || TimeLineManager.instance == null || CutSceneManager.instance == null)
+        if (system_msg_text == null  || dialog_box == null  || TimeLineManager.instance == null || TimeLine_Sequence_Manager.instance == null)
         {
             // Debug.LogError("Error");
             return;
@@ -37,10 +37,10 @@ public class SystemMessage : MonoBehaviour
         if(this.gameObject.activeSelf)
         {
             System_MessageOnOff(true);
-            CutSceneManager.instance.system_msg_count ++;
+            TimeLine_Sequence_Manager.instance.system_msg_count ++;
         }
 
-        switch(CutSceneManager.instance.system_msg_count)
+        switch(TimeLine_Sequence_Manager.instance.system_msg_count)
         {
             case 0: system_msg_text.text =
             "";
@@ -67,13 +67,13 @@ public class SystemMessage : MonoBehaviour
             case 5 : oatesCutScene.SetActive(true);
             if(YorN == false)
             {
-                CutSceneManager.instance.system_msg_count++;
+                TimeLine_Sequence_Manager.instance.system_msg_count++;
             }
             break;
 
             case 6: system_msg_text.text =
             "자세히 들여다보니 허리까지 내려오는 하얀 긴 머리를 하고 있는 사람이 자신이 시선이 들켰다고 생각했는지 후다닥-. 도망간다. ";
-            CutSceneManager.instance.system_msg_count++;
+            TimeLine_Sequence_Manager.instance.system_msg_count++;
             break;
 
             case 7: system_msg_text.text =
@@ -81,7 +81,7 @@ public class SystemMessage : MonoBehaviour
             isSpace = false;
             break;
 
-            case 8: print(CutSceneManager.instance.system_msg_count);
+            case 8: print(TimeLine_Sequence_Manager.instance.system_msg_count);
             system_msg_text.text =
             "따라 갈까?";
             isSpace = false;
@@ -98,7 +98,7 @@ public class SystemMessage : MonoBehaviour
             oatesCutScene.SetActive(false); 
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && !isSpace && CutSceneManager.instance.system_msg_count == 7)
+        if(Input.GetKeyDown(KeyCode.Space) && !isSpace && TimeLine_Sequence_Manager.instance.system_msg_count == 7)
         {
             system_msg_text.text =
             "그 형체는 몇 초간 더 지켜보더니 후다닥-. 사라진다.";

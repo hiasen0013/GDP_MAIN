@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CutSceneManager : MonoBehaviour
+public class TimeLine_Sequence_Manager : MonoBehaviour
 {
-    public static CutSceneManager instance;
+    public static TimeLine_Sequence_Manager instance;
     public bool is_First_CutScene = false;
     public bool is_Second_CutScene = false;
     public bool is_Thrid_CutScene = false;

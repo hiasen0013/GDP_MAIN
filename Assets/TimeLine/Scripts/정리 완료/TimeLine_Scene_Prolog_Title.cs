@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class CutScene_Title : MonoBehaviour
+public class TimeLine_Scene_Prolog_Title : MonoBehaviour
 {
     [SerializeField] private Image title_box;
     [SerializeField] private TextMeshProUGUI title_text;

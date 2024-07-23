@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene2_HarryMove : MonoBehaviour
+public class TimeLine_2_Scene_HarryMove : MonoBehaviour
 {
     public GameObject movePos_A;
     private bool scene2_HarryMove = false;

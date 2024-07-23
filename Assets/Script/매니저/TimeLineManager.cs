@@ -51,9 +51,9 @@ public class TimeLineManager : MonoBehaviour
     {
         playableDirector.Stop();
         this.gameObject.SetActive(false);
-        CutSceneManager.instance.is_First_CutScene = false;
-        CutSceneManager.instance.is_Second_CutScene = false;
-        CutSceneManager.instance.is_Thrid_CutScene = false;
+        TimeLine_Sequence_Manager.instance.is_First_CutScene = false;
+        TimeLine_Sequence_Manager.instance.is_Second_CutScene = false;
+        TimeLine_Sequence_Manager.instance.is_Thrid_CutScene = false;
     }
 
     public void BtnManager(bool value)

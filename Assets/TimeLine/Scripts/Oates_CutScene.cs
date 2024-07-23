@@ -20,15 +20,15 @@ public class Oates_CutScene : MonoBehaviour
 
     public void Oates_Start_Anim()
     {
-        if(CutSceneManager.instance.is_First_CutScene)
+        if(TimeLine_Sequence_Manager.instance.is_First_CutScene)
         {
             anim.SetTrigger("isStart_First_CutScene");
         }
-        if(CutSceneManager.instance.is_Second_CutScene)
+        if(TimeLine_Sequence_Manager.instance.is_Second_CutScene)
         {
             anim.SetTrigger("isStart_Second_CutScene");
         }
-        if(CutSceneManager.instance.is_Thrid_CutScene)
+        if(TimeLine_Sequence_Manager.instance.is_Thrid_CutScene)
         {
             anim.SetTrigger("isStart_Thrid_CutScene");
         }
