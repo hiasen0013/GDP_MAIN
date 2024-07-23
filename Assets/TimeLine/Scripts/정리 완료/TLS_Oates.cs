@@ -20,15 +20,15 @@ public class TLS_Oates : MonoBehaviour
 
     public void Oates_Start_Anim()
     {
-        if(TLS_Sequence_Manager.instance.is_First_CutScene)
+        if(TLS_Sequence_Manager.instance.is_First_TLS)
         {
             anim.SetTrigger("isStart_First_CutScene");
         }
-        if(TLS_Sequence_Manager.instance.is_Second_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Second_TLS)
         {
             anim.SetTrigger("isStart_Second_CutScene");
         }
-        if(TLS_Sequence_Manager.instance.is_Thrid_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Thrid_TLS)
         {
             anim.SetTrigger("isStart_Thrid_CutScene");
         }

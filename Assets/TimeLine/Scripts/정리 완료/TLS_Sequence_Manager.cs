@@ -5,9 +5,9 @@ using UnityEngine;
 public class TLS_Sequence_Manager : MonoBehaviour
 {
     public static TLS_Sequence_Manager instance;
-    public bool is_First_CutScene = false;
-    public bool is_Second_CutScene = false;
-    public bool is_Thrid_CutScene = false;
+    public bool is_First_TLS = false;
+    public bool is_Second_TLS = false;
+    public bool is_Thrid_TLS = false;
     public int system_msg_count = 0;
 
     void Awake()
@@ -18,22 +18,23 @@ public class TLS_Sequence_Manager : MonoBehaviour
         } 
     }
 
-    public void First_CutScene()
+    public void First_TLS()
     {
-        is_First_CutScene = true;
+        is_First_TLS = true;
+        Debug.Log("첫번째");
         system_msg_count = 0;
     }
 
-    public void Second_CutScene()
+    public void Second_TLS()
     {
+        is_Second_TLS = true;
         Debug.Log("두번째");
-        is_Second_CutScene = true;
         system_msg_count = 7;
     }
 
-    public void Thrid_CutScene()
+    public void Thrid_TLS()
     {
-        is_Thrid_CutScene = true;
-        Debug.Log(is_Thrid_CutScene);
+        is_Thrid_TLS = true;
+        Debug.Log("세번째");
     }
 }

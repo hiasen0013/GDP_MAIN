@@ -17,11 +17,6 @@ public class SystemMessage : MonoBehaviour
 
     public void System_MessageOnOff(bool value)
     {
-        if (system_msg_text == null  || dialog_box == null  || TLS_Manager.instance == null)
-        {
-            // Debug.LogError("Error");
-            return;
-        } 
         system_msg_text.gameObject.SetActive(value);
         dialog_box.gameObject.SetActive(value);
         TLS_Manager.instance.isDialog = value;
@@ -29,11 +24,6 @@ public class SystemMessage : MonoBehaviour
 
     void OnEnable()
     {
-        if (system_msg_text == null  || dialog_box == null  || TLS_Manager.instance == null || TLS_Sequence_Manager.instance == null)
-        {
-            // Debug.LogError("Error");
-            return;
-        }
         if(this.gameObject.activeSelf)
         {
             System_MessageOnOff(true);

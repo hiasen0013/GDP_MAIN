@@ -15,33 +15,33 @@ public class TLS_Harry : MonoBehaviour
             Debug.Log("애니미 있음");
     }
 
-    public void Harry_Start_Anim()
+    public void Harry_Anim_Start()
     {
-        if(TLS_Sequence_Manager.instance.is_First_CutScene)
+        if(TLS_Sequence_Manager.instance.is_First_TLS)
         {
             Debug.Log("실행됨");
             anim.SetTrigger("isStart_First_CutScene");
         }
-        if(TLS_Sequence_Manager.instance.is_Second_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Second_TLS)
         {
             anim.SetTrigger("isSatrt_Second_CutScene");
         }
-        if(TLS_Sequence_Manager.instance.is_Thrid_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Thrid_TLS)
         {
             anim.SetTrigger("isStart_Thrid_CutScene");
         }
     }
-    public void WakeUpAnim()
+    public void WakeUp_Anim()
     {
         anim.SetTrigger("isWakeUp");
     }
 
-    public void WakeUpMove()
+    public void WakeUp_Move()
     {
         anim.SetTrigger("isWakeUp2");
         this.gameObject.transform.localPosition = new Vector2 (2.732f, 0.04f);
     }
-    public void WakeUP_Move3()
+    public void WakeUP_Move2()
     {
         anim.SetTrigger("isWakeUp3");
         this.gameObject.transform.localPosition = new Vector2 (1.82f, 0.04f);

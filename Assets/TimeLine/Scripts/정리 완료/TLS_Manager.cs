@@ -51,9 +51,9 @@ public class TLS_Manager : MonoBehaviour
     {
         playableDirector.Stop();
         this.gameObject.SetActive(false);
-        TLS_Sequence_Manager.instance.is_First_CutScene = false;
-        TLS_Sequence_Manager.instance.is_Second_CutScene = false;
-        TLS_Sequence_Manager.instance.is_Thrid_CutScene = false;
+        TLS_Sequence_Manager.instance.is_First_TLS = false;
+        TLS_Sequence_Manager.instance.is_Second_TLS = false;
+        TLS_Sequence_Manager.instance.is_Thrid_TLS = false;
     }
 
     public void BtnManager(bool value)

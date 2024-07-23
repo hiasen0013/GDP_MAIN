@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TLS_Scene_Change_Manager : MonoBehaviour
 {
-    public void End_First_CutScene()
+    public void End_First_TLS()
     {
         
         SceneManager.LoadScene("1_Room");
