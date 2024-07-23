@@ -119,6 +119,5 @@ public class B5_MoveTirgger : MoveTrigger
             b5_Laboratory.SetActive(false);
             b5_Specialized_Laboratory.SetActive(true);
         }
-
     }
 }

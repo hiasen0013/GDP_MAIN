@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC_HeadLayer : MonoBehaviour
+public class NPC_Head_Trigger : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spr;
 
