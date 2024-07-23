@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeLine_Scene_Harry : MonoBehaviour
+public class TLS_Harry : MonoBehaviour
 {
     public Animator anim;
 
@@ -17,16 +17,16 @@ public class TimeLine_Scene_Harry : MonoBehaviour
 
     public void Harry_Start_Anim()
     {
-        if(TimeLine_Sequence_Manager.instance.is_First_CutScene)
+        if(TLS_Sequence_Manager.instance.is_First_CutScene)
         {
             Debug.Log("실행됨");
             anim.SetTrigger("isStart_First_CutScene");
         }
-        if(TimeLine_Sequence_Manager.instance.is_Second_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Second_CutScene)
         {
             anim.SetTrigger("isSatrt_Second_CutScene");
         }
-        if(TimeLine_Sequence_Manager.instance.is_Thrid_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Thrid_CutScene)
         {
             anim.SetTrigger("isStart_Thrid_CutScene");
         }

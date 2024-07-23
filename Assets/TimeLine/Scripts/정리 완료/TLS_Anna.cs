@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class Anna_CutScene : MonoBehaviour
+public class TLS_Anna : MonoBehaviour
 {
     Animator anim;
     public List<GameObject> movePos;
@@ -73,7 +73,7 @@ public class Anna_CutScene : MonoBehaviour
                 anim.SetTrigger("isStop");
                 isStartAnim = false;
                 index = 0;
-                TimeLineManager.instance.isDialog = false;
+                TLS_Manager.instance.isDialog = false;
             }
         }
         else if (isGoBackAnim && index < movePos.Count)
@@ -88,7 +88,7 @@ public class Anna_CutScene : MonoBehaviour
             {
                 isGoBackAnim = false;
                 index = 0;
-                TimeLineManager.instance.isDialog = false;
+                TLS_Manager.instance.isDialog = false;
                 this.gameObject.SetActive(false);
             }
         }
@@ -97,7 +97,7 @@ public class Anna_CutScene : MonoBehaviour
     {
         anim.SetTrigger("isStartAnim");
         isStartAnim = true;
-        TimeLineManager.instance.isDialog = true;
+        TLS_Manager.instance.isDialog = true;
     }
 
     public void BackMove()
@@ -105,6 +105,6 @@ public class Anna_CutScene : MonoBehaviour
         speed = 4f;
         anim.SetTrigger("isGoBack");
         isGoBackAnim = true;
-        TimeLineManager.instance.isDialog = true;
+        TLS_Manager.instance.isDialog = true;
     }
 }

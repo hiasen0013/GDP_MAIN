@@ -67,7 +67,7 @@ public class Dialog_Manager : MonoBehaviour
         dialog_portrait.gameObject.SetActive(value);
         dialog_text.gameObject.SetActive(value);
         dialog_nameText.gameObject.SetActive(value);
-        TimeLineManager.instance.isDialog = value;
+        TLS_Manager.instance.isDialog = value;
     }
 
     // Start is called before the first frame update
@@ -79,7 +79,7 @@ public class Dialog_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TimeLineManager.instance.isDialog)
+        if (TLS_Manager.instance.isDialog)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

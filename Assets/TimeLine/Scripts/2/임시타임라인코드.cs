@@ -20,7 +20,7 @@ public class 임시타임라인코드 : MonoBehaviour
             test2.SetActive(false);
         if(test1.activeSelf)
         {
-            TimeLineManager.instance.isDialog = true;
+            TLS_Manager.instance.isDialog = true;
         }
         }
         else if(SystemMessage.instance.YorN == false)
@@ -29,7 +29,7 @@ public class 임시타임라인코드 : MonoBehaviour
             test1.SetActive(false);
             if(test2.activeSelf)
         {
-            TimeLineManager.instance.isDialog = true;
+            TLS_Manager.instance.isDialog = true;
         }
         }
     }

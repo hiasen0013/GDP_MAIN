@@ -17,19 +17,19 @@ public class SystemMessage : MonoBehaviour
 
     public void System_MessageOnOff(bool value)
     {
-        if (system_msg_text == null  || dialog_box == null  || TimeLineManager.instance == null)
+        if (system_msg_text == null  || dialog_box == null  || TLS_Manager.instance == null)
         {
             // Debug.LogError("Error");
             return;
         } 
         system_msg_text.gameObject.SetActive(value);
         dialog_box.gameObject.SetActive(value);
-        TimeLineManager.instance.isDialog = value;
+        TLS_Manager.instance.isDialog = value;
     }
 
     void OnEnable()
     {
-        if (system_msg_text == null  || dialog_box == null  || TimeLineManager.instance == null || TimeLine_Sequence_Manager.instance == null)
+        if (system_msg_text == null  || dialog_box == null  || TLS_Manager.instance == null || TLS_Sequence_Manager.instance == null)
         {
             // Debug.LogError("Error");
             return;
@@ -37,10 +37,10 @@ public class SystemMessage : MonoBehaviour
         if(this.gameObject.activeSelf)
         {
             System_MessageOnOff(true);
-            TimeLine_Sequence_Manager.instance.system_msg_count ++;
+            TLS_Sequence_Manager.instance.system_msg_count ++;
         }
 
-        switch(TimeLine_Sequence_Manager.instance.system_msg_count)
+        switch(TLS_Sequence_Manager.instance.system_msg_count)
         {
             case 0: system_msg_text.text =
             "";
@@ -61,19 +61,19 @@ public class SystemMessage : MonoBehaviour
             case 4: system_msg_text.text =
             "자세히 볼까?";
             isSpace = false;
-            TimeLineManager.instance.BtnManager(true);
+            TLS_Manager.instance.BtnManager(true);
             break;
 
             case 5 : oatesCutScene.SetActive(true);
             if(YorN == false)
             {
-                TimeLine_Sequence_Manager.instance.system_msg_count++;
+                TLS_Sequence_Manager.instance.system_msg_count++;
             }
             break;
 
             case 6: system_msg_text.text =
             "자세히 들여다보니 허리까지 내려오는 하얀 긴 머리를 하고 있는 사람이 자신이 시선이 들켰다고 생각했는지 후다닥-. 도망간다. ";
-            TimeLine_Sequence_Manager.instance.system_msg_count++;
+            TLS_Sequence_Manager.instance.system_msg_count++;
             break;
 
             case 7: system_msg_text.text =
@@ -81,11 +81,11 @@ public class SystemMessage : MonoBehaviour
             isSpace = false;
             break;
 
-            case 8: print(TimeLine_Sequence_Manager.instance.system_msg_count);
+            case 8: print(TLS_Sequence_Manager.instance.system_msg_count);
             system_msg_text.text =
             "따라 갈까?";
             isSpace = false;
-            TimeLineManager.instance.BtnManager(true);
+            TLS_Manager.instance.BtnManager(true);
             break;
         }
     }
@@ -98,7 +98,7 @@ public class SystemMessage : MonoBehaviour
             oatesCutScene.SetActive(false); 
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && !isSpace && TimeLine_Sequence_Manager.instance.system_msg_count == 7)
+        if(Input.GetKeyDown(KeyCode.Space) && !isSpace && TLS_Sequence_Manager.instance.system_msg_count == 7)
         {
             system_msg_text.text =
             "그 형체는 몇 초간 더 지켜보더니 후다닥-. 사라진다.";
@@ -122,7 +122,7 @@ public class SystemMessage : MonoBehaviour
     {
         print("Y");
         YorN = true;
-        TimeLineManager.instance.BtnManager(false);
+        TLS_Manager.instance.BtnManager(false);
         System_MessageOnOff(false);
         isSpace = true;
     }
@@ -131,7 +131,7 @@ public class SystemMessage : MonoBehaviour
     {
         print("N");
         YorN = false;
-        TimeLineManager.instance.BtnManager(false);
+        TLS_Manager.instance.BtnManager(false);
         System_MessageOnOff(false);
         isSpace = true;
     }

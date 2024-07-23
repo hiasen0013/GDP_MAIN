@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
-public class Oates_CutScene : MonoBehaviour
+public class TLS_Oates : MonoBehaviour
 {
     public Animator anim;
     [SerializeField] Sprite jumpingImage;
@@ -20,15 +20,15 @@ public class Oates_CutScene : MonoBehaviour
 
     public void Oates_Start_Anim()
     {
-        if(TimeLine_Sequence_Manager.instance.is_First_CutScene)
+        if(TLS_Sequence_Manager.instance.is_First_CutScene)
         {
             anim.SetTrigger("isStart_First_CutScene");
         }
-        if(TimeLine_Sequence_Manager.instance.is_Second_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Second_CutScene)
         {
             anim.SetTrigger("isStart_Second_CutScene");
         }
-        if(TimeLine_Sequence_Manager.instance.is_Thrid_CutScene)
+        if(TLS_Sequence_Manager.instance.is_Thrid_CutScene)
         {
             anim.SetTrigger("isStart_Thrid_CutScene");
         }

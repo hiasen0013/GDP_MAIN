@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeLine_2_Scene_HarryMove : MonoBehaviour
+public class TLS2_HarryMove : MonoBehaviour
 {
     public GameObject movePos_A;
     private bool scene2_HarryMove = false;
@@ -16,7 +16,7 @@ public class TimeLine_2_Scene_HarryMove : MonoBehaviour
         if(scene2_HarryMove == true)
         {
         transform.position = Vector3.MoveTowards(currentPosition, movePos, speed*Time.deltaTime);
-        TimeLineManager.instance.isDialog = true;
+        TLS_Manager.instance.isDialog = true;
         }
     }
 
@@ -29,7 +29,7 @@ public class TimeLine_2_Scene_HarryMove : MonoBehaviour
         if(other.CompareTag("movePosA"))
         {
             scene2_HarryMove = false;
-            TimeLineManager.instance.isDialog = false;
+            TLS_Manager.instance.isDialog = false;
         }
     }
 }

@@ -5,10 +5,10 @@ using UnityEngine.Playables;
 using UnityEditor.SceneManagement;
 using UnityEngine.AI;
 
-public class TimeLineManager : MonoBehaviour
+public class TLS_Manager : MonoBehaviour
 {
 
-    public static TimeLineManager instance;
+    public static TLS_Manager instance;
     public bool isDialog;
     //타임라인 컨트롤러
     private PlayableDirector playableDirector;
@@ -51,9 +51,9 @@ public class TimeLineManager : MonoBehaviour
     {
         playableDirector.Stop();
         this.gameObject.SetActive(false);
-        TimeLine_Sequence_Manager.instance.is_First_CutScene = false;
-        TimeLine_Sequence_Manager.instance.is_Second_CutScene = false;
-        TimeLine_Sequence_Manager.instance.is_Thrid_CutScene = false;
+        TLS_Sequence_Manager.instance.is_First_CutScene = false;
+        TLS_Sequence_Manager.instance.is_Second_CutScene = false;
+        TLS_Sequence_Manager.instance.is_Thrid_CutScene = false;
     }
 
     public void BtnManager(bool value)
