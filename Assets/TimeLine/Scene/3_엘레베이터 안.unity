@@ -1097,6 +1097,9 @@ MonoBehaviour:
   target: {fileID: 0}
   moveSpeed: 5
   currentSceneName: 
+  sceneMoveSpeed: 0
+  targetTag: Player
+  roomCameraPosition: {x: 9, y: 0, z: -10}
 --- !u!1 &1168584764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,85 +1168,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1169326452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1169326454}
-  - component: {fileID: 1169326453}
-  - component: {fileID: 1169326455}
-  m_Layer: 0
-  m_Name: CutSceneManger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1169326453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169326452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fa9e8898de31404eb83fe66371f4f9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  is_First_CutScene: 0
-  is_Second_CutScene: 0
-  is_Thrid_CutScene: 0
-  system_msg_count: 0
---- !u!4 &1169326454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169326452}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.974224, y: 4.7013383, z: 0.07253181}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1169326455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169326452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: 6381d614f2119454eb097b23f7ad4f03, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1169326453}
-          m_TargetAssemblyTypeName: CutSceneManager, Assembly-CSharp
-          m_MethodName: Thrid_CutScene
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1237839127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,8 +1312,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1415627378}
   - component: {fileID: 1415627380}
-  - component: {fileID: 1415627379}
+  - component: {fileID: 1415627382}
   - component: {fileID: 1415627381}
+  - component: {fileID: 1415627379}
   m_Layer: 0
   m_Name: TimeLine
   m_TagString: Untagged
@@ -1430,13 +1355,11 @@ PlayableDirector:
   - key: {fileID: -7658708396005631768, guid: 65fc4cea96ef51c40990394f308b33d1, type: 2}
     value: {fileID: 41497882}
   - key: {fileID: 8053275467771315008, guid: 65fc4cea96ef51c40990394f308b33d1, type: 2}
-    value: {fileID: 1169326455}
+    value: {fileID: 1415627381}
   - key: {fileID: 3600341676465824812, guid: 65fc4cea96ef51c40990394f308b33d1, type: 2}
     value: {fileID: 1602275997}
   - key: {fileID: 1603395388128278723, guid: 65fc4cea96ef51c40990394f308b33d1, type: 2}
     value: {fileID: 2097019840}
-  - key: {fileID: 3160737419394663898, guid: 65fc4cea96ef51c40990394f308b33d1, type: 2}
-    value: {fileID: 554515035}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1415627380
@@ -1469,13 +1392,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 6381d614f2119454eb097b23f7ad4f03, type: 2}
+    - {fileID: 11400000, guid: ecd8e23dbaec9f94da3040e02f505241, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1415627380}
-          m_TargetAssemblyTypeName: TimeLineManager, Assembly-CSharp
-          m_MethodName: Thrid_CutScene
+        - m_Target: {fileID: 1415627382}
+          m_TargetAssemblyTypeName: TLS_Sequence_Manager, Assembly-CSharp
+          m_MethodName: Thrid_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1485,6 +1408,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1415627382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415627377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa9e8898de31404eb83fe66371f4f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is_First_TLS: 0
+  is_Second_TLS: 0
+  is_Thrid_TLS: 0
+  system_msg_count: 0
 --- !u!1 &1485293459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,13 +1977,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 977c4249ef18a9a4fbe4194caa26a179, type: 2}
+    - {fileID: 11400000, guid: b1c0d2a9c9d6ff04ea0f152ca1f39aba, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1602275991}
-          m_TargetAssemblyTypeName: Harry_CutScene, Assembly-CSharp
-          m_MethodName: Harry_Start_Anim
+          m_TargetAssemblyTypeName: TLS_Harry, Assembly-CSharp
+          m_MethodName: Harry_Anim_Start
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2938,4 +2877,3 @@ SceneRoots:
   - {fileID: 1415627378}
   - {fileID: 1602275996}
   - {fileID: 2097019838}
-  - {fileID: 1169326454}

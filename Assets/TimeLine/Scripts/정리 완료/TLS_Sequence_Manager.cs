@@ -8,6 +8,7 @@ public class TLS_Sequence_Manager : MonoBehaviour
     public bool is_First_TLS = false;
     public bool is_Second_TLS = false;
     public bool is_Thrid_TLS = false;
+    public bool is_Fourth_TLS = false;
     public int system_msg_count = 0;
 
     void Awake()
@@ -37,4 +38,10 @@ public class TLS_Sequence_Manager : MonoBehaviour
         is_Thrid_TLS = true;
         Debug.Log("세번째");
     }
+
+    public void Fourth_TLS()
+    {
+        is_Fourth_TLS = true;
+        Debug.Log("네번째");
+     }
 }
