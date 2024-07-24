@@ -39,7 +39,6 @@ public class TLS_Harry : MonoBehaviour
     {
         anim.SetTrigger("isWakeUp");
     }
-
     public void WakeUp_Move()
     {
         anim.SetTrigger("isWakeUp2");
@@ -61,3 +60,4 @@ public class TLS_Harry : MonoBehaviour
         anim.SetTrigger("Scene2_isWalk_end");
     }
 }
+    
