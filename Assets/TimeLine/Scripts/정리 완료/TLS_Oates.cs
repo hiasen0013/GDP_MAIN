@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class TLS_Oates : MonoBehaviour
 {
-    public Animator anim;
-    [SerializeField] Sprite jumpingImage;
-    [SerializeField] SpriteRenderer spr;
+    private Animator anim;
 
     void Start()
     {
@@ -22,15 +20,19 @@ public class TLS_Oates : MonoBehaviour
     {
         if(TLS_Sequence_Manager.instance.is_First_TLS)
         {
-            anim.SetTrigger("isStart_First_CutScene");
+            anim.SetTrigger("isStart_First_TLS");
         }
         if(TLS_Sequence_Manager.instance.is_Second_TLS)
         {
-            anim.SetTrigger("isStart_Second_CutScene");
+            anim.SetTrigger("isStart_Second_TLS");
         }
         if(TLS_Sequence_Manager.instance.is_Thrid_TLS)
         {
-            anim.SetTrigger("isStart_Thrid_CutScene");
+            anim.SetTrigger("isStart_Thrid_TLS");
+        }
+        if(TLS_Sequence_Manager.instance.is_Fourth_TLS)
+        {
+            anim.SetTrigger("isStart_Fourth_TLS");
         }
     }
 

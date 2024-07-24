@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TLS_Harry : MonoBehaviour
 {
-    public Animator anim;
+    private Animator anim;
 
     void Start()
     {
@@ -20,15 +20,19 @@ public class TLS_Harry : MonoBehaviour
         if(TLS_Sequence_Manager.instance.is_First_TLS)
         {
             Debug.Log("실행됨");
-            anim.SetTrigger("isStart_First_CutScene");
+            anim.SetTrigger("isStart_First_TLS");
         }
         if(TLS_Sequence_Manager.instance.is_Second_TLS)
         {
-            anim.SetTrigger("isSatrt_Second_CutScene");
+            anim.SetTrigger("isStart_Second_TLS");
         }
         if(TLS_Sequence_Manager.instance.is_Thrid_TLS)
         {
-            anim.SetTrigger("isStart_Thrid_CutScene");
+            anim.SetTrigger("isStart_Thrid_TLS");
+        }
+        if(TLS_Sequence_Manager.instance.is_Fourth_TLS)
+        {
+            anim.SetTrigger("isStart_Fourth_TLS");
         }
     }
     public void WakeUp_Anim()
