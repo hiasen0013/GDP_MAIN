@@ -20,7 +20,7 @@ public class TLS_Oates : TLS_AnimatorController
         anim.SetTrigger("isAfterJumping");
     }
 
-    public void TLS5_Oates_appear()
+    public void TLS5_Oates_Enter()
     {
         this.gameObject.transform.localPosition = new Vector2 (14.361f, 0.057f);
     }

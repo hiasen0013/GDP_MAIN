@@ -38,7 +38,7 @@ public class TLS_Harry : TLS_AnimatorController
         anim.SetTrigger("Scene2_isWalk_end");
     }
 
-    public void TLS5_Harry_appear()
+    public void TLS5_Harry_Enter()
     {
         this.gameObject.transform.localPosition = new Vector2 (15.353f, 0.115f);
     }
