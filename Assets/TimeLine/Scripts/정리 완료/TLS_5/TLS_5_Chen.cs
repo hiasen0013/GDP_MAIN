@@ -50,4 +50,12 @@ public class TLS_5_Chen : TLS_Move
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.gameObject.name == "Chen_MovePos_3")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
