@@ -508,7 +508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &554515036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1423,6 +1423,8 @@ MonoBehaviour:
   is_First_TLS: 0
   is_Second_TLS: 0
   is_Thrid_TLS: 0
+  is_Fourth_TLS: 0
+  is_Fifth_TLS: 0
   system_msg_count: 0
 --- !u!1 &1485293459
 GameObject:
@@ -1802,7 +1804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86042cb315381e4b8cc1ee5a8922868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1602275992}
 --- !u!95 &1602275992
 Animator:
   serializedVersion: 5
@@ -2832,9 +2833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cad366e09e425488f976bd9b0cee15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2097019834}
-  jumpingImage: {fileID: 0}
-  spr: {fileID: 0}
 --- !u!114 &2097019840
 MonoBehaviour:
   m_ObjectHideFlags: 0
