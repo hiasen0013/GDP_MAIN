@@ -36,7 +36,7 @@ public class TLS_5_Chen : TLS_Move
 
     private void OnTriggerStay2D(Collider2D other) 
     {
-        if(TLS_Manager.instance.isDialog == false &&other.gameObject.name == "Chen_MovePos_3")
+        if(distance < stopDistance && other.gameObject.name == "Chen_MovePos_3")
         {
             Destroy(this.gameObject);
         }

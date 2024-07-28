@@ -24,6 +24,6 @@ public class TLS_Move : MonoBehaviour
         Vector2 newPos = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
         transform.position = newPos;
         distance = Vector2.Distance(transform.position, destination);
-        Debug.Log($"{this.gameObject.name}이 movePos{movePos[index]}로  이동중");
+        Debug.Log($"{this.gameObject.name}가 movePos{movePos[index]}로  이동중");
     }
 }
