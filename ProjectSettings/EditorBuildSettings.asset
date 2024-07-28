@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/TimeLine/Scene/3_\uC5D8\uB808\uBCA0\uC774\uD130 \uC548.unity"
     guid: 539f9ded42226634d8d80f2e9388f701
+  - enabled: 1
+    path: "Assets/Scenes/\uC9C0\uD558_6\uCE35/4_Right_Corridor.unity"
+    guid: cca8acb38f8c969498a87e628c284dca
   m_configObjects: {}
