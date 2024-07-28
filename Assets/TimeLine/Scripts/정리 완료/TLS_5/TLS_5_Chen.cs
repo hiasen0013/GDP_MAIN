@@ -34,13 +34,14 @@ public class TLS_5_Chen : TLS_Move
         base.MoveTowardsDestination();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerStay2D(Collider2D other) 
     {
-        if(other.gameObject.name == "Chen_MovePos_3")
+        if(TLS_Manager.instance.isDialog == false &&other.gameObject.name == "Chen_MovePos_3")
         {
             Destroy(this.gameObject);
         }
     }
+
     public void IsTrue()
     {
         isTrue[index] = true;
