@@ -5315,7 +5315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b551a026444a114c9e3ef10c51a3a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transferMapName: 3_Elevator_Front
+  transferMapName: "2_\uC5D8\uB808\uBCA0\uC774\uD130 \uC55E"
 --- !u!4 &1695569234
 Transform:
   m_ObjectHideFlags: 0
