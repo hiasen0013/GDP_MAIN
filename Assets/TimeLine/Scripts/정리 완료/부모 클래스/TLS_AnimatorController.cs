@@ -9,10 +9,6 @@ public class TLS_AnimatorController : MonoBehaviour
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
-        if( anim == null)
-            Debug.Log("anim 없음");
-        else
-            Debug.Log("anim 있음");
     }
 
     protected void SetAnimTrigger()

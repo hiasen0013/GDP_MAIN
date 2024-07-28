@@ -15,8 +15,8 @@ public class TLS2_HarryMove : MonoBehaviour
         Vector3 movePos = movePos_A.transform.position;
         if(scene2_HarryMove == true)
         {
-        transform.position = Vector3.MoveTowards(currentPosition, movePos, speed*Time.deltaTime);
-        TLS_Manager.instance.isDialog = true;
+            transform.position = Vector3.MoveTowards(currentPosition, movePos, speed*Time.deltaTime);
+            TLS_Manager.instance.isDialog = true;
         }
     }
 

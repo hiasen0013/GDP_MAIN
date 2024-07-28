@@ -38,7 +38,7 @@ public class Dialog_Manager : MonoBehaviour
             dialog_portrait.sprite = dialogs[dialog_count].portrait;
             dialog_nameText.text = dialogs[dialog_count].dialog_name;
             dialog_count++;
-            print("현재 대사의 카운터 :" + dialog_count);
+            //print("현재 대사의 카운터 :" + dialog_count);
         }
         else
         {

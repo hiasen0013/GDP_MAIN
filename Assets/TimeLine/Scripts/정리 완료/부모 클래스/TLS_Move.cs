@@ -7,11 +7,11 @@ public class TLS_Move : MonoBehaviour
     Animator anim;
     [SerializeField] protected List<GameObject> movePos;
     [SerializeField] protected float speed;
-    [SerializeField] protected float stopDistance = 0.8f;
+    [SerializeField] protected float stopDistance = 0.01f;
     [SerializeField] protected int index = 0;
     [SerializeField] protected List<bool> isTrue;
     protected float distance;
-    protected Coroutine moveCoroutine;
+    //protected Coroutine moveCoroutine;
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
@@ -23,6 +23,7 @@ public class TLS_Move : MonoBehaviour
         Vector2 destination = movePos[index].transform.position;
         Vector2 newPos = Vector2.MoveTowards(transform.position, destination, speed * Time.deltaTime);
         transform.position = newPos;
-        distance = Vector3.Distance(transform.position, destination);
+        distance = Vector2.Distance(transform.position, destination);
+        Debug.Log($"{this.gameObject.name}이 movePos{movePos[index]}로  이동중");
     }
 }

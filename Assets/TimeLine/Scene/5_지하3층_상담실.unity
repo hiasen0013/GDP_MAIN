@@ -123,6 +123,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &61736228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61736229}
+  - component: {fileID: 61736230}
+  m_Layer: 0
+  m_Name: Harry_movePos_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61736229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61736228}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.94, y: 1.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944912988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61736230
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61736228}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &78891873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,6 +3508,7 @@ GameObject:
   - component: {fileID: 1180456679}
   - component: {fileID: 1180456681}
   - component: {fileID: 1180456680}
+  - component: {fileID: 1180456682}
   m_Layer: 0
   m_Name: "\uCCB8"
   m_TagString: Untagged
@@ -3630,6 +3708,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80ac5e8d65b3d845b9482880f1b31b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1180456682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180456674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ba95a85c6e5c2aa4bb3af8f67034d1cf, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1180456680}
+          m_TargetAssemblyTypeName: TLS_5_Chen, Assembly-CSharp
+          m_MethodName: IsTrue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1207823854
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,7 +4784,7 @@ GameObject:
   - component: {fileID: 1660955933}
   - component: {fileID: 1660955934}
   m_Layer: 0
-  m_Name: "\uD574\uB9AC \uC548\uB098 \uC624\uCE20 \uCCB8 \uB300\uD654"
+  m_Name: "\uD574\uB9AC \uC548\uB098 \uCCB8 \uB300\uD654"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4894,6 +5002,7 @@ GameObject:
   - component: {fileID: 1743799940}
   - component: {fileID: 1743799939}
   - component: {fileID: 1743799938}
+  - component: {fileID: 1743799945}
   m_Layer: 0
   m_Name: "\uD574\uB9AC"
   m_TagString: Untagged
@@ -4915,8 +5024,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: b1c0d2a9c9d6ff04ea0f152ca1f39aba, type: 2}
-    - {fileID: 11400000, guid: f9daaff73237ac348928a2a933515fd3, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
+    - {fileID: 11400000, guid: ba95a85c6e5c2aa4bb3af8f67034d1cf, type: 2}
+    - {fileID: 11400000, guid: acbac481d7fc8404a815bc2b79555cc8, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4936,7 +5046,21 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1743799939}
           m_TargetAssemblyTypeName: TLS_Harry, Assembly-CSharp
-          m_MethodName: TLS5_Harry_appear
+          m_MethodName: TLS5_Harry_Enter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1743799945}
+          m_TargetAssemblyTypeName: TLS5_Harry_move, Assembly-CSharp
+          m_MethodName: IsTrue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5118,6 +5242,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743799945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743799937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392a2c27b511e834db4fbacae14395a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePos:
+  - {fileID: 1782930319}
+  - {fileID: 61736228}
+  speed: 10
+  stopDistance: 0.001
+  index: 0
+  isTrue: 
 --- !u!1 &1772074628
 GameObject:
   m_ObjectHideFlags: 0
@@ -5252,6 +5395,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772074628}
   m_CullTransparentMesh: 1
+--- !u!1 &1782930319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782930320}
+  - component: {fileID: 1782930321}
+  m_Layer: 0
+  m_Name: Harry_movePos_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1782930320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782930319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 1.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944912988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1782930321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782930319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1808033217
 GameObject:
   m_ObjectHideFlags: 0
@@ -5689,9 +5909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 099ea679fea67314c93e6fea2f76f3e6, type: 2}
-    - {fileID: 11400000, guid: f9daaff73237ac348928a2a933515fd3, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     - {fileID: 11400000, guid: c0554adad86822e4bb354439769fc994, type: 2}
+    - {fileID: 11400000, guid: ba95a85c6e5c2aa4bb3af8f67034d1cf, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -5711,7 +5931,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1894425963}
           m_TargetAssemblyTypeName: TLS_Oates, Assembly-CSharp
-          m_MethodName: TLS5_Oates_appear
+          m_MethodName: TLS5_Oates_BackMove
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5725,7 +5945,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1894425963}
           m_TargetAssemblyTypeName: TLS_Oates, Assembly-CSharp
-          m_MethodName: TLS5_Oates_BackMove
+          m_MethodName: TLS5_Oates_Enter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6013,6 +6233,39 @@ Transform:
   - {fileID: 1207823855}
   m_Father: {fileID: 1086976926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1944912987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944912988}
+  m_Layer: 0
+  m_Name: Harry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944912988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944912987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1782930320}
+  - {fileID: 61736229}
+  m_Father: {fileID: 2113651424}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1954765843
 GameObject:
   m_ObjectHideFlags: 0
@@ -6032,7 +6285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1954765844
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -6062,6 +6315,10 @@ PlayableDirector:
     value: {fileID: 1999151705}
   - key: {fileID: 7173576820145401802, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
     value: {fileID: 1180456679}
+  - key: {fileID: -2952326512182875092, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 1180456682}
+  - key: {fileID: 3007859443112709988, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 1660955932}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1954765845
@@ -6318,7 +6575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 47c78b590cf1e374ebe95e306b2e9076, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     - {fileID: 11400000, guid: c0554adad86822e4bb354439769fc994, type: 2}
     m_Events:
     - m_PersistentCalls:
@@ -6529,6 +6786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 490968822}
+  - {fileID: 1944912988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
