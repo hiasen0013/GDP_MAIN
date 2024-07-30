@@ -22,7 +22,7 @@ public class MoveTrigger : MonoBehaviour
 public class ChildTrigger : MonoBehaviour
 {
     private MoveTrigger moveTrigger;
-    private int childId;
+    [SerializeField]private int childId;
 
 
     public void Setup(MoveTrigger moveTrigger, int childId)
