@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MoveTrigger : MonoBehaviour
 {
-    void Start()
+    protected virtual void Start()
     {
         foreach (Transform child in transform)
         {
