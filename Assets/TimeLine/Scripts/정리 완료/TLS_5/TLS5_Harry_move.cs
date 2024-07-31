@@ -11,32 +11,6 @@ public class TLS5_Harry_move : TLS_Move
 
     private void Update()
     {
-        /*if(isTrue[index])
-        {
-            TLS_Manager.instance.isDialog = true;
-            MoveTowardsDestination();
-            if(distance < stopDistance)
-            {
-                index ++;
-                if(index < isTrue.Count)
-                {
-                    isTrue[index] = true;
-                    isTrue[index-1] = false;
-                }
-                if (isTrue[1]) // 다음 목적지로 이동을 시작합니다.
-                {
-                    Debug.Log($"{isTrue.Count}");
-                    Debug.Log($"{index}");
-                    MoveTowardsDestination();
-                    if(isTrue[1] && distance < stopDistance)
-                    {
-                        TLS_Manager.instance.isDialog = false;
-                        isTrue[index] = false;
-                        //index++;
-                    }
-                }
-            }
-        } */
 
         if(index < isTrue.Count && isTrue[index])
         {
@@ -67,3 +41,32 @@ public class TLS5_Harry_move : TLS_Move
     }
 }
  
+
+        /*
+        if(isTrue[index])
+        {
+            TLS_Manager.instance.isDialog = true;
+            MoveTowardsDestination();
+            if(distance < stopDistance)
+            {
+                index ++;
+                if(index < isTrue.Count)
+                {
+                    isTrue[index] = true;
+                    isTrue[index-1] = false;
+                }
+                if (isTrue[1]) // 다음 목적지로 이동을 시작합니다.
+                {
+                    Debug.Log($"{isTrue.Count}");
+                    Debug.Log($"{index}");
+                    MoveTowardsDestination();
+                    if(isTrue[1] && distance < stopDistance)
+                    {
+                        TLS_Manager.instance.isDialog = false;
+                        isTrue[index] = false;
+                        //index++;
+                    }
+                }
+            }
+        } 
+        */

@@ -269,6 +269,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1978569479}
   dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_count: 0
   dialogs:
   - dialog: "\uC5B4 ! \uB108!"
     dialog_name: "\uD574\uB9AC"
@@ -866,6 +867,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1978569479}
   dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_count: 0
   dialogs:
   - dialog: "\uC74C~ \uC9C0\uAE08\uC740 \uBC14\uBE60! \uB098\uC911\uC5D0~\r"
     dialog_name: "\uD574\uB9AC"
@@ -1522,6 +1524,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1978569479}
   dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_count: 0
   dialogs:
   - dialog: "\uC73C\uC545 !"
     dialog_name: ???
@@ -2585,6 +2588,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1978569479}
   dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_count: 0
   dialogs:
   - dialog: "\uAE5C\uC9DD\uC544 \uC65C \uC18C\uB9AC\uB97C \uC9C0\uB974\uACE0 \uADF8\uB798?"
     dialog_name: "\uD574\uB9AC"
@@ -2719,26 +2723,16 @@ PlayableDirector:
     value: {fileID: 727297717}
   - key: {fileID: -2288775715390272481, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 2097019834}
-  - key: {fileID: 4706041558756137198, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
-    value: {fileID: 2097019839}
   - key: {fileID: 1807671706100637413, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 2097019839}
-  - key: {fileID: -5878117619302478621, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
-    value: {fileID: 1504857785}
-  - key: {fileID: -1056853899549054880, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
-    value: {fileID: 1504857785}
   - key: {fileID: -6452644689715327958, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 1504857785}
   - key: {fileID: 7207209054954339181, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 1263232599}
   - key: {fileID: 264155348548173478, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 2078103469}
-  - key: {fileID: -3007199923927035537, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
-    value: {fileID: 1504857785}
   - key: {fileID: -4646835263927216917, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 1605593538}
-  - key: {fileID: 4202922945803176270, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
-    value: {fileID: 1504857785}
   - key: {fileID: 3378086931411822172, guid: 8ab62754915607241a5e24bb9daec4f0, type: 2}
     value: {fileID: 1149925427}
   m_ExposedReferences:
@@ -2756,6 +2750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDialog: 0
+  playableDirector: {fileID: 0}
   yes_btn: {fileID: 1922991880}
   no_btn: {fileID: 973716976}
   System_YorN_textBox: {fileID: 13336437}
@@ -2881,6 +2876,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1978569479}
   dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_count: 0
   dialogs:
   - dialog: "\uADF8\uB798!"
     dialog_name: "\uD574\uB9AC"
@@ -3319,10 +3315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: b1c0d2a9c9d6ff04ea0f152ca1f39aba, type: 2}
-    - {fileID: 11400000, guid: aa2cb71e45100cd46a45a4410fdf4510, type: 2}
-    - {fileID: 11400000, guid: f7d12ae230cc51e4a9de1d2707d6202d, type: 2}
-    - {fileID: 11400000, guid: 58becde976b2ad742b8366f17424c7fd, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
+    - {fileID: 11400000, guid: c0554adad86822e4bb354439769fc994, type: 2}
+    - {fileID: 11400000, guid: 8555c8446d721c045a29705409c1e61f, type: 2}
+    - {fileID: 11400000, guid: ba95a85c6e5c2aa4bb3af8f67034d1cf, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -7950,8 +7946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 099ea679fea67314c93e6fea2f76f3e6, type: 2}
-    - {fileID: 11400000, guid: 7a9fc006f6b37074ea405192cb70728c, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
+    - {fileID: 11400000, guid: c0554adad86822e4bb354439769fc994, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:

@@ -38,7 +38,6 @@ public class TLS_5_Anna_Move : TLS_Move
     {
         if(distance < stopDistance && other.gameObject.name == "Anna_MovePos_3")
         {
-            Debug.Log("ㅇㅇ");
             Destroy(this.gameObject);
         }
     }

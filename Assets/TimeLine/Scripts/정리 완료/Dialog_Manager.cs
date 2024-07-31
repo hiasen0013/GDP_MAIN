@@ -9,9 +9,8 @@ public class Dialog_Manager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image dialog_box;
     [SerializeField] private TextMeshProUGUI dialog_text;
     [SerializeField] private TextMeshProUGUI dialog_nameText;
-    private int dialog_count = 0;
-
-    [SerializeField] private Dialog[] dialogs;
+    public int dialog_count = 0;
+    [SerializeField]private Dialog[] dialogs;
     private bool isTyping = false;
     public float typingSpeed = 100f;
 

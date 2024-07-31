@@ -11,7 +11,7 @@ public class TLS_Manager : MonoBehaviour
     public static TLS_Manager instance;
     public bool isDialog;
     //타임라인 컨트롤러
-    private PlayableDirector playableDirector;
+    public PlayableDirector playableDirector;
     public GameObject yes_btn;
     public GameObject no_btn;
     public GameObject System_YorN_textBox;
