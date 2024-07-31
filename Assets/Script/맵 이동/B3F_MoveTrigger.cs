@@ -11,8 +11,10 @@ public class B3F_MoveTrigger : MoveTrigger
     [SerializeField] private GameObject b3_Cafeteria;
     [SerializeField] private GameObject b3_CounselingRoom;
     [SerializeField] private GameObject b3_Warehouse;
-    void Awake()
+    protected override void Start()
     {
+        base.Start();
+        
         if(b3_Lobby == null)
         {
             b3_Lobby = GameObject.Find("B3_로비");
