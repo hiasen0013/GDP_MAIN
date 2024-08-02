@@ -24,9 +24,4 @@ public class TLS_Oates : TLS_AnimatorController
     {
         this.gameObject.transform.localPosition = new Vector2 (14.361f, 0.057f);
     }
-
-    public void TLS5_Oates_BackMove()
-    {
-        anim.SetTrigger("TLS_5_Oates_BakcMove");
-    }
 }
