@@ -3189,7 +3189,7 @@ MonoBehaviour:
   - dialog: "\uC798 \uAC00 \uB204\uB098~\r"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
-  typingSpeed: 20
+  typingSpeed: 40
 --- !u!4 &1103462621
 Transform:
   m_ObjectHideFlags: 0
@@ -3402,7 +3402,7 @@ MonoBehaviour:
   - dialog: "\uB2F9\uC5F0\uD558\uC9C0! \r\r"
     dialog_name: "\uC548\uB098"
     portrait: {fileID: 21300000, guid: a3c7609a205844c4482a67590f7e8c89, type: 3}
-  typingSpeed: 20
+  typingSpeed: 40
 --- !u!4 &1157420600
 Transform:
   m_ObjectHideFlags: 0
@@ -3845,7 +3845,7 @@ MonoBehaviour:
   - dialog: "\u2026 \u2026    "
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
-  typingSpeed: 20
+  typingSpeed: 40
 --- !u!1 &1280202917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,7 +4094,7 @@ MonoBehaviour:
   - dialog: "\uC800 \uB140\uC11D \uBB50\uC57C?"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: 56bfafee81a08624681f35b34043a919, type: 3}
-  typingSpeed: 20
+  typingSpeed: 40
 --- !u!4 &1324963899
 Transform:
   m_ObjectHideFlags: 0

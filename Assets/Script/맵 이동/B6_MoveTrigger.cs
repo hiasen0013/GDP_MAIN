@@ -25,9 +25,9 @@ public class B6_MoveTirgger : MoveTrigger
     protected override void Start()
     {
         base.Start();
-        b6_Room_101.SetActive(true);
+        b6_Room_101.SetActive(false);
         b6_Room_102.SetActive(false);
-        b6_Room_103.SetActive(false);
+        b6_Room_103.SetActive(true);
         b6_Room_104.SetActive(false);
         b6_Room_105.SetActive(false);
         b6_Room_201.SetActive(false);

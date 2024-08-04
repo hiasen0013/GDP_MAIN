@@ -6,6 +6,7 @@ TagManager:
   tags:
   - movePosA
   - movePosB
+  - note
   layers:
   - Default
   - TransparentFX

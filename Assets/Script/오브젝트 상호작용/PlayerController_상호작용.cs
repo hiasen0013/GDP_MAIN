@@ -17,6 +17,7 @@ public class PlayerController_상호작용 : MonoBehaviour
 
     private ScannableObject currentObject;
     private Vector2 inputDirection = Vector2.zero;
+    private int currentDialogIndex = 0;
 
     void Update()
     {
@@ -27,11 +28,20 @@ public class PlayerController_상호작용 : MonoBehaviour
         {
             if (dialogBox.gameObject.activeSelf)
             {
-                dialogBox.gameObject.SetActive(false);
+                if (currentObject != null && currentDialogIndex < currentObject.dialogs.Length - 1)
+                {
+                    currentDialogIndex++;
+                    ShowDialog(currentObject.dialogs[currentDialogIndex]);
+                }
+                else
+                {
+                    dialogBox.gameObject.SetActive(false);
+                }
             }
             else if (currentObject != null)
             {
-                ShowDialog(currentObject.dialog);
+                currentDialogIndex = 0;
+                ShowDialog(currentObject.dialogs[currentDialogIndex]);
             }
         }
     }
@@ -93,13 +103,5 @@ public class PlayerController_상호작용 : MonoBehaviour
             dialogText.SetText(dialogText.text + c);
             yield return new WaitForSeconds(1f / typingSpeed);
         }
-
-        StartCoroutine(HideDialog());
-    }
-
-    IEnumerator HideDialog()
-    {
-        yield return new WaitForSeconds(5f); // 대사 표시 시간. 필요에 따라 조정 가능
-        dialogBox.gameObject.SetActive(false);
     }
 }

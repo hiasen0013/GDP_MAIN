@@ -1,0 +1,995 @@
+fileFormatVersion: 2
+guid: 5ea1f1721ed54a243b1c8690eba4d35c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GDP_UI_BX_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 458
+        width: 359
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a8308e81c1d7142b7c9a0a8c26e18d
+      internalID: -810478076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 431
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424a36c6398a45541b46e3bd5aac61f8
+      internalID: -984027641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 433
+        width: 43
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335021623199c1749ae79280e8453fbe
+      internalID: -1164123913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_25
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 414
+        width: 51
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f378d584e922942a07c51051e59a5e
+      internalID: -1209853058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_29
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 324
+        width: 12
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6b0aa416340e94bbc9fec683824e78
+      internalID: -843222379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_30
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 330
+        width: 308
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afe056d96a0c8f4191c0d29759818a5
+      internalID: 1534373992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_31
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 359
+        width: 180
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f120f0e9cd67484f82561dbc52ec64c
+      internalID: 1873747752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 395
+        width: 51
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da87b5b2d61f5d64eab5e31558022c6f
+      internalID: 52221111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_36
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 375
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d37a7f5bc84339489c4280af335633b
+      internalID: 812639997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_40
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 365
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a44e231cc277e43b6cc45826a6a587
+      internalID: 17260152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 319
+        width: 131
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269ddd64596631849be362f08eb601aa
+      internalID: -476043974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_43
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 347
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85da9466bfe43c7449add2d0d8bfd150
+      internalID: -1992019430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_48
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 346
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b77f74417a19f243ac2df6c5edf57e5
+      internalID: 228896354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_49
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 335
+        width: 48
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6392c7e2a879b8c4db468598ff37ae11
+      internalID: -1017130438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_59
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 230
+        width: 308
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9819cedf3bac3a9439912cdb6c3c0408
+      internalID: 48800191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_65
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 280
+        width: 131
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580d6eaf1779eb64fa4bbd53801cf844
+      internalID: 460155355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_74
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 298
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c774c25cecd68b4bb592322a0968bf8
+      internalID: 57735817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_75
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 239
+        width: 131
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d974a34b474b7cf45809ee996749e8eb
+      internalID: 2106440906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_76
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 236
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33db40b74d01024f9550b0030732a4a
+      internalID: -1834997943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_77
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 227
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed39404923768d4cb86cbe919ed5278
+      internalID: 1162376146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_78
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 209
+        width: 86
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dda6d13019a954488157333584cf60b
+      internalID: -1964018087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_79
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 130
+        width: 308
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecb06dbd61fb1c4aa877dae105a9e23
+      internalID: 180325770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_80
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 131
+        width: 95
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b3276b7c989094b8ec94dc031be319
+      internalID: -1977831389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_81
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 144
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068afdf4044c9c244b752a5c0cb1f0b6
+      internalID: 1857485636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_82
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 127
+        width: 95
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737b8c574951e4243abc9d6a52d42067
+      internalID: -2013055083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_83
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 107
+        width: 65
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f26066219ee3264083b5ac33a8530a4
+      internalID: -821633174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_90
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 6
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac783f4e46e6af4093bf925b09a1783
+      internalID: 1374225190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_110
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 8
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53be8ee7dc36b474a87b1a548b80c0a7
+      internalID: 1000537910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 311
+        width: 48
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce622f49ebcc535468883ca6b512e0f2
+      internalID: 1804352375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 323
+        width: 48
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ca56d3089a5e14fbb0a4bf6269cfc8
+      internalID: 889805497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 298
+        width: 78
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee1f73603fbe6341bacef3dd95103b8
+      internalID: -978794961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 435
+        width: 106
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001eec134fcc4bc4b9f8e103de25e7f8
+      internalID: -1594506850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 36
+        width: 152
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e2c1b908610a5428902b73e4be82bb
+      internalID: 593226430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 32
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178d9911fd424f54a94aee83b28c729d
+      internalID: 1688813643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 60
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128971259e7526c4a90518bb4eccf44d
+      internalID: -1322396302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDP_UI_BX_7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 14
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7746401f53be094c884a2968b8ba091
+      internalID: 2051432674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GDP_UI_BX_0: 1804352375
+      GDP_UI_BX_1: 889805497
+      GDP_UI_BX_10: 779758453
+      GDP_UI_BX_100: -1958711990
+      GDP_UI_BX_101: 459876027
+      GDP_UI_BX_102: 1412979507
+      GDP_UI_BX_103: -1011976841
+      GDP_UI_BX_104: -360398185
+      GDP_UI_BX_105: -1710930687
+      GDP_UI_BX_106: -119416506
+      GDP_UI_BX_107: -1224998559
+      GDP_UI_BX_108: 444820390
+      GDP_UI_BX_109: 2048528494
+      GDP_UI_BX_11: -810478076
+      GDP_UI_BX_110: 1000537910
+      GDP_UI_BX_111: 1232965903
+      GDP_UI_BX_12: -984027641
+      GDP_UI_BX_13: -1164123913
+      GDP_UI_BX_14: -410526635
+      GDP_UI_BX_15: 2126866890
+      GDP_UI_BX_16: -1491948931
+      GDP_UI_BX_17: 520456806
+      GDP_UI_BX_18: -631763313
+      GDP_UI_BX_19: -129071040
+      GDP_UI_BX_2: -978794961
+      GDP_UI_BX_20: 2052062863
+      GDP_UI_BX_21: 1765782595
+      GDP_UI_BX_22: 854776442
+      GDP_UI_BX_23: 42533904
+      GDP_UI_BX_24: 1267054938
+      GDP_UI_BX_25: -1209853058
+      GDP_UI_BX_26: -1887639086
+      GDP_UI_BX_27: -1017555271
+      GDP_UI_BX_28: 812930491
+      GDP_UI_BX_29: -843222379
+      GDP_UI_BX_3: -1594506850
+      GDP_UI_BX_30: 1534373992
+      GDP_UI_BX_31: 1873747752
+      GDP_UI_BX_32: 52221111
+      GDP_UI_BX_33: 1389009915
+      GDP_UI_BX_34: -1731866928
+      GDP_UI_BX_35: 1614905443
+      GDP_UI_BX_36: 812639997
+      GDP_UI_BX_37: -225521875
+      GDP_UI_BX_38: -1519378973
+      GDP_UI_BX_39: 1256228124
+      GDP_UI_BX_4: 593226430
+      GDP_UI_BX_40: 17260152
+      GDP_UI_BX_41: -353720803
+      GDP_UI_BX_42: -476043974
+      GDP_UI_BX_43: -1992019430
+      GDP_UI_BX_44: 1918797273
+      GDP_UI_BX_45: -1165023698
+      GDP_UI_BX_46: 1735690595
+      GDP_UI_BX_47: -89917202
+      GDP_UI_BX_48: 228896354
+      GDP_UI_BX_49: -1017130438
+      GDP_UI_BX_5: 1688813643
+      GDP_UI_BX_50: 1755564
+      GDP_UI_BX_51: -1823407352
+      GDP_UI_BX_52: -16878352
+      GDP_UI_BX_53: 528310447
+      GDP_UI_BX_54: -587891732
+      GDP_UI_BX_55: -1242378857
+      GDP_UI_BX_56: -637965940
+      GDP_UI_BX_57: 1218101587
+      GDP_UI_BX_58: 941031907
+      GDP_UI_BX_59: 48800191
+      GDP_UI_BX_6: -1322396302
+      GDP_UI_BX_60: -160619359
+      GDP_UI_BX_61: 2121617887
+      GDP_UI_BX_62: 191234582
+      GDP_UI_BX_63: 733682183
+      GDP_UI_BX_64: 1718049880
+      GDP_UI_BX_65: 460155355
+      GDP_UI_BX_66: -1878110861
+      GDP_UI_BX_67: -1698592886
+      GDP_UI_BX_68: 1486726625
+      GDP_UI_BX_69: 1856173848
+      GDP_UI_BX_7: 2051432674
+      GDP_UI_BX_70: 1803707519
+      GDP_UI_BX_71: -1272340921
+      GDP_UI_BX_72: -1290104518
+      GDP_UI_BX_73: -1323794996
+      GDP_UI_BX_74: 57735817
+      GDP_UI_BX_75: 2106440906
+      GDP_UI_BX_76: -1834997943
+      GDP_UI_BX_77: 1162376146
+      GDP_UI_BX_78: -1964018087
+      GDP_UI_BX_79: 180325770
+      GDP_UI_BX_8: 778590338
+      GDP_UI_BX_80: -1977831389
+      GDP_UI_BX_81: 1857485636
+      GDP_UI_BX_82: -2013055083
+      GDP_UI_BX_83: -821633174
+      GDP_UI_BX_84: 1815590894
+      GDP_UI_BX_85: 694526546
+      GDP_UI_BX_86: 781819339
+      GDP_UI_BX_87: -822897946
+      GDP_UI_BX_88: 935277082
+      GDP_UI_BX_89: 122802872
+      GDP_UI_BX_9: 190534825
+      GDP_UI_BX_90: 1374225190
+      GDP_UI_BX_91: -1781478891
+      GDP_UI_BX_92: 611695722
+      GDP_UI_BX_93: -2081569946
+      GDP_UI_BX_94: -240881279
+      GDP_UI_BX_95: 1111190165
+      GDP_UI_BX_96: 2125735765
+      GDP_UI_BX_97: -1122595
+      GDP_UI_BX_98: -1253570922
+      GDP_UI_BX_99: 1676696141
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
