@@ -5220,7 +5220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: 
+    dialog_name: 
+    portrait: {fileID: 0}
   sphereRadius: 0.5
 --- !u!1 &170068300
 GameObject:
@@ -6549,7 +6552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &210211508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6591,7 +6594,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 066f6ca807d39f947b2ad18e2bc09265, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -13852,7 +13855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654214533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13894,7 +13897,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 033da9786a27e91488f92cf4ac58dd88, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -17177,6 +17180,7 @@ GameObject:
   - component: {fileID: 827227318}
   - component: {fileID: 827227317}
   - component: {fileID: 827227319}
+  - component: {fileID: 827227320}
   m_Layer: 6
   m_Name: "\uB178\uD2B8"
   m_TagString: note
@@ -17296,6 +17300,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41666666, y: 0.3125}
   m_EdgeRadius: 0
+--- !u!114 &827227320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827227316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogs:
+  - dialog: "\uC9C0\uC5D4\uC7A5"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 56bfafee81a08624681f35b34043a919, type: 3}
+  sphereRadius: 1
 --- !u!1 &829253739
 GameObject:
   m_ObjectHideFlags: 0
@@ -24390,7 +24411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1152295887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24432,7 +24453,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 4cb6ed83add3e634493198587cafc083, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -26547,7 +26568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1286004586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26589,7 +26610,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 5b4cab2d15543c8449371a68891358f5, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

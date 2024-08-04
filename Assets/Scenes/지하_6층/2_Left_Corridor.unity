@@ -457,10 +457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    dialog: "\uC790\uAC94 \uD504\uB85C\uC774\uD2B8 (733)"
-    dialog_name: "\uD574\uB9AC"
-    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  dialogs: []
+  sphereRadius: 1
 --- !u!61 &200315477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3466,10 +3464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    dialog: "\uC624\uCE20 \uC624\uC988\uC648\uB4DC (002)"
-    dialog_name: "\uD574\uB9AC"
-    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  dialogs: []
+  sphereRadius: 1
 --- !u!61 &573740308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3929,10 +3925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    dialog: "\uD718 (099)"
-    dialog_name: "\uD574\uB9AC"
-    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  dialogs: []
+  sphereRadius: 1
 --- !u!61 &934352165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4214,10 +4208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    dialog: "\uD574\uB9AC \uD398\uB354\uC2A8"
-    dialog_name: "\uD574\uB9AC"
-    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  dialogs: []
+  sphereRadius: 1
 --- !u!61 &1033767390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5130,10 +5122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog:
-    dialog: "\uD734 \uB9C8\uC774\uC5B4\uC2A4 (182)"
-    dialog_name: "\uD574\uB9AC"
-    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  dialogs: []
+  sphereRadius: 1
 --- !u!61 &1571819539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5793,7 +5783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1742134682
 MonoBehaviour:
   m_ObjectHideFlags: 0
