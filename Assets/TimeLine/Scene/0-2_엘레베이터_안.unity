@@ -2025,7 +2025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: b1c0d2a9c9d6ff04ea0f152ca1f39aba, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2894,7 +2894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 099ea679fea67314c93e6fea2f76f3e6, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:

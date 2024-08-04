@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
+
 using UnityEngine;
 
 public class TLS_KangGun : TLS_AnimatorController

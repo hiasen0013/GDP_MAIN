@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
-using UnityEditor.SceneManagement;
+
 using UnityEngine.AI;
 
 public class TLS_Manager : MonoBehaviour
