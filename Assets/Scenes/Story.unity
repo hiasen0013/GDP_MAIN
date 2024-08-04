@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 309256061}
-  typingSpeed: 20
+  typingSpeed: 40
 --- !u!1 &700951303
 GameObject:
   m_ObjectHideFlags: 0

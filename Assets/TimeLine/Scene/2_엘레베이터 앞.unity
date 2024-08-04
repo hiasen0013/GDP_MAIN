@@ -274,7 +274,7 @@ MonoBehaviour:
   - dialog: "\uC5B4 ! \uB108!"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &41497884
 Transform:
   m_ObjectHideFlags: 0
@@ -876,7 +876,7 @@ MonoBehaviour:
       \uB2E4\uC2DC \uCC3E\uC544\uC640!"
     dialog_name: "\uC624\uCE20"
     portrait: {fileID: 21300000, guid: 615a2b3ea0762cf40848218aff4d2f3f, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &502003028
 Transform:
   m_ObjectHideFlags: 0
@@ -1613,7 +1613,7 @@ MonoBehaviour:
   - dialog: "\uC73C\uC545 !"
     dialog_name: ???
     portrait: {fileID: 21300000, guid: 9b2d9cbc45b19d64bb4243822ad0859c, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &727297719
 Transform:
   m_ObjectHideFlags: 0
@@ -2731,7 +2731,7 @@ MonoBehaviour:
   - dialog: "\uC800. \uC815\uB9D0?! \uADF8\uB7FC \uAC19\uC774 \uAC08\uB798?"
     dialog_name: ???
     portrait: {fileID: 21300000, guid: 98a292453a9b3994d930f3ee97fba876, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &1263232601
 Transform:
   m_ObjectHideFlags: 0
@@ -2970,7 +2970,7 @@ MonoBehaviour:
   - dialog: "\uC751! \uB530\uB77C\uC640! \uB0B4\uAC00 \uC18C\uAC1C\uD574 \uC904\uAC8C."
     dialog_name: "\uC624\uCE20"
     portrait: {fileID: 21300000, guid: 260fe55d8dd10824b82af17257403fd3, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &1450860703
 Transform:
   m_ObjectHideFlags: 0

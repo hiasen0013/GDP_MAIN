@@ -8,7 +8,7 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
     public void End_First_TLS()
     {
         
-        SceneManager.LoadScene("1_Room");
+        SceneManager.LoadScene("지하_6층_배치도");
     }
 
     public void End_Second_TLS()

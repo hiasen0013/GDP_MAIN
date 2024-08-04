@@ -332,6 +332,7 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uD574\uB9AC\uB294 \uBAA8\uB974\uACA0\uAD6C\uB098. \uBC29\uAE08 \uAC04
       \uC0AC\uB78C\uC740 \uC6B0\uB9AC \uD300 \uD300\uC7A5\uC774\uC57C."
@@ -378,7 +379,7 @@ MonoBehaviour:
   - dialog: "\uB124! \uC548\uB155\uD788\uAC00\uC138\uC694."
     dialog_name: "\uC624\uCE20"
     portrait: {fileID: 21300000, guid: 260fe55d8dd10824b82af17257403fd3, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &223453238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,6 +3135,7 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uC2DC\uAC04\uC774 \uBC8C\uC368 \uB2E4 \uB410\uB124... \uC774\uC81C
       \uB3CC\uC544\uAC00\uC57C \uD574. \uD574\uB9AC."
@@ -3148,7 +3150,7 @@ MonoBehaviour:
   - dialog: "\uADF8\uB807\uAD6C\uB098~ \uADF8\uB798. \uB3CC\uC544\uAC00\uC790!"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 0}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &790342741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,6 +3544,7 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uB108... \uADFC\uB370 \uC65C \uC120\uC0DD\uB2D8\uD55C\uD14C \uB204\uB098\uB77C\uACE0
       \uBD88\uB7EC?"
@@ -3553,7 +3556,7 @@ MonoBehaviour:
   - dialog: ... .
     dialog_name: "\uC624\uCE20"
     portrait: {fileID: 21300000, guid: c5b8d4e8077828b42889c8cf65a83bb7, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &1012024566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4409,6 +4412,7 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uC5B4... \uCCB8 \uC5F0\uAD6C\uC6D0\uB2D8. \uC548\uB155\uD558\uC138\uC694!"
     dialog_name: "\uC624\uCE20"
@@ -4434,7 +4438,7 @@ MonoBehaviour:
   - dialog: "\uADF8\uB7FC \uC88B\uC740 \uC2DC\uAC04 \uBCF4\uB0B4\uB3C4\uB85D \uD574."
     dialog_name: "\uCCB8"
     portrait: {fileID: 21300000, guid: f5c6b882d6e500448a2cc841f7535e5c, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &1304053265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,11 +4783,12 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uB204\uB098!"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: bb4f78f887f63394cb49aee3a82bc6e7, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &1466118335
 GameObject:
   m_ObjectHideFlags: 0
@@ -5432,6 +5437,7 @@ MonoBehaviour:
   dialog_box: {fileID: 395280461}
   dialog_text: {fileID: 849785813}
   dialog_nameText: {fileID: 1772074630}
+  dialog_count: 0
   dialogs:
   - dialog: "\uD574\uB9AC\uAD6C\uB098. \uC5B4\uC11C \uC640~ \uAD6C\uACBD\uD558\uACE0
       \uC788\uC5C8\uAD6C\uB098?"
@@ -5443,7 +5449,7 @@ MonoBehaviour:
   - dialog: "\uC751 \uC870\uC2EC\uD574\uC11C \uB4E4\uC5B4\uAC00."
     dialog_name: "\uC548\uB098"
     portrait: {fileID: 21300000, guid: d10b4c54bb495464ca21e707ba9e1e90, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!1 &1724150568
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,6 +7058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDialog: 0
+  playableDirector: {fileID: 0}
   yes_btn: {fileID: 0}
   no_btn: {fileID: 0}
   System_YorN_textBox: {fileID: 0}

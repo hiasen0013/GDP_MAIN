@@ -206,7 +206,7 @@ MonoBehaviour:
   - dialog: "\uC88B\uC740 \uC774\uB984\uC774\uB2E4!"
     dialog_name: "\uC624\uCE20"
     portrait: {fileID: 21300000, guid: 98a292453a9b3994d930f3ee97fba876, type: 3}
-  typingSpeed: 100
+  typingSpeed: 40
 --- !u!4 &41497884
 Transform:
   m_ObjectHideFlags: 0

@@ -141,7 +141,6 @@ public class PlayerManager : MovingObject_Ex
             }
         }
 
-
         ///////////////////////
         // if (Input.GetButtonDown("Jump") && scanObject != null)
         // {
