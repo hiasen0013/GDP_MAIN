@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.SceneManagement;
+
 public class Dialoug_test : MonoBehaviour
 {
     [SerializeField] private Speaker[] speakers; // 대화에 참여하는 캐릭터들의 UI 배열
