@@ -7896,7 +7896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: b1c0d2a9c9d6ff04ea0f152ca1f39aba, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -7924,6 +7924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86042cb315381e4b8cc1ee5a8922868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!95 &1212290878
 Animator:
   serializedVersion: 5
@@ -8554,6 +8555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cad366e09e425488f976bd9b0cee15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &1377699689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8568,7 +8570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 099ea679fea67314c93e6fea2f76f3e6, type: 2}
+    - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -9837,6 +9839,8 @@ PlayableDirector:
     value: {fileID: 143872430}
   - key: {fileID: 3744132159450309412, guid: ea560fc255136b24e84b50463ade9752, type: 2}
     value: {fileID: 937816466}
+  - key: {fileID: -1404862439411825765, guid: ea560fc255136b24e84b50463ade9752, type: 2}
+    value: {fileID: 937816465}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1875326496

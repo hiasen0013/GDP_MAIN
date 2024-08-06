@@ -4137,6 +4137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80ac5e8d65b3d845b9482880f1b31b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &1180456682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5264,7 +5265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1585101426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5732,6 +5733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86042cb315381e4b8cc1ee5a8922868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!95 &1743799940
 Animator:
   serializedVersion: 5
@@ -6546,6 +6548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cad366e09e425488f976bd9b0cee15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &1894425964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6998,6 +7001,18 @@ PlayableDirector:
     value: {fileID: 783582195}
   - key: {fileID: -6124147521311709530, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
     value: {fileID: 1585101430}
+  - key: {fileID: 3435124600453278561, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1624371660047836221, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4194901589198974893, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 661127516479679511, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -925209304811018911, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -8265358795322957594, guid: 48c758858ad4b0449b5f2d68d110d343, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1954765845
@@ -7314,6 +7329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891993f893ac05944aa8bfbbdd54807d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!95 &1999151707
 Animator:
   serializedVersion: 5
