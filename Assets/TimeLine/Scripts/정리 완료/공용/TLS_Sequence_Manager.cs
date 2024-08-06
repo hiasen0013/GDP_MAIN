@@ -10,6 +10,8 @@ public class TLS_Sequence_Manager : MonoBehaviour
     public bool is_Thrid_TLS = false;
     public bool is_Fourth_TLS = false;
     public bool is_Fifth_TLS = false;
+
+    public bool is_First_1_TLS = false;
     public int system_msg_count = 0;
 
     void Awake()
@@ -50,5 +52,11 @@ public class TLS_Sequence_Manager : MonoBehaviour
     {
         is_Fifth_TLS = true;
         Debug.Log("다섯번째");
+    }
+
+    public void First_1_TLS()
+    {
+        is_First_1_TLS = true;
+        Debug.Log("1-1번째");
     }
 }

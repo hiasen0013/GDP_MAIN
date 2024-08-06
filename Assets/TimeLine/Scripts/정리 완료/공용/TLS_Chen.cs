@@ -37,4 +37,24 @@ public class TLS_Chen : TLS_AnimatorController
                 break;
         }
     }
+
+    public void Chen_TLS_1_1_Anim() // 1-1_프롤로그_1
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                anim.SetTrigger("1_1_Right_Walk");
+                break;
+            case 2:
+                anim.SetTrigger("1_1_Right_Idle");
+                break;
+            case 3:
+                anim.SetTrigger("1_1_Left_Walk");
+                break;
+            case 4:
+                anim.SetTrigger("1_1_Down_Walk");
+                break;
+        }
+    }
 }

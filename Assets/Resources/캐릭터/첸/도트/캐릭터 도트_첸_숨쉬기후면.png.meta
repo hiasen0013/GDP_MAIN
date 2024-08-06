@@ -121,7 +121,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\uCE90\uB9AD\uD130 \uB3C4\uD2B8_\uCCB8_\uC228\uC26C\uAE30\uD6C4\uBA74_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ccb25bcbd91f24ca18039033554f3c
+      internalID: -1695209497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCE90\uB9AD\uD130 \uB3C4\uD2B8_\uCCB8_\uC228\uC26C\uAE30\uD6C4\uBA74_1"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 33
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be31730d607a85468e00da4c98a2bda
+      internalID: -1745838018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +174,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\uCE90\uB9AD\uD130 \uB3C4\uD2B8_\uCCB8_\uC228\uC26C\uAE30\uD6C4\uBA74_0": -1695209497
+      "\uCE90\uB9AD\uD130 \uB3C4\uD2B8_\uCCB8_\uC228\uC26C\uAE30\uD6C4\uBA74_1": -1745838018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
