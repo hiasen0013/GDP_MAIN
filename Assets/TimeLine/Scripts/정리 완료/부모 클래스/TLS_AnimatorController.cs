@@ -34,5 +34,9 @@ public class TLS_AnimatorController : MonoBehaviour
         {
             anim.SetTrigger("isStart_Fifth_TLS");
         }
+        if(TLS_Sequence_Manager.instance.is_First_1_TLS)
+        {
+            anim.SetTrigger("isStart_First_1_TLS");
+        }
     }
 }

@@ -80,5 +80,10 @@ public class TLS_Harry : TLS_AnimatorController
                 break;
         }
     }
+
+    public void TLS_1_1_Harry_Anim()
+    {
+        
+    }
 }
     
