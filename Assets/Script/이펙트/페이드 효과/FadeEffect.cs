@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public enum FadeState { FadeIn = 0, FadeOut, FadeInOut, FadeLoop }
+public enum FadeState { FadeIn = 0, FadeOut, FadeInOut, FadeLoop, FadeOutIn }
 
 public class FadeEffect : MonoBehaviour
 {
+    
     [SerializeField]
     [Range(0.01f, 10f)]
     private float fadeTime;
@@ -15,7 +16,9 @@ public class FadeEffect : MonoBehaviour
 
     private Image image;
 
-    private FadeState fadeState;
+    public FadeState fadeState;
+
+    private Coroutine currentCoroutine;
 
     void Awake()
     {
@@ -32,10 +35,19 @@ public class FadeEffect : MonoBehaviour
     {
         Onfade(FadeState.FadeIn); // or any other default fade state you want
     }
+    public void Onfade(int state)
+    {
+        Onfade((FadeState)state);
+    }
 
     public void Onfade(FadeState state)
     {
         fadeState = state;
+
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
 
         switch(fadeState)
         {
@@ -48,6 +60,9 @@ public class FadeEffect : MonoBehaviour
             case FadeState.FadeInOut:
             case FadeState.FadeLoop:
                 StartCoroutine(FadeInOut());
+                break;
+            case FadeState.FadeOutIn:
+                StartCoroutine(FadeOutIn());
                 break;
         }
     }
@@ -66,6 +81,19 @@ public class FadeEffect : MonoBehaviour
         }
     }
 
+    private IEnumerator FadeOutIn()
+    {
+        while(true)
+        {
+            yield return StartCoroutine(Fade(0, 1)); 
+            yield return StartCoroutine(Fade(1, 0)); 
+
+            if(fadeState == FadeState.FadeOutIn)
+            {
+                break;
+            }
+        }
+    }
     private IEnumerator Fade(float start, float end)
     {
         float currentTime = 0.0f;
@@ -82,10 +110,5 @@ public class FadeEffect : MonoBehaviour
 
             yield return null;
         }
-    }
-
-    public void Fade_Start()
-    {
-        Onfade(FadeState.FadeOut);
     }
 }
