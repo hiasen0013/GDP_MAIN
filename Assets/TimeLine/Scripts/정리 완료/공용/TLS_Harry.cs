@@ -85,5 +85,17 @@ public class TLS_Harry : TLS_AnimatorController
     {
         
     }
+
+    public void TLS_2_Harry_edeline_Anim()
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                this.gameObject.transform.localPosition = new Vector3 (7.66f, 0.2f, 0f);
+                anim.SetTrigger("2-?_Edeline_Right_Idle");
+                break;
+        }
+    }
 }
     

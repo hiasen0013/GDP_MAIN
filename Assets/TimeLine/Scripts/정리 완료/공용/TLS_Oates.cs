@@ -67,4 +67,17 @@ public class TLS_Oates : TLS_AnimatorController
                 break;
         }
     }
+
+    public void TLS_2_Oates_edeline_Anim()
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                this.gameObject.transform.localPosition = new Vector3 (7.66f, 1.28f, 0f);
+                anim.SetTrigger("2-?_Edeline_Right_Idle");
+                break;
+        }
+    }
 }
+
