@@ -21,4 +21,16 @@ public class TLS_Camera : MonoBehaviour
                 break;
         }
     }
+
+    public void TLS_2_1_Camera_Move()
+    {
+        index++;
+        switch(index)
+        {
+            case 1: 
+                Debug.Log("이동함");
+                this.gameObject.transform.localPosition = new Vector3(80.08f,-9.34f, -10);
+                break;
+        }
+    }
 }

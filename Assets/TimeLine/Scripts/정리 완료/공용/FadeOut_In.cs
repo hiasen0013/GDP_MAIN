@@ -2,50 +2,58 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FadeOut_In : MonoBehaviour
+public class FadeOutIn : MonoBehaviour
 {
-    private Image fadeImage;
-    public float fadeTime;
-    public float fadeoutTime;
+    public Image image;
+    public float fadeDuration = 1f; 
 
     void Start()
     {
-        fadeImage = GetComponent<Image>();
-    }
-
-    public void StartFadeCoroutine()
-    {
-        StartCoroutine(FadeOutIn());
-    }
-
-    private IEnumerator FadeOutIn()
-    {
-        yield return StartCoroutine(FadeOut());
-        yield return new WaitForSeconds(fadeoutTime);
-        yield return StartCoroutine(FadeIn());
-    }
-
-    private IEnumerator FadeOut()
-    {
-        while(fadeImage.color.a > 0f)
+        if (image == null)
         {
-            Color color = fadeImage.color;
-            color.a -= fadeTime*Time.deltaTime;
-            fadeImage.color = color;
-            Debug.Log("FadeOut");
-            yield return null;
+            image = GetComponent<Image>();
         }
     }
 
-    private IEnumerator FadeIn()
+    public void FadeOutInStart()
     {
-        while(fadeImage.color.a < 1f)
+        StartCoroutine(FadeOutInCoroutine());
+    }
+
+    public void FadeOutStart()
+    {
+        StartCoroutine(FadeOutInCoroutine());
+    }
+
+    private IEnumerator FadeOutCoroutine()
+    {
+        yield return StartCoroutine(Fade(0, 1));
+    }
+
+    private IEnumerator FadeOutInCoroutine()
+    {
+        yield return StartCoroutine(Fade(0, 1));
+
+        yield return new WaitForSeconds(3f);
+
+        yield return StartCoroutine(Fade(1, 0));
+    }
+
+    private IEnumerator Fade(float startFade, float endFade)
+    {
+        float FadeTime = 0f;
+        Color color = image.color;
+        
+        while (FadeTime < fadeDuration)
         {
-            Color color = fadeImage.color;
-            color.a += fadeTime * Time.deltaTime;
-            fadeImage.color = color;
-            Debug.Log("fadeIN");
+            FadeTime += Time.deltaTime;
+            float newAlpha = Mathf.Lerp(startFade, endFade, FadeTime / fadeDuration);
+            color.a = newAlpha;
+            image.color = color;
             yield return null;
         }
+
+        color.a = endFade;
+        image.color = color;
     }
 }
