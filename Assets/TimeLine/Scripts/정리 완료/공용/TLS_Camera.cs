@@ -31,6 +31,10 @@ public class TLS_Camera : MonoBehaviour
                 Debug.Log("이동함");
                 this.gameObject.transform.localPosition = new Vector3(80.08f,-9.34f, -10);
                 break;
+            
+            case 2:
+                this.gameObject.transform.localPosition = new Vector3(105.33f, -9.34f, -10);
+                break;
         }
     }
 }
