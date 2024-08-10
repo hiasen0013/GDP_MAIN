@@ -97,5 +97,29 @@ public class TLS_Harry : TLS_AnimatorController
                 break;
         }
     }
+
+    public void TLS_2_1_Harry_Anim()
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                anim.SetTrigger("isStart_2_1_TLS");
+                break;
+            case 2:
+                anim.SetTrigger("2-1_Up_Idle");
+                break;
+            case 3:
+                anim.SetTrigger("2-1_Right_Idle1");
+                break;
+            case 4:
+                anim.SetTrigger("2-1_Up_Walk");
+                break;
+            case 5:
+                anim.SetTrigger("2-1_Down_Idle");
+                break;
+            
+        }
+    }
 }
     

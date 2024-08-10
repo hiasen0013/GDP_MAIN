@@ -2918,6 +2918,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeState: 0
 --- !u!114 &1053449116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,6 +4808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86042cb315381e4b8cc1ee5a8922868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &1753113363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5183,7 +5185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDialog: 0
-  playableDirector: {fileID: 0}
+  playableDirector: {fileID: 1884327168}
   yes_btn: {fileID: 1301874636}
   no_btn: {fileID: 1611318552}
   System_YorN_textBox: {fileID: 236871271}
@@ -5326,6 +5328,7 @@ MonoBehaviour:
   is_Thrid_TLS: 0
   is_Fourth_TLS: 0
   is_Fifth_TLS: 0
+  is_First_1_TLS: 0
   system_msg_count: 0
 --- !u!1 &2017340733
 GameObject:

@@ -18,6 +18,26 @@ public class TLS_Move : MonoBehaviour
         isTrue = new List<bool>(new bool[movePos.Count]);
     }
 
+    protected virtual void Update()
+    {
+        if(index < isTrue.Count && isTrue[index])
+        {
+            TLS_Manager.instance.isDialog = true;
+            MoveTowardsDestination();
+            if(distance < stopDistance)
+            {
+                TLS_Manager.instance.isDialog = false;
+                index ++;
+                isTrue[index - 1] = false;
+            }
+        }
+
+        if(index >= isTrue.Count)
+        {
+            return;
+        }
+    }
+
     protected virtual void MoveTowardsDestination()
     {
         Vector2 destination = movePos[index].transform.position;

@@ -25,33 +25,33 @@ public class TLS_Sequence_Manager : MonoBehaviour
     public void First_TLS()
     {
         is_First_TLS = true;
-        Debug.Log("첫번째");
+        Debug.Log("1-1");
         system_msg_count = 0;
     }
 
     public void Second_TLS()
     {
         is_Second_TLS = true;
-        Debug.Log("두번째");
+        Debug.Log("1-2");
         system_msg_count = 7;
     }
 
     public void Thrid_TLS()
     {
         is_Thrid_TLS = true;
-        Debug.Log("세번째");
+        Debug.Log("1-3");
     }
 
     public void Fourth_TLS()
     {
         is_Fourth_TLS = true;
-        Debug.Log("네번째");
+        Debug.Log("1-4");
     }
 
     public void Fifth_TLS()
     {
         is_Fifth_TLS = true;
-        Debug.Log("다섯번째");
+        Debug.Log("1-5");
     }
 
     public void First_1_TLS()
