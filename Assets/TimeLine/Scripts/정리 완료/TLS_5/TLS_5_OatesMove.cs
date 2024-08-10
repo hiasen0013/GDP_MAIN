@@ -9,24 +9,9 @@ public class TLS_5_OatesMove : TLS_Move
         base.Start();
     }
 
-    private void Update()
+    protected override void Update()
     {
-        if(index < isTrue.Count && isTrue[index])
-        {
-            TLS_Manager.instance.isDialog = true;
-            MoveTowardsDestination();
-            if(distance < stopDistance)
-            {
-                TLS_Manager.instance.isDialog = false;
-                index ++;
-                isTrue[index-1] = false;
-            }
-        }
-
-        if(index >= isTrue.Count)
-        {   
-            return;
-        }
+        base.Update();
     }
     protected override void MoveTowardsDestination()
     {

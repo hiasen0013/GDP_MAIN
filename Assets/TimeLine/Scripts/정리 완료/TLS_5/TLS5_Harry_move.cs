@@ -9,28 +9,10 @@ public class TLS5_Harry_move : TLS_Move
         base.Start();
     }
 
-    private void Update()
+    protected override void Update()
     {
-
-        if(index < isTrue.Count && isTrue[index])
-        {
-            TLS_Manager.instance.isDialog = true;
-            MoveTowardsDestination();
-            if(distance < stopDistance)
-            {
-                TLS_Manager.instance.isDialog = false;
-                index ++;
-                isTrue[index-1] = false;
-            }
-        }
-
-        if(index >= isTrue.Count)
-        {   
-            return;
-        }
-        
-    }
-    protected override void MoveTowardsDestination()
+        base.Update();
+    }    protected override void MoveTowardsDestination()
     {
         base.MoveTowardsDestination();
     }
@@ -38,6 +20,12 @@ public class TLS5_Harry_move : TLS_Move
     {
         isTrue[index] = true;
         Debug.Log($"{this.gameObject.name} isTrue{index} = {isTrue[index]}");
+    }
+
+    public void TLS_2_1()
+    {
+        IsTrue();
+        TLS_Manager.instance.isDialog = false;
     }
 }
  
