@@ -22,6 +22,22 @@ public class FadeOutIn : MonoBehaviour
         StartCoroutine(FadeOutInCoroutine());
     }
 
+    public void FadeOutStart()
+    {
+        StartCoroutine(FadeOutCoroutine());
+    }
+
+    private IEnumerator FadeOutCoroutine(bool wait = false)
+    {   wait = true;
+        yield return StartCoroutine(Fade(originalAlpha, 1));
+        while(wait)
+        {
+            yield return null;
+        }
+        yield return StartCoroutine(Fade(1,0));
+        
+    }
+
     private IEnumerator FadeOutInCoroutine()
     {
 
