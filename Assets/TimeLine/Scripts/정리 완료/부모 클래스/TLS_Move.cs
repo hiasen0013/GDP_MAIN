@@ -46,4 +46,10 @@ public class TLS_Move : MonoBehaviour
         distance = Vector2.Distance(transform.position, destination);
         Debug.Log($"{this.gameObject.name}가 movePos{movePos[index]}로  이동중");
     }
+
+    public virtual void IsTrue()
+    {
+        isTrue[index] = true;
+        Debug.Log($"{this.gameObject.name} isTrue{index} = {isTrue[index]}");
+    }
 }

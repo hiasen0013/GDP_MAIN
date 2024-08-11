@@ -16,10 +16,9 @@ public class TLS5_Harry_move : TLS_Move
     {
         base.MoveTowardsDestination();
     }
-    public void IsTrue()
+    public override void IsTrue()
     {
-        isTrue[index] = true;
-        Debug.Log($"{this.gameObject.name} isTrue{index} = {isTrue[index]}");
+        base.IsTrue();
     }
 
     public void TLS_2_1()

@@ -18,8 +18,8 @@ public class TLS_5_OatesMove : TLS_Move
         base.MoveTowardsDestination();
     }
 
-    public void IsTrue()
+    public override void IsTrue()
     {
-        isTrue[index] = true;
+        base.IsTrue();
     }
 }
