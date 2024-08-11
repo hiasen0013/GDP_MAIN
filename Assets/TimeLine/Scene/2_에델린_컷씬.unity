@@ -984,15 +984,9 @@ PlayableDirector:
     value: {fileID: 1825579137}
   - key: {fileID: 4441159241623341341, guid: e42571fc33a3ef04281af23952289f27, type: 2}
     value: {fileID: 1891714553}
-  - key: {fileID: -2684213646487876892, guid: e42571fc33a3ef04281af23952289f27, type: 2}
-    value: {fileID: 1708135747}
   - key: {fileID: 2984656728364380960, guid: e42571fc33a3ef04281af23952289f27, type: 2}
     value: {fileID: 973025114}
-  - key: {fileID: -2757958465421822629, guid: e42571fc33a3ef04281af23952289f27, type: 2}
-    value: {fileID: 1708135747}
   - key: {fileID: -8028337930655842834, guid: e42571fc33a3ef04281af23952289f27, type: 2}
-    value: {fileID: 1708135747}
-  - key: {fileID: -518148774124830311, guid: e42571fc33a3ef04281af23952289f27, type: 2}
     value: {fileID: 1708135747}
   m_ExposedReferences:
     m_References: []
