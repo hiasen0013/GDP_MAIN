@@ -18197,6 +18197,7 @@ GameObject:
   - component: {fileID: 1456609942}
   - component: {fileID: 1456609945}
   - component: {fileID: 1456609944}
+  - component: {fileID: 1456609946}
   m_Layer: 0
   m_Name: "\uC5D0\uB378\uB9B0"
   m_TagString: Untagged
@@ -18400,6 +18401,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1013207341}
+--- !u!114 &1456609946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456609937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5585\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &1458532268
 GameObject:
   m_ObjectHideFlags: 0
@@ -18669,8 +18685,8 @@ Transform:
   m_GameObject: {fileID: 1500818097}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.164, y: 0.063, z: 0}
-  m_LocalScale: {x: 1.3, y: 0.4, z: 1}
+  m_LocalPosition: {x: -2.164, y: 0.138, z: 0}
+  m_LocalScale: {x: 1.3, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1410954438}
@@ -20624,8 +20640,8 @@ Transform:
   m_GameObject: {fileID: 1860265514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.164, y: -0.351, z: 0}
-  m_LocalScale: {x: 1.3, y: 0.4, z: 1}
+  m_LocalPosition: {x: -2.164, y: -0.42, z: 0}
+  m_LocalScale: {x: 1.3, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1410954438}
