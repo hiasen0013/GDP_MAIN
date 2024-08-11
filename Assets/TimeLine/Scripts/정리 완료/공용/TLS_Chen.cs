@@ -57,4 +57,26 @@ public class TLS_Chen : TLS_AnimatorController
                 break;
         }
     }
+
+    public void Chen_TLS_1_2_Anim() // 1-2 로비 / 엘베안/ 실험실 컷씬
+    {
+        index++;
+        switch(index)
+        {
+            case 1:
+                this.gameObject.transform.localPosition = new Vector3(107.55f, -7.04f, 0);
+                anim.SetTrigger("1_2_Down_Idle1");
+                break;
+            case 2:
+                anim.SetTrigger("1_2_Left_Walk");
+                break;
+            case 3:
+                anim.SetTrigger("1_2_Down_Walk");
+                break;
+            case 4:
+                anim.SetTrigger("1_2_Down_Idle2");
+                break;
+
+        }
+    }
 }

@@ -27,8 +27,8 @@ public class TLS_5_Anna_Move : TLS_Move
         }
     }
 
-    public void IsTrue()
+    public override void IsTrue()
     {
-        isTrue[index] = true;
+        base.IsTrue();
     }
 }

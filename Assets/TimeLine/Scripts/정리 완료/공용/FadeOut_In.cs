@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class FadeOutIn : MonoBehaviour
 {
     public Image image;
-    public float fadeDuration = 1f; 
+    public float fadeDuration = 1f;
+    private float originalAlpha;
 
     void Start()
     {
@@ -13,6 +14,7 @@ public class FadeOutIn : MonoBehaviour
         {
             image = GetComponent<Image>();
         }
+        originalAlpha = image.color.a;
     }
 
     public void FadeOutInStart()
@@ -20,30 +22,25 @@ public class FadeOutIn : MonoBehaviour
         StartCoroutine(FadeOutInCoroutine());
     }
 
-    public void FadeOutStart()
-    {
-        StartCoroutine(FadeOutInCoroutine());
-    }
-
-    private IEnumerator FadeOutCoroutine()
-    {
-        yield return StartCoroutine(Fade(0, 1));
-    }
-
     private IEnumerator FadeOutInCoroutine()
     {
-        yield return StartCoroutine(Fade(0, 1));
+
+        yield return StartCoroutine(Fade(originalAlpha, 1));
 
         yield return new WaitForSeconds(3f);
 
         yield return StartCoroutine(Fade(1, 0));
+        
+        Color color = image.color;
+        color.a = originalAlpha;
+        image.color = color;
     }
 
     private IEnumerator Fade(float startFade, float endFade)
     {
         float FadeTime = 0f;
         Color color = image.color;
-        
+
         while (FadeTime < fadeDuration)
         {
             FadeTime += Time.deltaTime;

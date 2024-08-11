@@ -116,6 +116,7 @@ public class TLS_Harry : TLS_AnimatorController
                 anim.SetTrigger("2-1_Up_Walk");
                 break;
             case 5:
+                this.gameObject.transform.localPosition = new Vector3(80.02f,-9.089f, 0);
                 anim.SetTrigger("2-1_Down_Idle");
                 break;
             

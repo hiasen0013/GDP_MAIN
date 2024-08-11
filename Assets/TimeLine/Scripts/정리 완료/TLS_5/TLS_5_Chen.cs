@@ -27,10 +27,9 @@ public class TLS_5_Chen : TLS_Move
         }
     }
 
-    public void IsTrue()
+    public override void IsTrue()
     {
-        isTrue[index] = true;
-        Debug.Log($"{this.gameObject.name} isTrue{index} = {isTrue[index]}");
+        base.IsTrue();
     }
 }
 
