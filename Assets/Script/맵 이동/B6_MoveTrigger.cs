@@ -89,6 +89,10 @@ public class B6_MoveTirgger : MoveTrigger
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_103.SetActive(false);
                 b6_Corridor_1.SetActive(true);
+                if(GameProgress.instance.prolog.prolog0_0)
+                {
+                    Debug.Log("성공");
+                }
                 break;
             case 5: // 복도에서 103룸으로
                 Transform nextChildTransform5 = transform.GetChild(4);

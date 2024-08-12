@@ -7,8 +7,12 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
 {
     public void End_First_TLS()
     {
-        
-        SceneManager.LoadScene("지하_6층_배치도");
+        GameProgress.instance.prolog.prolog0_0 = true;
+        if(GameProgress.instance.prolog.prolog0_0 == true)
+        {
+            SceneManager.LoadScene("지하_6층_배치도");
+            Debug.Log("성공");
+        }
     }
 
     public void End_Second_TLS()

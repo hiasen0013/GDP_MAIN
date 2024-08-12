@@ -18653,6 +18653,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeState: 0
 --- !u!1 &918489639
 GameObject:
   m_ObjectHideFlags: 0

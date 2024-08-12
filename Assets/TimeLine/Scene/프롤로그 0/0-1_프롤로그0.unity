@@ -2373,6 +2373,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821229760}
   m_CullTransparentMesh: 1
+--- !u!1 &853046887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853046888}
+  - component: {fileID: 853046889}
+  m_Layer: 0
+  m_Name: GameProgress
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &853046888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853046887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.021911, y: -2.3107536, z: 0.0168528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853046889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853046887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cbf3cf6a2e32542be157ee751f62d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907529258
 GameObject:
   m_ObjectHideFlags: 0
@@ -5253,25 +5297,25 @@ PlayableDirector:
   - key: {fileID: -9191490619009974965, guid: b4bb8c840ed3e4a4bad7c5a4ddad03b7, type: 2}
     value: {fileID: 350559172}
   - key: {fileID: 4094691538876265242, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1884327169}
   - key: {fileID: 7242035585758145138, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1192507084}
   - key: {fileID: 316877374383031879, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1259076968}
   - key: {fileID: -665647555850655794, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 962338434}
   - key: {fileID: 5092352635230580742, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1157420598}
   - key: {fileID: 7433123595478609996, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1103462619}
   - key: {fileID: 5267060003190034316, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1324963897}
   - key: {fileID: -9191490619009974965, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 350559172}
   - key: {fileID: 4917048593678462312, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1753113363}
   - key: {fileID: -4589498477258796810, guid: 62f5ec38337b00749b0a3129a4524522, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1165659411}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1884327169
@@ -5505,3 +5549,4 @@ SceneRoots:
   - {fileID: 1280202919}
   - {fileID: 618968440}
   - {fileID: 1091237948}
+  - {fileID: 853046888}
