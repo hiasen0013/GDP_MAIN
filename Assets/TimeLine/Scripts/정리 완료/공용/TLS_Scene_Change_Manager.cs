@@ -29,7 +29,7 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
 
     public void End_0_Thrid_TLS()
     {
-        //GameProgress.instance.prolog.prolog0_3 = true;
+        GameProgress.instance.prolog.prolog0_3 = true;
         SceneManager.LoadScene("지하3층_배치도");
     }
 
