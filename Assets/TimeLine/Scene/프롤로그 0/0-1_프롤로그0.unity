@@ -5353,7 +5353,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1884327170}
           m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
-          m_MethodName: End_First_TLS
+          m_MethodName: End_0_First_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

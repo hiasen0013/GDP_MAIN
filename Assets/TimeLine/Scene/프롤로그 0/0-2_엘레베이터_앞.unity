@@ -967,6 +967,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeState: 0
 --- !u!114 &554515038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2875,7 +2876,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1415627384}
           m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
-          m_MethodName: End_Second_TLS
+          m_MethodName: End_0_Second_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2916,6 +2917,7 @@ MonoBehaviour:
   is_Thrid_TLS: 0
   is_Fourth_TLS: 0
   is_Fifth_TLS: 0
+  is_First_1_TLS: 0
   system_msg_count: 0
 --- !u!114 &1415627384
 MonoBehaviour:

@@ -566,6 +566,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeState: 0
 --- !u!114 &554515038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,6 +1362,7 @@ GameObject:
   - component: {fileID: 1415627382}
   - component: {fileID: 1415627381}
   - component: {fileID: 1415627379}
+  - component: {fileID: 1415627383}
   m_Layer: 0
   m_Name: TimeLine
   m_TagString: Untagged
@@ -1440,12 +1442,27 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: ecd8e23dbaec9f94da3040e02f505241, type: 2}
+    - {fileID: 11400000, guid: 648eca2c76e5c114195b0ff20498f6e2, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1415627382}
           m_TargetAssemblyTypeName: TLS_Sequence_Manager, Assembly-CSharp
           m_MethodName: Thrid_TLS
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1415627383}
+          m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
+          m_MethodName: End_0_Thrid_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1472,7 +1489,20 @@ MonoBehaviour:
   is_Thrid_TLS: 0
   is_Fourth_TLS: 0
   is_Fifth_TLS: 0
+  is_First_1_TLS: 0
   system_msg_count: 0
+--- !u!114 &1415627383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415627377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dc10ff9a6820941bef6396d486dc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485293459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86042cb315381e4b8cc1ee5a8922868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!95 &1602275992
 Animator:
   serializedVersion: 5
@@ -2880,6 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cad366e09e425488f976bd9b0cee15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &2097019840
 MonoBehaviour:
   m_ObjectHideFlags: 0

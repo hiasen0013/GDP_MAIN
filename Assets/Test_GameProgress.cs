@@ -11,5 +11,10 @@ public class Test_GameProgress : MonoBehaviour
         {
             SceneManager.LoadScene("0-2_엘레베이터_앞");
         }
+
+        if(GameProgress.instance.prolog.prolog0_3)
+        {
+            SceneManager.LoadScene("0-4_지하3층_도서관");
+        }
     }
 }
