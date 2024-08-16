@@ -23,10 +23,11 @@ public class GameProgress : MonoBehaviour
 
     void Update()
     {
-        if(prolog.prolog0_0)
+        if(prolog.prolog0_1)
         {
-            Debug.Log("프롤로그0-0이 트루");
+            Debug.Log("프롤로그0-1이 트루");
         }
+        return;
     }
 }
 
@@ -34,7 +35,7 @@ public class PrologState
 {
     [Header("프롤로그 0")] // 프롤로그 0, 엘베 앞, 엘베 안, 도서관, 상담실
     public bool prolog0_0 = false; // 프롤로그0이 끝나면 트루. 해리 방 앞의 오츠가 도망가면 폴스.
-    public bool prolog0_1 = false; // 해리 방 앞의 오츠가 도망가면 트루. 엘베 앞으로 가면 폴스.
+    public bool prolog0_1 = true; // 해리 방 앞의 오츠가 도망가면 트루. 엘베 앞으로 가면 폴스.
     public bool prolog0_2 = false; // 엘베 앞 오츠를 따라가면 트루. 엘베 안 타임라인 끝나면 폴스.
     public bool prolog0_3 = false; // 보류
 }

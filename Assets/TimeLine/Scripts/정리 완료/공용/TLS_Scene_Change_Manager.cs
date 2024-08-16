@@ -7,11 +7,11 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
 {
     public void End_First_TLS()
     {
-        GameProgress.instance.prolog.prolog0_0 = true;
-        if(GameProgress.instance.prolog.prolog0_0 == true)
+        GameProgress.instance.prolog.prolog0_1 = true;
+        if(GameProgress.instance.prolog.prolog0_1 == true)
         {
             SceneManager.LoadScene("지하_6층_배치도");
-            Debug.Log("성공");
+            Debug.Log("성공 프롤로그1 true");
         }
     }
 
