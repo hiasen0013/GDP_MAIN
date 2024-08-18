@@ -98,7 +98,7 @@ public class 기사스크립트 : MonoBehaviour
         dialogueText.SetText("");
 
         // 씬 전환을 위한 메서드 호출
-        StartCoroutine(LoadSceneAfterDelay("1_RoomCutScene", 1f)); // 1초 후에 "1.Room" 씬으로 전환
+        StartCoroutine(LoadSceneAfterDelay("0-1_프롤로그0", 1f)); // 1초 후에 "1.Room" 씬으로 전환
     }
 
     IEnumerator LoadSceneAfterDelay(string sceneName, float delay)

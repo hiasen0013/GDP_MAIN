@@ -956,6 +956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196288149}
   - component: {fileID: 1196288148}
+  - component: {fileID: 1196288150}
   m_Layer: 0
   m_Name: "TLS_\uC5D0\uB378\uB9B0"
   m_TagString: Untagged
@@ -1005,6 +1006,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196288150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196288147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ff051525521064399063d6aa1c3905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1196288148}
+  sceneName: "\uC9C0\uD5585\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &1463285956
 GameObject:
   m_ObjectHideFlags: 0
