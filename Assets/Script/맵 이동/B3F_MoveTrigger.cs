@@ -15,6 +15,7 @@ public class B3F_MoveTrigger : MoveTrigger
     {
         base.Start();
 
+        /*
         if(b3_Lobby == null)
         {
             b3_Lobby = GameObject.Find("B3_로비");
@@ -42,7 +43,7 @@ public class B3F_MoveTrigger : MoveTrigger
         if(b3_Warehouse == null)
         {
             b3_Warehouse = GameObject.Find("B3_창고");
-        }
+        } */
         b3_Lobby.SetActive(true); 
         b3_Library.SetActive(false); 
         b3_Corridor.SetActive(false); 
