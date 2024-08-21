@@ -10,7 +10,8 @@ public class FadeEffect : MonoBehaviour
     
     [SerializeField]
     [Range(0.01f, 10f)]
-    private float fadeTime;
+
+    public float fadeTime;
     [SerializeField]
     private AnimationCurve fadeCurve;
 
