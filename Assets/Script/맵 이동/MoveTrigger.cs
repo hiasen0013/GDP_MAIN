@@ -23,10 +23,11 @@ public class MoveTrigger : MonoBehaviour
         Debug.Log($"{childId} 자식 오브젝트에서 {other.gameObject.name}이(가) 트리거에 들어왔습니다.");
         Debug.Log($"자식 오브젝트의 위치: {currentChildTransform.position}");
 
-        // 트리거 발생 시 화면이 밝아지도록 FadeEffect의 Onfade 메서드 호출
+        // 트리거 발생 시 페이드 효과를 중단하고 다시 시작
         if (fadeEffect != null)
         {
-            fadeEffect.Onfade(FadeState.FadeIn);
+            fadeEffect.StopAllCoroutines(); // 현재 진행 중인 페이드 효과를 중단
+            fadeEffect.Onfade(FadeState.FadeIn); // 페이드 효과를 처음부터 다시 시작
         }
         else
         {
