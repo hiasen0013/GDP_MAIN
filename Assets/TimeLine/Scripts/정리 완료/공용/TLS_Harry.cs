@@ -122,5 +122,16 @@ public class TLS_Harry : TLS_AnimatorController
             
         }
     }
+
+    public void TLS_Oates_Event_1_Anim()
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                anim.SetTrigger("Oates_Event_1_start");
+                break;
+        }
+    }
 }
     

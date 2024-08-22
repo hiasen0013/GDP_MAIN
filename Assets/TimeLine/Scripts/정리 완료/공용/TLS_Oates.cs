@@ -96,5 +96,19 @@ public class TLS_Oates : TLS_AnimatorController
                 break;
         }
     }
+
+    public void TLS_Oates_Event_1_Anim()
+    {
+        index ++;
+        switch(index)
+        {
+            case 1:
+                anim.SetTrigger("Oates_Event_1_start");
+                break;
+            case 2:
+                anim.SetTrigger("Oates_Event_1_Right_Walk");
+                break;
+        }
+    }
 }
 
