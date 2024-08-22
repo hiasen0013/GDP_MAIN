@@ -6610,6 +6610,7 @@ GameObject:
   - component: {fileID: 326233591}
   - component: {fileID: 326233592}
   - component: {fileID: 326233593}
+  - component: {fileID: 326233594}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uCCAB\uC904_\uB450\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -6729,6 +6730,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &326233594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326233590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &348642885
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,6 +8508,8 @@ GameObject:
   m_Component:
   - component: {fileID: 391131083}
   - component: {fileID: 391131084}
+  - component: {fileID: 391131085}
+  - component: {fileID: 391131086}
   m_Layer: 0
   m_Name: "B3_\uB3C4\uC11C\uAD00_\uCE74\uC6B4\uD130"
   m_TagString: Untagged
@@ -8566,6 +8584,96 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &391131085
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391131082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.8354926, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.8958335, y: 2.9791667}
+    newSize: {x: 6.8958335, y: 2.9791667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2248487, y: 2.9791667}
+  m_EdgeRadius: 0
+--- !u!61 &391131086
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391131082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.6374117}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.8958335, y: 2.9791667}
+    newSize: {x: 6.8958335, y: 2.9791667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.8958335, y: 1.7043436}
+  m_EdgeRadius: 0
 --- !u!1 &408668798
 GameObject:
   m_ObjectHideFlags: 0
@@ -16733,6 +16841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750391461}
   - component: {fileID: 750391462}
+  - component: {fileID: 750391463}
   m_Layer: 0
   m_Name: "B3_\uCC3D\uACE0_\uC88C\uCE21_\uBE48\uC7A5\uC2DD\uC7A5"
   m_TagString: Untagged
@@ -16808,6 +16917,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &750391463
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750391460}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5416666, y: 2.4166667}
+    newSize: {x: 1.5416666, y: 2.4166667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5416666, y: 2.4166667}
+  m_EdgeRadius: 0
 --- !u!1 &751523808
 GameObject:
   m_ObjectHideFlags: 0
@@ -16895,6 +17049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 755158528}
   - component: {fileID: 755158529}
+  - component: {fileID: 755158530}
   m_Layer: 0
   m_Name: "B3_\uCC3D\uACE0_\uC6B0\uCE21_\uBE48\uC7A5\uC2DD\uC7A5"
   m_TagString: Untagged
@@ -16969,6 +17124,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &755158530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755158527}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5416666, y: 2.4166667}
+    newSize: {x: 1.5416666, y: 2.4166667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5416666, y: 2.4166667}
+  m_EdgeRadius: 0
 --- !u!1 &763407983
 GameObject:
   m_ObjectHideFlags: 0
@@ -17055,6 +17255,7 @@ GameObject:
   - component: {fileID: 784952102}
   - component: {fileID: 784952103}
   - component: {fileID: 784952104}
+  - component: {fileID: 784952105}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uC14B\uC9F8\uC904_\uB450\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -17174,6 +17375,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &784952105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784952101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &786584450
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,7 +17523,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.7847104}
+  m_Offset: {x: 0, y: -1.8065367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17318,7 +17534,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.875, y: 1.7847452}
+  m_Size: {x: 2.875, y: 1.7410927}
   m_EdgeRadius: 0
 --- !u!1 &788959471
 GameObject:
@@ -20072,6 +20288,7 @@ GameObject:
   - component: {fileID: 1062060618}
   - component: {fileID: 1062060619}
   - component: {fileID: 1062060620}
+  - component: {fileID: 1062060621}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uB458\uC9F8\uC904_\uB450\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -20191,6 +20408,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &1062060621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062060617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &1068898293
 GameObject:
   m_ObjectHideFlags: 0
@@ -26493,7 +26725,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06645179}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26504,7 +26736,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4375, y: 2.4375}
+  m_Size: {x: 3.4375, y: 2.3045964}
   m_EdgeRadius: 0
 --- !u!1 &1205459979
 GameObject:
@@ -26796,6 +27028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1225002879}
   - component: {fileID: 1225002880}
+  - component: {fileID: 1225002881}
   m_Layer: 0
   m_Name: "B3_\uB3C4\uC11C\uAD00_\uC778\uD3EC_\uB85C\uACE0"
   m_TagString: Untagged
@@ -26870,6 +27103,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1225002881
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225002878}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.625, y: 0.9791667}
+    newSize: {x: 2.625, y: 0.9791667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.625, y: 0.9791667}
+  m_EdgeRadius: 0
 --- !u!1 &1234021457
 GameObject:
   m_ObjectHideFlags: 0
@@ -32343,6 +32621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353819338}
   - component: {fileID: 1353819339}
+  - component: {fileID: 1353819340}
   m_Layer: 0
   m_Name: "B3_\uB3C4\uC11C\uAD00_\uCE74\uC6B4\uD130_\uC704_\uD654\uBD84"
   m_TagString: Untagged
@@ -32417,6 +32696,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1353819340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353819337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9583333, y: 1.6875}
+    newSize: {x: 0.9583333, y: 1.6875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9583333, y: 1.6875}
+  m_EdgeRadius: 0
 --- !u!1 &1370745981
 GameObject:
   m_ObjectHideFlags: 0
@@ -32772,7 +33096,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06645179}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -32783,7 +33107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4375, y: 2.4375}
+  m_Size: {x: 3.4375, y: 2.3045964}
   m_EdgeRadius: 0
 --- !u!1 &1449742869
 GameObject:
@@ -33400,7 +33724,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.095065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -33411,7 +33735,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.1458335, y: 1.7708334}
+  m_Size: {x: 5.1458335, y: 1.5807035}
   m_EdgeRadius: 0
 --- !u!1 &1502645931
 GameObject:
@@ -33500,6 +33824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510434467}
   - component: {fileID: 1510434468}
+  - component: {fileID: 1510434469}
   m_Layer: 0
   m_Name: "B3_\uCC3D\uACE0_\uD070_\uBE48\uC7A5\uC2DD\uC7A5"
   m_TagString: Untagged
@@ -33575,6 +33900,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1510434469
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510434466}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.07078314}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.4375, y: 2.4375}
+    newSize: {x: 3.4375, y: 2.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.4375, y: 2.2959337}
+  m_EdgeRadius: 0
 --- !u!1 &1513715757
 GameObject:
   m_ObjectHideFlags: 0
@@ -34021,6 +34391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572277643}
   - component: {fileID: 1572277644}
+  - component: {fileID: 1572277645}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uD658\uD48D\uAD6C"
   m_TagString: Untagged
@@ -34095,6 +34466,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1572277645
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572277642}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.9791667}
+    newSize: {x: 1, y: 0.9791667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9791667}
+  m_EdgeRadius: 0
 --- !u!1 &1574422558
 GameObject:
   m_ObjectHideFlags: 0
@@ -34830,6 +35246,7 @@ GameObject:
   - component: {fileID: 1663073694}
   - component: {fileID: 1663073695}
   - component: {fileID: 1663073696}
+  - component: {fileID: 1663073697}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uC14B\uC9F8\uC904_\uCCAB\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -34949,6 +35366,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &1663073697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663073693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &1668868141
 GameObject:
   m_ObjectHideFlags: 0
@@ -36154,6 +36586,7 @@ GameObject:
   - component: {fileID: 1943910033}
   - component: {fileID: 1943910034}
   - component: {fileID: 1943910035}
+  - component: {fileID: 1943910036}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uCCAB\uC904_\uCCAB\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -36273,6 +36706,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &1943910036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943910032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &1963085586
 GameObject:
   m_ObjectHideFlags: 0
@@ -36489,6 +36937,7 @@ GameObject:
   - component: {fileID: 1988374593}
   - component: {fileID: 1988374594}
   - component: {fileID: 1988374595}
+  - component: {fileID: 1988374596}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uB458\uC9F8\uC904_\uCCAB\uBC88\uC9F8_\uD14C\uC774\uBE14"
   m_TagString: Untagged
@@ -36608,6 +37057,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9166665, y: 2.0208492}
   m_EdgeRadius: 0
+--- !u!114 &1988374596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988374592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &2004304015
 GameObject:
   m_ObjectHideFlags: 0
@@ -38265,6 +38729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2050713467}
   - component: {fileID: 2050713468}
+  - component: {fileID: 2050713469}
   m_Layer: 0
   m_Name: "B3_\uC2DD\uB2F9_\uC138\uBC88\uC9F8_\uAC8C\uC2DC\uD310"
   m_TagString: Untagged
@@ -38339,6 +38804,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2050713469
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050713466}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4791667, y: 1.7083334}
+    newSize: {x: 2.4791667, y: 1.7083334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4791667, y: 1.7083334}
+  m_EdgeRadius: 0
 --- !u!1 &2051014481
 GameObject:
   m_ObjectHideFlags: 0
@@ -38696,8 +39206,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.86104584
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_Size.y
       value: 0.8117428
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0023956299
       objectReference: {fileID: 0}
     - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_Offset.y

@@ -13880,7 +13880,7 @@ SpriteRenderer:
   m_Size: {x: 17.4375, y: 9.458333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &972977450
@@ -14041,7 +14041,7 @@ SpriteRenderer:
   m_Size: {x: 9.791667, y: 4.2083335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &978778134
@@ -18227,7 +18227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1456609938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20350,7 +20350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1849784613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22436,7 +22436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa68d0d9b514e64a9aec8e6de2c44a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!61 &2059130321
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22604,7 +22603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2089228279
 MonoBehaviour:
   m_ObjectHideFlags: 0

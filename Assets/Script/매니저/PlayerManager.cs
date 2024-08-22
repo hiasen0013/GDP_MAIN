@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
 public class PlayerManager : MovingObject_Ex
 {
@@ -15,11 +13,9 @@ public class PlayerManager : MovingObject_Ex
     private float applyRunSpeed;
 
     private bool canMove = true;
+    private bool isFading = false; // 페이드 상태를 나타내는 플래그
 
     private Coroutine moveCoroutine;
-
-    // 2
-    /////////////////////////////
 
     float h;
     float v;
@@ -28,13 +24,8 @@ public class PlayerManager : MovingObject_Ex
 
     Vector2 lastDirection;
 
-    /////////////////////////////
-    
     GameObject scanObject;
-    // public GameManager manager;
-
     public 오브젝트감지 obj;
-
 
     void Start()
     {
@@ -47,6 +38,13 @@ public class PlayerManager : MovingObject_Ex
     {
         while (!canMove)
         {
+            if (isFading) // 페이드 중에는 움직이지 않음
+            {
+                animator.SetBool("Walking", false); // 애니메이션 정지
+                yield return null;
+                continue;
+            }
+
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 applyRunSpeed = runSpeed;
@@ -70,17 +68,6 @@ public class PlayerManager : MovingObject_Ex
 
                 lastDirection = new Vector2(vector.x, vector.y);  // 마지막 방향 저장
 
-                /////////////////////////////
-
-                // // bool CheckCollisionFlag = base.CheckCollision();
-                // if (CheckCollisionFlag)
-                // {
-                //     animator.SetBool("Walking", false);
-                //     break;
-                // }
-
-                /////////////////////////////
-
                 animator.SetBool("Walking", true);
 
                 transform.Translate(vector.x * (speed + applyRunSpeed) * Time.deltaTime, vector.y * (speed + applyRunSpeed) * Time.deltaTime, 0);
@@ -98,8 +85,6 @@ public class PlayerManager : MovingObject_Ex
 
     void Update()
     {   
-        // 4
-        /////////////////////////////
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
 
@@ -114,9 +99,7 @@ public class PlayerManager : MovingObject_Ex
 
         Vector2 moveVec = isHorizonMove ? new Vector2(h, 0) : new Vector2(0, v);
 
-        /////////////////////////////
-
-        if (canMove)
+        if (canMove && !isFading)
         {
             if (moveVec.x != 0 || moveVec.y != 0)
             {
@@ -130,7 +113,7 @@ public class PlayerManager : MovingObject_Ex
         }
         else
         {
-            vector.Set(moveVec.x, moveVec.y, transform.position.z);
+            vector.Set(moveVec.x, vector.y, transform.position.z);
             if (vector.x != 0 || vector.y != 0)
             {
                 if (moveCoroutine != null)
@@ -140,19 +123,10 @@ public class PlayerManager : MovingObject_Ex
                 moveCoroutine = StartCoroutine(MoveCoroutine());
             }
         }
-
-        ///////////////////////
-        // if (Input.GetButtonDown("Jump") && scanObject != null)
-        // {
-        //     print(scanObject.name);
-        //     obj.Action(scanObject);
-        // }
-        ///////////////////////
     }
 
     void FixedUpdate()
     {
-        // 이동이 없을 때도 마지막 방향으로 Raycast 사용
         Vector2 direction = vector.x != 0 || vector.y != 0 ? new Vector2(vector.x, vector.y) : lastDirection;
 
         Debug.DrawRay(rigid.position, direction * 0.7f, new Color(0, 1, 0));
@@ -174,5 +148,14 @@ public class PlayerManager : MovingObject_Ex
         v = 0;
         isHorizonMove = false;
         rigid.velocity = Vector2.zero;
+    }
+
+    public void SetFadingState(bool fading)
+    {
+        isFading = fading; // 페이드 상태 설정
+        if (isFading)
+        {
+            animator.SetBool("Walking", false); // 페이드 중에는 애니메이션 정지
+        }
     }
 }
