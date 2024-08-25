@@ -200,6 +200,272 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &7515323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7515326}
+  - component: {fileID: 7515325}
+  - component: {fileID: 7515324}
+  - component: {fileID: 7515327}
+  - component: {fileID: 7515328}
+  m_Layer: 6
+  m_Name: "\uB77C\uD53C\uC2A4\uB77C\uC904\uB9AC"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!95 &7515324
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab3118e274bf0f64fa28171cf0cf7aaa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &7515325
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515323}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -959373151, guid: 3cf629df3d3b56c40b9c0d1edc31f7e3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.9791667, y: 1.7083334}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &7515326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515323}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.12, y: -7.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1290134884}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7515327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515323}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9791667, y: 1.7083334}
+    newSize: {x: 0.9791667, y: 1.7083334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9791667, y: 1.7083334}
+  m_EdgeRadius: 0
+--- !u!114 &7515328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogs:
+  - dialog: "\uCC98\uC74C \uBCF4\uB294 \uC5BC\uAD74\uC774\uB124. \uCD5C\uADFC\uC5D0
+      \uB4E4\uC5B4\uC654\uB098 \uBD10?"
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC774\uB7F4 \uB54C \uB4E4\uC5B4\uC624\uB2E4\uB2C8 \uB108\uB3C4 \uCC38
+      \uC6B4\uC774 \uC5C6\uB124."
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC548\uB155! \uC5B4\uB5BB\uAC8C \uC54C\uC558\uC5B4?"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 78abea37fc9be764f8c985be643b5a6e, type: 3}
+  - dialog: ...
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: 615a2b3ea0762cf40848218aff4d2f3f, type: 3}
+  - dialog: "\uADF8\uB0E5... \uBCF4\uBA74 \uC54C\uC9C0."
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uCC98\uC74C \uB4E4\uC5B4\uC628 \uC560\uB4E4\uC740 \uB300\uBD80\uBD84
+      \uB450\uB9AC\uBC88\uAC70\uB9AC\uBA74\uC11C \uAD6C\uACBD\uD558\uAE30 \uBC14\uC058\uAC70\uB4E0."
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC544\uD558!"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: bb4f78f887f63394cb49aee3a82bc6e7, type: 3}
+  - dialog: ...
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c5b8d4e8077828b42889c8cf65a83bb7, type: 3}
+  - dialog: "\uC74C? \uD770 \uBA38\uB9AC \uAF2C\uB9F9\uC774\uB3C4 \uC788\uAD70. \uB4DC\uB514\uC5B4
+      \uCE5C\uAD6C\uAC00 \uC0DD\uACBC\uB098 \uBD10?"
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC798 \uC9C0\uB0B4\uBD10. \uB9E8\uB0A0 \uCE5C\uAD6C \uC5C6\uB2E4\uACE0
+      \uD63C\uC790 \uB2E4\uB154\uC796\uC544?"
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uB124, \uB124\uAC00 \uBB58 \uC54C\uC544!"
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: 39e1266216361ff48b348074fd6fab72, type: 3}
+  - dialog: "\uADF8\uB9AC\uACE0 \uCE5C\uAD6C\uAC00 \uC5C6\uB294 \uAC8C \uC544\uB2C8\uB77C\uACE0!"
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: fefa4b30048ed804ca32855cfcc94b8a, type: 3}
+  - dialog: ...
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 221be76b86c6f0441a4d68900b08f110, type: 3}
+  - dialog: "\uC544. \uBBF8\uC548 \uB108\uBB34 \uC6B0\uB9AC\uB07C\uB9AC\uB9CC \uB5A0\uB4E4\uC5C8\uB124."
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uADFC\uB370\u2026 \uB108 \uAD49\uC7A5\uD788 \uAE30\uBD84 \uB098\uC05C
+      \uB208\uC744 \uAC00\uC9C0\uACE0 \uC788\uAD6C\uB098."
+    dialog_name: ???
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC74C?"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 221be76b86c6f0441a4d68900b08f110, type: 3}
+  - dialog: "\uC544\uB2C8\uC57C. \uB0B4\uAC00 \uCD08\uBA74\uC5D0 \uC2E4\uB840\uD588\uC5B4."
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC18C\uAC1C\uAC00 \uB2A6\uC5C8\uB124. \uB0B4 \uC774\uB984\uC740 \uB77C\uD53C\uC2A4
+      \uB77C\uC904\uB9AC\uC57C. \uB108\uB791 \uAC19\uC740 \uCC98\uC9C0\uC9C0."
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC544~ \uC751!"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: bb4f78f887f63394cb49aee3a82bc6e7, type: 3}
+  - dialog: "\uB108\u2026\uC815\uB9D0\u2026 \uD2B9\uC774\uD558\uAD6C\uB098?"
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uBCF4\uD1B5 \uC0C1\uB300\uBC29\uC774 \uBA3C\uC800 \uC774\uB984\uC744
+      \uC18C\uAC1C\uD558\uBA74 \uBCF8\uC778\uB3C4 \uB9D0\uD558\uC9C0 \uC54A\uC544?"
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC544! \uADF8\uB807\uAD6C\uB098. \uB0B4 \uC774\uB984\uC740 \uD574\uB9AC
+      \uD398\uB354\uC2A8\uC774\uC57C. \uCE5C\uD558\uAC8C \uC9C0\uB0B4\uC790?"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
+  - dialog: ...
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: 615a2b3ea0762cf40848218aff4d2f3f, type: 3}
+  - dialog: "\uADF8\uB798\u2026 \uD574\uB9AC. \uADF8\uB7FC \uAD6C\uACBD \uC5F4\uC2EC\uD788
+      \uD558\uB3C4\uB85D \uD574."
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  - dialog: "\uC751! \uB77C\uBE44\uC2A4. \uACE0\uB9C8\uC6CC."
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 7885f7332d1995347b990f364c510701, type: 3}
+  - dialog: "\uB77C\uD53C\uC2A4..."
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: c5b8d4e8077828b42889c8cf65a83bb7, type: 3}
+  - dialog: "\uADF8\uB0E5 \uBE68\uB9AC \uAC00\uC790"
+    dialog_name: "\uC624\uCE20"
+    portrait: {fileID: 21300000, guid: 260fe55d8dd10824b82af17257403fd3, type: 3}
+  - dialog: "\uC544! \uBBF8\uC548. \uB77C\uD53C\uC2A4! \uB2E4\uC74C\uC5D0 \uB610
+      \uBD10~"
+    dialog_name: "\uD574\uB9AC"
+    portrait: {fileID: 21300000, guid: 2cf84b9a359f0e14c94ba9eced752148, type: 3}
+  - dialog: "\u2026\uADF8\uB798. \uAF2D \uB2E4\uC2DC \uB9CC\uB0A0 \uC218 \uC788\uC73C\uBA74
+      \uC88B\uACA0\uC5B4."
+    dialog_name: "\uB77C\uD53C\uC2A4 \uB77C\uC904\uB9AC"
+    portrait: {fileID: 21300000, guid: c299aea1f1eaf654cb1e6c0c2a8f3c04, type: 3}
+  sphereRadius: 1
 --- !u!1 &22328771
 GameObject:
   m_ObjectHideFlags: 0
@@ -29194,6 +29460,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1068898294}
+  - {fileID: 7515326}
   m_Father: {fileID: 788959473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1290134885
