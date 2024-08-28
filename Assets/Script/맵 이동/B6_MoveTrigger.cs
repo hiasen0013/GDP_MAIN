@@ -93,7 +93,7 @@ public class B6_MoveTirgger : MoveTrigger
 
                 if(GameProgress.instance.prolog.prolog0_0)
                 {
-                    SceneManager.LoadScene("0_문앞_오츠도망");
+                    SceneManager.LoadSceneAsync("0_문앞_오츠도망");
                 }
                 break;
             case 5: // 복도에서 103룸으로
