@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "GDP_MAIN.sln"
+    "dotnet.defaultSolution": "GitHub.sln"
 }

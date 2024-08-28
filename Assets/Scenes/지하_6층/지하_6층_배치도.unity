@@ -22517,7 +22517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - dialog: "\uC9C0\uC5D4\uC7A5"
+  - dialog: 
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: 56bfafee81a08624681f35b34043a919, type: 3}
   sphereRadius: 1
@@ -37260,7 +37260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1534001922
 Transform:
   m_ObjectHideFlags: 0
@@ -37288,19 +37288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775263a0edf0651469ad1494db1a0dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portraitArr:
-  - {fileID: 21300000, guid: 40304416f5db88c41a1400a0f94880b5, type: 3}
-  - {fileID: 21300000, guid: d10b4c54bb495464ca21e707ba9e1e90, type: 3}
-  - {fileID: 21300000, guid: a3c7609a205844c4482a67590f7e8c89, type: 3}
-  - {fileID: 21300000, guid: e3200e171185cac469ac9ebd2d9e2026, type: 3}
-  - {fileID: 21300000, guid: 40304416f5db88c41a1400a0f94880b5, type: 3}
-  - {fileID: 21300000, guid: d10b4c54bb495464ca21e707ba9e1e90, type: 3}
-  - {fileID: 21300000, guid: a3c7609a205844c4482a67590f7e8c89, type: 3}
-  - {fileID: 21300000, guid: a3c7609a205844c4482a67590f7e8c89, type: 3}
-  - {fileID: 21300000, guid: f118203941ef5aa4c8aa47accd703e57, type: 3}
-  - {fileID: 21300000, guid: d1de73668c1342449ae325928f9d1f40, type: 3}
-  - {fileID: 21300000, guid: f5c6b882d6e500448a2cc841f7535e5c, type: 3}
-  - {fileID: 21300000, guid: f5c6b882d6e500448a2cc841f7535e5c, type: 3}
+  portraitArr: []
 --- !u!1 &1561067720
 GameObject:
   m_ObjectHideFlags: 0
