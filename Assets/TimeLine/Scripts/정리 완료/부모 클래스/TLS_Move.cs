@@ -11,7 +11,7 @@ public class TLS_Move : MonoBehaviour
     [SerializeField] protected int index = 0;
     [SerializeField] protected List<bool> isTrue;
     protected float distance;
-    //protected Coroutine moveCoroutine;
+
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
