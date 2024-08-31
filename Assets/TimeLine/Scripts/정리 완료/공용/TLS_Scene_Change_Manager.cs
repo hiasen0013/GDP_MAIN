@@ -51,6 +51,7 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
 
     public void End_0_Oates_Run_TLS()
     {
-        SceneManager.LoadScene("지하6층_배치도");
+        SceneManager.LoadScene("지하_6층_배치도");
+        GameProgress.instance.tlProgress.prolog0_0 = false;
     }
 }

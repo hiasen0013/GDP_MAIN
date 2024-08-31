@@ -26,7 +26,7 @@ public class B6_MoveTirgger : MoveTrigger
     protected override void Start()
     {
         base.Start();
-        b6_Room_101.SetActive(false);
+        /*b6_Room_101.SetActive(false);
         b6_Room_102.SetActive(false);
         b6_Room_103.SetActive(true);
         b6_Room_104.SetActive(false);
@@ -40,7 +40,7 @@ public class B6_MoveTirgger : MoveTrigger
         b6_Corridor_2.SetActive(false);
         b6_lobby.SetActive(false);
         b6_counseling_room.SetActive(false);
-        b6_laboratory.SetActive(false);
+        b6_laboratory.SetActive(false); */
     }
 
     public override void OnChildTriggerEnter(Collider2D other, int childId)

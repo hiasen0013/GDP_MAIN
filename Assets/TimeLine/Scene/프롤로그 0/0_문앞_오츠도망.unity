@@ -6200,7 +6200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1952379301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6310,6 +6310,7 @@ GameObject:
   - component: {fileID: 2025164662}
   - component: {fileID: 2025164661}
   - component: {fileID: 2025164660}
+  - component: {fileID: 2025164664}
   m_Layer: 0
   m_Name: TimeLine
   m_TagString: Untagged
@@ -6344,6 +6345,8 @@ PlayableDirector:
     value: {fileID: 503788769}
   - key: {fileID: -7837596398982005724, guid: 5c9e64d0e3cb5754cb3f0021964a3f38, type: 2}
     value: {fileID: 1505344435}
+  - key: {fileID: 667292058129461796, guid: 5c9e64d0e3cb5754cb3f0021964a3f38, type: 2}
+    value: {fileID: 2025164664}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2025164659
@@ -6423,6 +6426,36 @@ MonoBehaviour:
   yes_btn: {fileID: 0}
   no_btn: {fileID: 0}
   System_YorN_textBox: {fileID: 0}
+--- !u!114 &2025164664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025164657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 648eca2c76e5c114195b0ff20498f6e2, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2025164661}
+          m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
+          m_MethodName: End_0_Oates_Run_TLS
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2067620593
 GameObject:
   m_ObjectHideFlags: 0
