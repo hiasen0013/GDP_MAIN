@@ -2765,7 +2765,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 916097140}
           m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
-          m_MethodName: End_First_TLS
+          m_MethodName: End_1_2_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3516,10 +3516,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 1673526200}
-  dialog_box: {fileID: 1142351663}
-  dialog_text: {fileID: 514682787}
   dialog_nameText: {fileID: 1794752246}
+  dialog_text: {fileID: 514682787}
   dialog_count: 0
   dialogs:
   - dialog: "\uC74C... \uADF8\uB7F0 \uAC83 \uAC19\uB124?"
@@ -3699,10 +3699,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 1673526200}
-  dialog_box: {fileID: 1142351663}
-  dialog_text: {fileID: 514682787}
   dialog_nameText: {fileID: 1794752246}
+  dialog_text: {fileID: 514682787}
   dialog_count: 0
   dialogs:
   - dialog: "\uB9C8\uC74C\uC5D0 \uC548 \uB4DC\uB098 \uBCF4\uB124."
@@ -4188,10 +4188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 1673526200}
-  dialog_box: {fileID: 1142351663}
-  dialog_text: {fileID: 514682787}
   dialog_nameText: {fileID: 1794752246}
+  dialog_text: {fileID: 514682787}
   dialog_count: 0
   dialogs:
   - dialog: "\uC548\uB155. \uD398\uB354\uC2A8. \uC624\uB298\uC740 \uC548\uB098 \uC5F0\uAD6C\uC6D0\uC774
@@ -4371,10 +4371,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 1673526200}
-  dialog_box: {fileID: 1142351663}
-  dialog_text: {fileID: 514682787}
   dialog_nameText: {fileID: 1794752246}
+  dialog_text: {fileID: 514682787}
   dialog_count: 0
   dialogs:
   - dialog: "\uC74C... \uBB54\uAC00 \uC2EB\uC740\uB370~"

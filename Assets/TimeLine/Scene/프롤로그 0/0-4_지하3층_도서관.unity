@@ -1159,6 +1159,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeState: 0
 --- !u!114 &386596045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,10 +1401,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 388302372}
-  dialog_box: {fileID: 2084490401}
-  dialog_text: {fileID: 2023274920}
   dialog_nameText: {fileID: 1786548001}
+  dialog_text: {fileID: 2023274920}
   dialog_count: 0
   dialogs:
   - dialog: "\uC5B4! \uAC74\uC544! "
@@ -7069,10 +7070,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 388302372}
-  dialog_box: {fileID: 2084490401}
-  dialog_text: {fileID: 2023274920}
   dialog_nameText: {fileID: 1786548001}
+  dialog_text: {fileID: 2023274920}
   dialog_count: 0
   dialogs:
   - dialog: "\uD574, \uD574\uB9AC\uC57C \uAC00\uC790."
@@ -8338,10 +8339,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 388302372}
-  dialog_box: {fileID: 2084490401}
-  dialog_text: {fileID: 2023274920}
   dialog_nameText: {fileID: 1786548001}
+  dialog_text: {fileID: 2023274920}
   dialog_count: 0
   dialogs:
   - dialog: "\uC624\uCE20! \uC640, \uC654\uB0D0."
@@ -8392,10 +8393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 0}
   dialog_portrait: {fileID: 388302372}
-  dialog_box: {fileID: 2084490401}
-  dialog_text: {fileID: 2023274920}
   dialog_nameText: {fileID: 1786548001}
+  dialog_text: {fileID: 2023274920}
   dialog_count: 0
   dialogs:
   - dialog: "\uB098\uB3C4 \uC548\uB155?"
@@ -9728,6 +9729,7 @@ GameObject:
   - component: {fileID: 1875326494}
   - component: {fileID: 1875326493}
   - component: {fileID: 1875326492}
+  - component: {fileID: 1875326497}
   m_Layer: 0
   m_Name: TImeLine
   m_TagString: Untagged
@@ -9750,12 +9752,27 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: ecd8e23dbaec9f94da3040e02f505241, type: 2}
+    - {fileID: 11400000, guid: 648eca2c76e5c114195b0ff20498f6e2, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1875326493}
           m_TargetAssemblyTypeName: TLS_Sequence_Manager, Assembly-CSharp
           m_MethodName: Fourth_TLS
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1875326497}
+          m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
+          m_MethodName: End_0_4_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9782,6 +9799,7 @@ MonoBehaviour:
   is_Thrid_TLS: 0
   is_Fourth_TLS: 0
   is_Fifth_TLS: 0
+  is_First_1_TLS: 0
   system_msg_count: 0
 --- !u!114 &1875326494
 MonoBehaviour:
@@ -9858,6 +9876,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875326497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875326491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dc10ff9a6820941bef6396d486dc45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877571256
 GameObject:
   m_ObjectHideFlags: 0

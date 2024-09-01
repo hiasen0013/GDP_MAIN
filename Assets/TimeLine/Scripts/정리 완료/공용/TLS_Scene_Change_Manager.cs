@@ -38,8 +38,28 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
 
     public void End_0_Thrid_TLS()
     {
-        GameProgress.instance.tlProgress.prolog0_3 = true;
+        //GameProgress.instance.tlProgress.prolog0_3 = true;
         SceneManager.LoadScene("지하3층_배치도");
+    }
+
+    public void End_0_4_TLS()
+    {
+        SceneManager.LoadScene("지하3층_배치도");
+    }
+
+    public void End_0_5_TLS()
+    {
+        SceneManager.LoadScene("0-5_지하3층_상담실");
+    }
+
+    public void End_1_1_TLS()
+    {
+        SceneManager.LoadScene("1-1_프롤로그0");
+    }
+
+    public void End_1_2_TLS()
+    {
+        SceneManager.LoadScene("1-2_로비_엘레베이터_안");
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

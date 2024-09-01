@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class B3F_MoveTrigger : MoveTrigger
 {
@@ -71,6 +72,8 @@ public class B3F_MoveTrigger : MoveTrigger
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b3_Corridor.SetActive(false);
                 b3_CounselingRoom.SetActive(true);
+                SceneManager.LoadScene("0-5_지하3층_상담실");
+                
                 break;
 
 
