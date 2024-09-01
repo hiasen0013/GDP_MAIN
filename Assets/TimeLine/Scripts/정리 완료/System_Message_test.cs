@@ -93,7 +93,6 @@ public class System_Message_test : MonoBehaviour
         {
             Debug.Log("true");
             TLS_YesOrNo_prologue_0_0.instance.selecting = true;
-            TLS_YesOrNo_prologue_0_0.instance.YesOrNo_obj(true);
         }
         else
             Debug.Log("false");

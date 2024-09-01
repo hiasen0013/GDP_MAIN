@@ -93,7 +93,7 @@ public class B6_MoveTirgger : MoveTrigger
                 b6_Room_103.SetActive(false);
                 b6_Corridor_Left.SetActive(true);
 
-                if(!GameProgress.instance.tlProgress.prolog0_0)
+                if(GameProgress.instance.tlProgress.prolog0_0)
                 {
                     SceneManager.LoadSceneAsync("0_문앞_오츠도망");
                 }

@@ -6,7 +6,6 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
 {
     public static TLS_YesOrNo_prologue_0_0 instance;
     [SerializeField] private GameObject oatesCutScene;
-    [SerializeField] private GameObject sym_obj;
 
     public void Awake()
     {
@@ -14,10 +13,11 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
     }
 
     protected override void Update()
-    { 
+    {
+        Debug.Log(selecting);
         if(selecting)
         {
-
+            Select_Obj(true);
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ToggleBtn();
@@ -25,20 +25,23 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
 
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                selecting = false;
-                selectedBtn.onClick.Invoke();
-                YesOrNo_obj(false);
-                System_Message_test.instance.SymUI_OnOff(false);
-                Debug.Log(yes_no_value);
+                //selectedBtn.onClick.Invoke();
+                if(selectedBtn == yesBtn)
+                {
+                    yes_no_value = 1;
+                    selecting = false;
+                    System_Message_test.instance.SymUI_OnOff(false);
+                }
+                else if (selectedBtn == noBtn)
+                {
+                    yes_no_value = 2;
+                }
             }
         }
-        else
+
+        else if (!selecting)
         {
-            YesOrNo_obj(false);
-            if(yes_no_value == 1)
-            {
-                oatesCutScene.SetActive(true);
-            }
+            Select_Obj(false);
         }
 
         if(oatesCutScene.activeSelf)
@@ -49,5 +52,10 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
                 TLS_Manager.instance.isDialog = false;
             }
         }
+
     }
+        public void Select_Obj_true()
+        {
+            Select_Obj(true);
+        }
 }

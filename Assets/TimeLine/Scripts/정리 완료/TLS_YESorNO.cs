@@ -2,11 +2,12 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using Unity.VisualScripting;
 
 public class TLS_YesorNo : MonoBehaviour
 {
     public bool selecting = false;
-    [SerializeField] protected GameObject select_obj;
+    public GameObject select_obj;
     [SerializeField] protected Button yesBtn;
     [SerializeField] protected Button noBtn;
     [SerializeField] protected Button selectedBtn;
@@ -17,20 +18,20 @@ public class TLS_YesorNo : MonoBehaviour
         selectedBtn = yesBtn;
         SetButtonTextColor(selectedBtn, Color.red);
         selectedBtn.Select();
-        yesBtn.onClick.AddListener(YesBtn_Click);
-        noBtn.onClick.AddListener(NoBtn_Click);
     }
- 
-    public virtual void YesOrNo_obj(bool value)
+
+    protected virtual void Select_Obj(bool value)
     {
-        select_obj.SetActive(value);
+        select_obj.gameObject.SetActive(value);
+        yesBtn.gameObject.SetActive(value);
+        noBtn.gameObject.SetActive(value);
     }
+
 
     protected virtual void Update()
     {
         if(selecting)
         {
-            YesOrNo_obj(true);
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ToggleBtn();
@@ -38,23 +39,19 @@ public class TLS_YesorNo : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                selectedBtn.onClick.Invoke();
-                Debug.Log("선택함");
-                YesOrNo_obj(false);
+                if(selectedBtn == yesBtn)
+                {
+                    yes_no_value = 1;
+                    select_obj.SetActive(false);
+                    selecting = false;
+                }
+                else if (selectedBtn == noBtn)
+                {
+                    yes_no_value = 2;
+                    select_obj.SetActive(false);
+                }
             }
         }
-    }
-    
-    protected virtual void YesBtn_Click()
-    {
-        yes_no_value = 1;
-        YesOrNo_obj(false);
-    }
-
-    protected virtual void NoBtn_Click()
-    {
-        yes_no_value = 2;
-        YesOrNo_obj(false);
     }
     
     protected virtual void ToggleBtn()
