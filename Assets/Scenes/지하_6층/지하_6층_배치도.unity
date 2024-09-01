@@ -25290,11 +25290,12 @@ MonoBehaviour:
   b6_Room_203: {fileID: 23059598}
   b6_Room_204: {fileID: 1060342229}
   b6_Room_205: {fileID: 1950166503}
-  b6_Corridor_1: {fileID: 962549475}
-  b6_Corridor_2: {fileID: 83478990}
+  b6_Corridor_Left: {fileID: 962549475}
+  b6_Corridor_Right: {fileID: 83478990}
   b6_lobby: {fileID: 1966842102}
   b6_counseling_room: {fileID: 2037379753}
   b6_laboratory: {fileID: 142681648}
+  testmovePos: 1
 --- !u!1 &1003484199
 GameObject:
   m_ObjectHideFlags: 0
@@ -26478,11 +26479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804602885711927342, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.1
+      value: 15.73
       objectReference: {fileID: 0}
     - target: {fileID: 2804602885711927342, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.9
+      value: 39.83
       objectReference: {fileID: 0}
     - target: {fileID: 2804602885711927342, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29516,7 +29517,7 @@ GameObject:
   - component: {fileID: 1199084626}
   - component: {fileID: 1199084625}
   m_Layer: 0
-  m_Name: Test
+  m_Name: GameProgress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

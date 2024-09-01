@@ -1,10 +1,11 @@
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class TLS_YesorNo : MonoBehaviour
 {
-    protected bool selecting = true;
+    public bool selecting = false;
     [SerializeField] protected GameObject select_obj;
     [SerializeField] protected Button yesBtn;
     [SerializeField] protected Button noBtn;
@@ -14,19 +15,22 @@ public class TLS_YesorNo : MonoBehaviour
     protected virtual void Start()
     {
         selectedBtn = yesBtn;
+        SetButtonTextColor(selectedBtn, Color.red);
         selectedBtn.Select();
+        yesBtn.onClick.AddListener(YesBtn_Click);
+        noBtn.onClick.AddListener(NoBtn_Click);
     }
  
-    protected virtual void YesOrNo_obj(bool value)
+    public virtual void YesOrNo_obj(bool value)
     {
         select_obj.SetActive(value);
-        selecting = value;
     }
 
     protected virtual void Update()
     {
         if(selecting)
         {
+            YesOrNo_obj(true);
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ToggleBtn();
@@ -36,6 +40,7 @@ public class TLS_YesorNo : MonoBehaviour
             {
                 selectedBtn.onClick.Invoke();
                 Debug.Log("선택함");
+                YesOrNo_obj(false);
             }
         }
     }
@@ -54,14 +59,27 @@ public class TLS_YesorNo : MonoBehaviour
     
     protected virtual void ToggleBtn()
     {
+        SetButtonTextColor(selectedBtn, Color.white);
         if(selectedBtn == yesBtn)
         {
             selectedBtn = noBtn;
+            Debug.Log("No버튼");
         }
         else
         {
             selectedBtn = yesBtn;
+            Debug.Log("YES버튼");
         }
+        SetButtonTextColor(selectedBtn, Color.red);
         selectedBtn.Select();
+    }
+
+    protected void SetButtonTextColor(Button btn, Color color)
+    {
+        TextMeshProUGUI btnText = btn.GetComponentInChildren<TextMeshProUGUI>(true);
+        if(btnText != null)
+        {
+            btnText.color = color;
+        }
     }
 }

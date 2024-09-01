@@ -53,5 +53,6 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("지하_6층_배치도");
         GameProgress.instance.tlProgress.prolog0_0 = false;
+        GameProgress.instance.tlProgress.prolog0_1 = true;
     }
 }

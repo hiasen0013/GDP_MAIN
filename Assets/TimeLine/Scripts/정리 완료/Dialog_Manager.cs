@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Dialog_Manager : MonoBehaviour
 {
+    [SerializeField] private UnityEngine.UI.Image dialog_Panel;
     [SerializeField] private UnityEngine.UI.Image dialog_portrait;
-    [SerializeField] private UnityEngine.UI.Image dialog_box;
-    [SerializeField] private TextMeshProUGUI dialog_text;
     [SerializeField] private TextMeshProUGUI dialog_nameText;
+    [SerializeField] private TextMeshProUGUI dialog_text;
     public int dialog_count = 0;
     [SerializeField]private Dialog[] dialogs;
     private bool isTyping = false;
@@ -62,7 +62,7 @@ public class Dialog_Manager : MonoBehaviour
 
     private void DialogUI_OnOff(bool value)
     {
-        dialog_box.gameObject.SetActive(value);
+        dialog_Panel.gameObject.SetActive(value);
         dialog_portrait.gameObject.SetActive(value);
         dialog_text.gameObject.SetActive(value);
         dialog_nameText.gameObject.SetActive(value);

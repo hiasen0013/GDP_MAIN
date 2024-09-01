@@ -17,11 +17,13 @@ public class B6_MoveTirgger : MoveTrigger
     [SerializeField] private GameObject b6_Room_203;
     [SerializeField] private GameObject b6_Room_204;
     [SerializeField] private GameObject b6_Room_205;
-    [SerializeField] private GameObject b6_Corridor_1;
-    [SerializeField] private GameObject b6_Corridor_2;
+    [SerializeField] private GameObject b6_Corridor_Left;
+    [SerializeField] private GameObject b6_Corridor_Right;
     [SerializeField] private GameObject b6_lobby;
     [SerializeField] private GameObject b6_counseling_room;
     [SerializeField] private GameObject b6_laboratory;
+
+    [SerializeField] private float testmovePos;
 
     protected override void Start()
     {
@@ -53,14 +55,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition0;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_101.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
                 break;
             case 1: // 복도에서 101룸으로
                 Transform nextChildTransform1 = transform.GetChild(0);
                 Vector2 newPosition1 = new Vector2(nextChildTransform1.position.x, nextChildTransform1.position.y + 1.3f);
                 other.transform.position = newPosition1;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_Room_101.SetActive(true);
                 break;
 
@@ -71,27 +73,27 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition2;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_102.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
                 break;
             case 3: // 복도에서 102룸으로
                 Transform nextChildTransform3 = transform.GetChild(2);
                 Vector2 newPosition3 = new Vector2(nextChildTransform3.position.x, nextChildTransform3.position.y + 1.3f);
                 other.transform.position = newPosition3;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_Room_102.SetActive(true);
                 break;
 
 
             case 4: // 103룸에서 복도로
                 Transform nextChildTransform4 = transform.GetChild(5);
-                Vector2 newPosition4 = new Vector2(nextChildTransform4.position.x, nextChildTransform4.position.y - 1f);
+                Vector2 newPosition4 = new Vector2(nextChildTransform4.position.x, nextChildTransform4.position.y - testmovePos);
                 other.transform.position = newPosition4;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_103.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
 
-                if(GameProgress.instance.tlProgress.prolog0_0)
+                if(!GameProgress.instance.tlProgress.prolog0_0)
                 {
                     SceneManager.LoadSceneAsync("0_문앞_오츠도망");
                 }
@@ -101,7 +103,7 @@ public class B6_MoveTirgger : MoveTrigger
                 Vector2 newPosition5 = new Vector2(nextChildTransform5.position.x, nextChildTransform5.position.y + 1.5f);
                 other.transform.position = newPosition5;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_Room_103.SetActive(true);
                 break;
 
@@ -112,14 +114,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition6;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_104.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
                 break;
             case 7: // 복도에서 104룸으로
                 Transform nextChildTransform7 = transform.GetChild(6);
                 Vector2 newPosition7 = new Vector2(nextChildTransform7.position.x, nextChildTransform7.position.y + 1.5f);
                 other.transform.position = newPosition7;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_Room_104.SetActive(true);
                 break;
 
@@ -130,14 +132,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition8;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_105.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
                 break;
             case 9: // 복도에서 105룸으로
                 Transform nextChildTransform9 = transform.GetChild(8);
                 Vector2 newPosition9 = new Vector2(nextChildTransform9.position.x, nextChildTransform9.position.y + 1.5f);
                 other.transform.position = newPosition9;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_Room_105.SetActive(true);
                 break;
 
@@ -148,14 +150,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition10;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_201.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
             case 11: // 복도에서 201룸으로
                 Transform nextChildTransform11 = transform.GetChild(10);
                 Vector2 newPosition11 = new Vector2(nextChildTransform11.position.x, nextChildTransform11.position.y + 1.5f);
                 other.transform.position = newPosition11;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_Room_201.SetActive(true);
                 break;
 
@@ -166,14 +168,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition12;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_202.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
             case 13: // 복도에서 202룸으로
                 Transform nextChildTransform13 = transform.GetChild(12);
                 Vector2 newPosition13 = new Vector2(nextChildTransform13.position.x, nextChildTransform13.position.y + 1.5f);
                 other.transform.position = newPosition13;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_Room_202.SetActive(true);
                 break;
 
@@ -184,14 +186,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition14;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_203.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
             case 15: // 복도에서 203룸으로
                 Transform nextChildTransform15 = transform.GetChild(14);
                 Vector2 newPosition15 = new Vector2(nextChildTransform15.position.x, nextChildTransform15.position.y + 1.5f);
                 other.transform.position = newPosition15;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_Room_203.SetActive(true);
                 break;
 
@@ -202,14 +204,14 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition16;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_204.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
             case 17: // 복도에서 204룸으로
                 Transform nextChildTransform17 = transform.GetChild(16);
                 Vector2 newPosition17 = new Vector2(nextChildTransform17.position.x, nextChildTransform17.position.y + 1.5f);
                 other.transform.position = newPosition17;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_Room_204.SetActive(true);
                 break;
 
@@ -220,51 +222,61 @@ public class B6_MoveTirgger : MoveTrigger
                 other.transform.position = newPosition18;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_Room_205.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
             case 19: // 복도에서 205룸으로
                 Transform nextChildTransform19 = transform.GetChild(18);
                 Vector2 newPosition19 = new Vector2(nextChildTransform19.position.x, nextChildTransform19.position.y + 1.5f);
                 other.transform.position = newPosition19;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_Room_205.SetActive(true);
                 break;
 
 
-            case 20: // 복도에서 로비로
+            case 20: // 왼쪽복도에서 로비로
                 Transform nextChildTransform20 = transform.GetChild(21);
                 Vector2 newPosition20 = new Vector2(nextChildTransform20.position.x + 1f, nextChildTransform20.position.y);
                 other.transform.position = newPosition20;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_1.SetActive(false);
+                b6_Corridor_Left.SetActive(false);
                 b6_lobby.SetActive(true);
+                if(GameProgress.instance.tlProgress.prolog0_1)
+                {
+                    GameObject player = GameObject.Find("Player");
+                    if(player != null)
+                    {
+                        player.transform.position = new Vector3(72.99f,20.7f,0f);
+                        Debug.Log("위치조정 성공");
+                    }
+                    SceneManager.LoadSceneAsync("0-2_엘레베이터_앞");
+                }
                 break;
-            case 21: // 로비에서 복도로
+            case 21: // 로비에서 왼쪽복도로
                 Transform nextChildTransform21 = transform.GetChild(20);
                 Vector2 newPosition21 = new Vector2(nextChildTransform21.position.x - 1.5f, nextChildTransform21.position.y);
                 other.transform.position = newPosition21;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_lobby.SetActive(false);
-                b6_Corridor_1.SetActive(true);
+                b6_Corridor_Left.SetActive(true);
                 break;
 
 
-            case 22: // 복도2에서 로비로
+            case 22: // 오른쪽복도에서 로비로
                 Transform nextChildTransform22 = transform.GetChild(23);
                 Vector2 newPosition22 = new Vector2(nextChildTransform22.position.x - 1.5f, nextChildTransform22.position.y);
                 other.transform.position = newPosition22;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
-                b6_Corridor_2.SetActive(false);
+                b6_Corridor_Right.SetActive(false);
                 b6_lobby.SetActive(true);
                 break;
-            case 23: // 로비에서 복도2로
+            case 23: // 로비에서 오른쪽복도
                 Transform nextChildTransform23 = transform.GetChild(22);
                 Vector2 newPosition23 = new Vector2(nextChildTransform23.position.x + 1f, nextChildTransform23.position.y);
                 other.transform.position = newPosition23;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b6_lobby.SetActive(false);
-                b6_Corridor_2.SetActive(true);
+                b6_Corridor_Right.SetActive(true);
                 break;
 
 

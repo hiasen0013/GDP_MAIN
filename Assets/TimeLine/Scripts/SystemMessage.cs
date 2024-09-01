@@ -14,7 +14,6 @@ public class SystemMessage : MonoBehaviour
 
     [SerializeField] private GameObject oatesCutScene;
     public bool YorN = false;
-
     public void System_MessageOnOff(bool value)
     {
         system_msg_text.gameObject.SetActive(value);
@@ -34,14 +33,6 @@ public class SystemMessage : MonoBehaviour
         {
             case 0: system_msg_text.text =
             "";
-            break;
-            
-            case 1: system_msg_text.text =
-            "문 너머로 또각또각 거리는 구두소리가 들린다.";
-            break;
-
-            case 2: system_msg_text.text =
-            "안나는 핸드폰이 울린다.";
             break;
 
             case 3: system_msg_text.text =
@@ -98,14 +89,7 @@ public class SystemMessage : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
 
     public void Yes_btn_Click()
