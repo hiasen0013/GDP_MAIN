@@ -265,10 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
-  dialog_box: {fileID: 1978569479}
-  dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_text: {fileID: 46277769}
   dialog_count: 0
   dialogs:
   - dialog: "\uC5B4 ! \uB108!"
@@ -863,10 +863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
-  dialog_box: {fileID: 1978569479}
-  dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_text: {fileID: 46277769}
   dialog_count: 0
   dialogs:
   - dialog: "\uC74C~ \uC9C0\uAE08\uC740 \uBC14\uBE60! \uB098\uC911\uC5D0~\r"
@@ -1605,10 +1605,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
-  dialog_box: {fileID: 1978569479}
-  dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_text: {fileID: 46277769}
   dialog_count: 0
   dialogs:
   - dialog: "\uC73C\uC545 !"
@@ -2669,10 +2669,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
-  dialog_box: {fileID: 1978569479}
-  dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_text: {fileID: 46277769}
   dialog_count: 0
   dialogs:
   - dialog: "\uAE5C\uC9DD\uC544 \uC65C \uC18C\uB9AC\uB97C \uC9C0\uB974\uACE0 \uADF8\uB798?"
@@ -2960,10 +2960,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
-  dialog_box: {fileID: 1978569479}
-  dialog_text: {fileID: 46277769}
   dialog_nameText: {fileID: 1634377440}
+  dialog_text: {fileID: 46277769}
   dialog_count: 0
   dialogs:
   - dialog: "\uADF8\uB798!"
