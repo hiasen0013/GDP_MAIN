@@ -1401,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_Panel: {fileID: 0}
+  dialog_Panel: {fileID: 2084490401}
   dialog_portrait: {fileID: 388302372}
   dialog_nameText: {fileID: 1786548001}
   dialog_text: {fileID: 2023274920}
@@ -7070,7 +7070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_Panel: {fileID: 0}
+  dialog_Panel: {fileID: 2084490401}
   dialog_portrait: {fileID: 388302372}
   dialog_nameText: {fileID: 1786548001}
   dialog_text: {fileID: 2023274920}
@@ -8339,7 +8339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_Panel: {fileID: 0}
+  dialog_Panel: {fileID: 2084490401}
   dialog_portrait: {fileID: 388302372}
   dialog_nameText: {fileID: 1786548001}
   dialog_text: {fileID: 2023274920}
@@ -8393,7 +8393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_Panel: {fileID: 0}
+  dialog_Panel: {fileID: 2084490401}
   dialog_portrait: {fileID: 388302372}
   dialog_nameText: {fileID: 1786548001}
   dialog_text: {fileID: 2023274920}
