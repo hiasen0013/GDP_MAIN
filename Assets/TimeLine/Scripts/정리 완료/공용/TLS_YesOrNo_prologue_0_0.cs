@@ -18,6 +18,7 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
         if(selecting)
         {
             Select_Obj(true);
+            
             if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ToggleBtn();
@@ -30,7 +31,7 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
                 {
                     yes_no_value = 1;
                     selecting = false;
-                    System_Message_test.instance.SymUI_OnOff(false);
+                    //System_Message_test.instance.SymUI_OnOff(false);
                 }
                 else if (selectedBtn == noBtn)
                 {

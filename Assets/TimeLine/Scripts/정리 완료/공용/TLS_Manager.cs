@@ -10,9 +10,6 @@ public class TLS_Manager : MonoBehaviour
     public bool isDialog;
     //타임라인 컨트롤러
     public PlayableDirector playableDirector;
-    public GameObject yes_btn;
-    public GameObject no_btn;
-    public GameObject System_YorN_textBox;
 
 
     void Awake()
@@ -48,12 +45,5 @@ public class TLS_Manager : MonoBehaviour
         TLS_Sequence_Manager.instance.is_First_TLS = false;
         TLS_Sequence_Manager.instance.is_Second_TLS = false;
         TLS_Sequence_Manager.instance.is_Thrid_TLS = false;
-    }
-
-    public void BtnManager(bool value)
-    {
-        yes_btn.SetActive(value);
-        no_btn.SetActive(value);
-        System_YorN_textBox.SetActive(value);
     }
 }

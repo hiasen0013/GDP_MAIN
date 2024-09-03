@@ -42,7 +42,6 @@ public class SystemMessage : MonoBehaviour
             case 4: system_msg_text.text =
             "자세히 볼까?";
             isSpace = false;
-            TLS_Manager.instance.BtnManager(true);
             break;
 
             case 5 : oatesCutScene.SetActive(true);
@@ -66,14 +65,13 @@ public class SystemMessage : MonoBehaviour
             system_msg_text.text =
             "따라 갈까?";
             isSpace = false;
-            TLS_Manager.instance.BtnManager(true);
             break;
         }
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isSpace)
+        if(Input.GetKeyDown(KeyCode.Space) && isSpace && !TLS_YesOrNo_prologue_0_0.instance.selecting)
         {
             System_MessageOnOff(false);
             oatesCutScene.SetActive(false); 
@@ -90,24 +88,6 @@ public class SystemMessage : MonoBehaviour
     void Awake()
     {
         instance = this;
-    }
-
-    public void Yes_btn_Click()
-    {
-        print("Y");
-        YorN = true;
-        TLS_Manager.instance.BtnManager(false);
-        System_MessageOnOff(false);
-        isSpace = true;
-    }
-
-    public void No_btn_Click()
-    {
-        print("N");
-        YorN = false;
-        TLS_Manager.instance.BtnManager(false);
-        System_MessageOnOff(false);
-        isSpace = true;
     }
 }
 

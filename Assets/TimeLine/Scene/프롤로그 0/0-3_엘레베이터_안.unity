@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300b2a56b571e2408e280ba12f6154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog_Panel: {fileID: 0}
+  dialog_Panel: {fileID: 1978569479}
   dialog_portrait: {fileID: 1679806484}
   dialog_nameText: {fileID: 1634377440}
   dialog_text: {fileID: 46277769}
