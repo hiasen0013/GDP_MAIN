@@ -154,9 +154,9 @@ public class B3F_MoveTrigger : MoveTrigger
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b3_Library.SetActive(false);
                 b3_Warehouse.SetActive(true);
-                SpriteRenderer spr = other.gameObject.GetComponent<SpriteRenderer>();
-                Material sprLitD = Resources.Load<Material>("Materials/Sprite-Lit-Default");
-                spr.material = sprLitD;
+                SpriteRenderer player_spr = other.gameObject.GetComponent<SpriteRenderer>();
+                Material spr = Resources.Load<Material>("Player_Materials/Sprite-Lit-Default");
+                player_spr.material = spr;
                 break;
             case 11:
                 Transform nextChildTransform11 = transform.GetChild(10);
@@ -165,9 +165,9 @@ public class B3F_MoveTrigger : MoveTrigger
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b3_Warehouse.SetActive(false);
                 b3_Library.SetActive(true);
-                spr = other.gameObject.GetComponent<SpriteRenderer>();
-                sprLitD = Resources.Load<Material>("Materials/Sprite-Unlit-Default");
-                spr.material = sprLitD;
+                player_spr = other.gameObject.GetComponent<SpriteRenderer>();
+                spr = Resources.Load<Material>("Player_Materials/Sprite-Unlit-Default");
+                player_spr.material = spr;
                 break;
 
 

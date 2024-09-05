@@ -2838,9 +2838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDialog: 0
   playableDirector: {fileID: 0}
-  yes_btn: {fileID: 1922991880}
-  no_btn: {fileID: 973716976}
-  System_YorN_textBox: {fileID: 13336437}
 --- !u!114 &1415627381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,7 +2873,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1415627384}
           m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
-          m_MethodName: End_0_Second_TLS
+          m_MethodName: End_0_2_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
