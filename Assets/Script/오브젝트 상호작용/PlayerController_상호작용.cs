@@ -19,29 +19,39 @@ public class PlayerController_상호작용 : MonoBehaviour
     private Vector2 inputDirection = Vector2.zero;
     private int currentDialogIndex = 0;
 
+    private bool isTyping = false; // 타이핑 중인지 여부
+    private bool isTalking = false; // 대화가 진행 중인지 여부
+
     void Update()
     {
         HandleInput();
         ScanForObject();
 
+        // 스페이스바 입력 처리
         if (Input.GetButtonDown("Jump"))
         {
-            if (dialogBox.gameObject.activeSelf)
+            // 대화가 진행 중인 경우
+            if (isTalking)
             {
-                if (currentObject != null && currentDialogIndex < currentObject.dialogs.Length - 1)
+                // 타이핑 중이면 다음 문장으로 넘기지 않음
+                if (!isTyping)
                 {
-                    currentDialogIndex++;
-                    ShowDialog(currentObject.dialogs[currentDialogIndex]);
-                }
-                else
-                {
-                    dialogBox.gameObject.SetActive(false);
+                    if (currentDialogIndex < currentObject.dialogs.Length - 1)
+                    {
+                        currentDialogIndex++;
+                        ShowDialog(currentObject.dialogs[currentDialogIndex]);
+                    }
+                    else
+                    {
+                        EndDialog();
+                    }
                 }
             }
+            // 대화 시작
             else if (currentObject != null)
             {
                 currentDialogIndex = 0;
-                ShowDialog(currentObject.dialogs[currentDialogIndex]);
+                StartDialog();
             }
         }
     }
@@ -86,9 +96,23 @@ public class PlayerController_상호작용 : MonoBehaviour
         }
     }
 
+    // 대화 시작 메서드
+    void StartDialog()
+    {
+        isTalking = true;
+        dialogBox.gameObject.SetActive(true);
+        ShowDialog(currentObject.dialogs[currentDialogIndex]);
+    }
+
+    // 대화 종료 메서드
+    void EndDialog()
+    {
+        isTalking = false;
+        dialogBox.gameObject.SetActive(false);
+    }
+
     void ShowDialog(Dialog dialog)
     {
-        dialogBox.gameObject.SetActive(true);
         dialogPortrait.sprite = dialog.portrait;
         dialogNameText.text = dialog.dialog_name;
         StartCoroutine(TypeEffect(dialog.dialog));
@@ -96,6 +120,7 @@ public class PlayerController_상호작용 : MonoBehaviour
 
     IEnumerator TypeEffect(string text)
     {
+        isTyping = true; // 타이핑 중임을 표시
         dialogText.text = "";
 
         foreach (char c in text)
@@ -103,5 +128,7 @@ public class PlayerController_상호작용 : MonoBehaviour
             dialogText.SetText(dialogText.text + c);
             yield return new WaitForSeconds(1f / typingSpeed);
         }
+
+        isTyping = false; // 타이핑이 완료되었음을 표시
     }
 }
