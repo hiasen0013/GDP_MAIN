@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 22328773}
   - component: {fileID: 22328774}
   - component: {fileID: 22328775}
+  - component: {fileID: 22328776}
   m_Layer: 6
   m_Name: "B3_\uC2DD\uB2F9_\uC2E4\uD5D8\uCCB4477"
   m_TagString: Untagged
@@ -540,7 +541,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3500
   m_Sprite: {fileID: 21300000, guid: d0215e9bd10bf934fa98f2bb2c9197c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -584,7 +585,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.21923447}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -595,7 +596,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7708333, y: 1.1875}
+  m_Size: {x: 0.7708333, y: 0.74903107}
   m_EdgeRadius: 0
 --- !u!114 &22328775
 MonoBehaviour:
@@ -630,6 +631,21 @@ MonoBehaviour:
     dialog_name: "\uC2E4\uD5D8\uCCB4 5"
     portrait: {fileID: 21300000, guid: ab33fc00c4a88dc4883c30a1b8b005b0, type: 3}
   sphereRadius: 0.5
+--- !u!114 &22328776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22328771}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &22926350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 3500
   m_Sprite: {fileID: 21300000, guid: dc9bf1337852daa4fa5f031a8a46907d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16110,6 +16126,7 @@ GameObject:
   - component: {fileID: 646461892}
   - component: {fileID: 646461893}
   - component: {fileID: 646461894}
+  - component: {fileID: 646461895}
   m_Layer: 6
   m_Name: "B3_\uC2DD\uB2F9_\uC2E4\uD5D8\uCCB4478"
   m_TagString: Untagged
@@ -16172,7 +16189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3500
   m_Sprite: {fileID: 21300000, guid: 981c939155d366842b0d354ade47dc77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16216,7 +16233,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1781286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16227,7 +16244,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6875, y: 1.0208334}
+  m_Size: {x: 0.6875, y: 0.6645763}
   m_EdgeRadius: 0
 --- !u!114 &646461894
 MonoBehaviour:
@@ -16262,6 +16279,21 @@ MonoBehaviour:
     dialog_name: "\uC2E4\uD5D8\uCCB4 5"
     portrait: {fileID: 21300000, guid: ab33fc00c4a88dc4883c30a1b8b005b0, type: 3}
   sphereRadius: 0.5
+--- !u!114 &646461895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646461890}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccf305ff0cd0d74bac9d9ac52843144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderOffset: 1000
+  sortingOrderMin: 0
+  targetSceneName: "\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4"
 --- !u!1 &651792142
 GameObject:
   m_ObjectHideFlags: 0
@@ -26676,7 +26708,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3500
   m_Sprite: {fileID: 21300000, guid: dc9bf1337852daa4fa5f031a8a46907d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
