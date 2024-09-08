@@ -30,7 +30,7 @@ public class SceneSetup : MonoBehaviour
             existingPlayer.SetActive(true);
 
             // 두 번째 씬의 타임라인 플레이어 비활성화
-            scenePlayer.SetActive(false);
+            // scenePlayer.SetActive(false);
         }
     }
 }
