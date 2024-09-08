@@ -83,7 +83,21 @@ public class TLS_Harry : TLS_AnimatorController
 
     public void TLS_1_1_Harry_Anim()
     {
-        
+        index ++;
+        switch(index)
+        {
+            case 1:
+                anim.SetTrigger("1-1_Walk_Up");
+                break;
+            case 2:
+                anim.SetTrigger("1-1_Walk_Up2");
+                this.gameObject.transform.localPosition = new Vector2 (2.732f, 0.04f);
+                break;
+            case 3:
+                anim.SetTrigger("1-1_Walk_Up3");
+                this.gameObject.transform.localPosition = new Vector2 (1.82f, 0.04f);
+                break;
+        }
     }
 
     public void TLS_2_Harry_edeline_Anim()
@@ -122,6 +136,7 @@ public class TLS_Harry : TLS_AnimatorController
             
         }
     }
+
 
     public void TLS_Oates_Event_1_Anim()
     {

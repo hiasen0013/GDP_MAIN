@@ -30,7 +30,15 @@ public class SceneSetup : MonoBehaviour
             existingPlayer.SetActive(true);
 
             // 두 번째 씬의 타임라인 플레이어 비활성화
+<<<<<<< Updated upstream
             // scenePlayer.SetActive(false);
+=======
+<<<<<<< HEAD
+            //scenePlayer.SetActive(false);
+=======
+            // scenePlayer.SetActive(false);
+>>>>>>> 217cc488aa1a3d78641677e50e576019619fcfbc
+>>>>>>> Stashed changes
         }
     }
 }

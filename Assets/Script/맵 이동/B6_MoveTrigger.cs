@@ -244,13 +244,18 @@ public class B6_MoveTirgger : MoveTrigger
                 b6_lobby.SetActive(true);
                 if(GameProgress.instance.tlProgress.prolog0_1)
                 {
-                    GameObject player = GameObject.Find("Player");
+                    /*GameObject player = GameObject.Find("Player");
                     if(player != null)
                     {
                         player.transform.position = new Vector3(72.99f,20.7f,0f);
                         Debug.Log("위치조정 성공");
-                    }
+                    } */
                     SceneManager.LoadSceneAsync("0-2_엘레베이터_앞");
+                }
+
+                if(GameProgress.instance.tlProgress.prolog1_0)
+                {
+                    SceneManager.LoadSceneAsync("1-2_로비_엘레베이터_안");
                 }
                 break;
             case 21: // 로비에서 왼쪽복도로

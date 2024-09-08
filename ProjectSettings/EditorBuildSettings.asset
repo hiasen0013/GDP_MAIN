@@ -12,11 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Story.unity
     guid: 4009e6fb2994af74f9b67a77c5b7ee2f
   - enabled: 1
+    path: "Assets/Scenes/\uC9C0\uD558_6\uCE35/\uC9C0\uD558_6\uCE35_\uBC30\uCE58\uB3C4(\uC6D0\uBCF8).unity"
+    guid: 851f14dcf48dd3244b08e76d03b487f7
+  - enabled: 1
+    path: "Assets/Scenes/\uC9C0\uD558_6\uCE35/\uC9C0\uD558_6\uCE35_\uBC30\uCE58\uB3C4.unity"
+    guid: e9b8cf7cb09629d4b997576ade82bab5
+  - enabled: 1
+    path: "Assets/Scenes/\uC9C0\uD558_5\uCE35/\uC9C0\uD5585\uCE35_\uBC30\uCE58\uB3C4.unity"
+    guid: 57953b65592bdc147ae8c54b3b363252
+  - enabled: 1
+    path: "Assets/Scenes/\uC9C0\uD558_3\uCE35/\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4.unity"
+    guid: eec57394cdc51384b802a5a1a42d8520
+  - enabled: 1
     path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0-1_\uD504\uB864\uB85C\uADF80.unity"
     guid: d9863b372fe60e94287e2d558cc40ff0
   - enabled: 1
-    path: "Assets/Scenes/\uC9C0\uD558_6\uCE35/\uC9C0\uD558_6\uCE35_\uBC30\uCE58\uB3C4(\uC6D0\uBCF8).unity"
-    guid: 851f14dcf48dd3244b08e76d03b487f7
+    path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0_\uBB38\uC55E_\uC624\uCE20\uB3C4\uB9DD.unity"
+    guid: 2f78e52bc7c451246849c49c090560f8
   - enabled: 1
     path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0-2_\uC5D8\uB808\uBCA0\uC774\uD130_\uC55E.unity"
     guid: cdaa7585b417d034484b3d850a60e89d
@@ -27,18 +39,12 @@ EditorBuildSettings:
     path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0-4_\uC9C0\uD5583\uCE35_\uB3C4\uC11C\uAD00.unity"
     guid: b7640cce3e248e648acb1b853badcdc0
   - enabled: 1
-    path: "Assets/Scenes/\uC9C0\uD558_5\uCE35/\uC9C0\uD5585\uCE35_\uBC30\uCE58\uB3C4.unity"
-    guid: 57953b65592bdc147ae8c54b3b363252
-  - enabled: 1
     path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0-5_\uC9C0\uD5583\uCE35_\uC0C1\uB2F4\uC2E4.unity"
     guid: be194506a06e6b24581ed15bad846a24
   - enabled: 1
-    path: "Assets/Scenes/\uC9C0\uD558_3\uCE35/\uC9C0\uD5583\uCE35_\uBC30\uCE58\uB3C4.unity"
-    guid: eec57394cdc51384b802a5a1a42d8520
+    path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 1/1-1_\uD504\uB864\uB85C\uADF80.unity"
+    guid: d9234e540b227204ab42c66b6a7bd36b
   - enabled: 1
-    path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 0/0_\uBB38\uC55E_\uC624\uCE20\uB3C4\uB9DD.unity"
-    guid: 2f78e52bc7c451246849c49c090560f8
-  - enabled: 1
-    path: "Assets/Scenes/\uC9C0\uD558_6\uCE35/\uC9C0\uD558_6\uCE35_\uBC30\uCE58\uB3C4.unity"
-    guid: e9b8cf7cb09629d4b997576ade82bab5
+    path: "Assets/TimeLine/Scene/\uD504\uB864\uB85C\uADF8 1/1-2_\uB85C\uBE44_\uC5D8\uB808\uBCA0\uC774\uD130_\uC548.unity"
+    guid: 71a522f73892ea64ea9262489049fed3
   m_configObjects: {}

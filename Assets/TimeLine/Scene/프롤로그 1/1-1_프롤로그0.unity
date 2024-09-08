@@ -2675,6 +2675,7 @@ GameObject:
   - component: {fileID: 916097142}
   - component: {fileID: 916097141}
   - component: {fileID: 916097140}
+  - component: {fileID: 916097146}
   m_Layer: 0
   m_Name: "TLS_\uD504\uB864\uB85C\uADF8_1"
   m_TagString: Untagged
@@ -2708,9 +2709,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDialog: 0
   playableDirector: {fileID: 916097144}
-  yes_btn: {fileID: 1301874636}
-  no_btn: {fileID: 1611318552}
-  System_YorN_textBox: {fileID: 236871271}
 --- !u!114 &916097142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2765,7 +2763,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 916097140}
           m_TargetAssemblyTypeName: TLS_Scene_Change_Manager, Assembly-CSharp
-          m_MethodName: End_1_2_TLS
+          m_MethodName: End_1_1_TLS
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2827,7 +2825,7 @@ PlayableDirector:
   - key: {fileID: 5181563491410441253, guid: 95e79308c097126448476ed69534b141, type: 2}
     value: {fileID: 1165659411}
   - key: {fileID: -5208753715969334417, guid: 95e79308c097126448476ed69534b141, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1324963897}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &916097145
@@ -2845,6 +2843,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &916097146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916097139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f4152b39d0d3c478d17e0c3fdd6dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 916097144}
+  scenePlayer: {fileID: 0}
 --- !u!1 &962338434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,14 +3541,14 @@ MonoBehaviour:
       \uC77C\uC815\uC5D0 \uB300\uD574 \uC54C\uB824\uC904\uAC8C. \uC624\uD6C4\uC5D0
       \uB124 \uC2E4\uD5D8\uC774 \uD558\uB098 \uC788\uC744 \uC608\uC815\uC774\uC57C.\r"
     dialog_name: "\uCCB8"
-    portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
+    portrait: {fileID: 21300000, guid: d1de73668c1342449ae325928f9d1f40, type: 3}
   - dialog: "\uC2DC\uAC04\uC774 \uB418\uBA74 \uB370\uB9AC\uB7EC \uC62C \uD14C\uB2C8
       \uB300\uAE30\uD558\uB3C4\uB85D \uD574.\r"
     dialog_name: "\uCCB8"
-    portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
+    portrait: {fileID: 21300000, guid: d1de73668c1342449ae325928f9d1f40, type: 3}
   - dialog: "\uADF8\uB7FC \uC798 \uC26C\uACE0 \uC788\uC5B4.\r"
     dialog_name: "\uCCB8"
-    portrait: {fileID: 21300000, guid: c0501165491b142468135c992269acd7, type: 3}
+    portrait: {fileID: 21300000, guid: f118203941ef5aa4c8aa47accd703e57, type: 3}
   typingSpeed: 40
 --- !u!4 &1103462621
 Transform:
@@ -4204,7 +4216,7 @@ MonoBehaviour:
   - dialog: "\uC6D0\uB798\uBD80\uD130 \uD398\uB354\uC2A8 \uB108\uC758 \uB2F4\uB2F9\uC740
       \uB098\uC600\uC73C\uB2C8 \uC0C1\uAD00\uC5C6\uACA0\uC9C0?"
     dialog_name: "\uCCB8"
-    portrait: {fileID: 21300000, guid: 546cff127e114334b91d98a523813c08, type: 3}
+    portrait: {fileID: 21300000, guid: d1de73668c1342449ae325928f9d1f40, type: 3}
   - dialog: ... ...
     dialog_name: "\uCCB8"
     portrait: {fileID: 21300000, guid: 546cff127e114334b91d98a523813c08, type: 3}
@@ -5110,8 +5122,6 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 6fa2d3597453ea7458d0c42e3b83abe4, type: 2}
     - {fileID: 11400000, guid: c0554adad86822e4bb354439769fc994, type: 2}
-    - {fileID: 11400000, guid: 8555c8446d721c045a29705409c1e61f, type: 2}
-    - {fileID: 11400000, guid: f44e48c49e9dea44c9108fde7e3fd381, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -5131,35 +5141,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1753113362}
           m_TargetAssemblyTypeName: TLS_Harry, Assembly-CSharp
-          m_MethodName: WakeUp_Anim
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1753113362}
-          m_TargetAssemblyTypeName: TLS_Harry, Assembly-CSharp
-          m_MethodName: WakeUp_Move
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1753113362}
-          m_TargetAssemblyTypeName: TLS_Harry, Assembly-CSharp
-          m_MethodName: WakeUP_Move2
+          m_MethodName: TLS_1_1_Harry_Anim
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

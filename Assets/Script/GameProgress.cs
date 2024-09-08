@@ -39,16 +39,28 @@ public class GameProgress : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"현재 씬은 : {scene.name} 입니다.");
+
+        if(tlProgress.prolog0_0)
+            Debug.Log("0_0True");
+        if(tlProgress.prolog0_1)
+            Debug.Log("0_1True");
+        if(tlProgress.prolog0_2)
+            Debug.Log("0_2True");
+        if(tlProgress.prolog0_3)
+            Debug.Log("0_3True");
+        if(tlProgress.prolog1_0)
+            Debug.Log("1_0True");
     }
 }
 
 public class TimeLineProgress
 {
-    [Header("프롤로그 0 진행상황")] // 프롤로그 0, 엘베 앞, 엘베 안, 도서관, 상담실
-    public bool prolog0_0 = true; // 프롤로그0이 끝나면 트루. 해리 방 앞의 오츠가 도망가면 폴스.
-    public bool prolog0_1 = false; // 해리 방 앞의 오츠가 도망가면 트루. 엘베 앞으로 타임라인 끝나면 폴스.
-    public bool prolog0_2 = false; // 엘베 앞 오츠를 따라가면 트루. 엘베 안 타임라인 끝나면 폴스.
-    public bool prolog0_3 = false; // 보류
+    [Header("프롤로그 0 진행상황")] // 프롤로그 0,
+    public bool prolog0_0 = true; // 
+    public bool prolog0_1 = false; // 
+    public bool prolog0_2 = false; // 
+    public bool prolog0_3 = false; // 
+    public bool prolog1_0 = false;
 }
 
 public class Yes_No_Progress

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TLS_5_OatesMove : TLS_Move
 {
+    [SerializeField] private GameObject EndPos;
     protected override void Start()
     {
         base.Start();
@@ -21,5 +22,13 @@ public class TLS_5_OatesMove : TLS_Move
     public override void IsTrue()
     {
         base.IsTrue();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if(other.gameObject == EndPos)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

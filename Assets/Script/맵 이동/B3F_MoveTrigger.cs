@@ -66,14 +66,17 @@ public class B3F_MoveTrigger : MoveTrigger
                 b3_Corridor.SetActive(true);
                 break;
             case 1: // 복도에서 상담실로
+                
                 Transform nextChildTransform1 = transform.GetChild(0);
                 Vector2 newPosition1 = new Vector2(nextChildTransform1.position.x, nextChildTransform1.position.y + 2f);
                 other.transform.position = newPosition1;
                 Debug.Log($"{childId}번째 자식 오브젝트와 충돌하여 이동하였습니다.");
                 b3_Corridor.SetActive(false);
                 b3_CounselingRoom.SetActive(true);
-                SceneManager.LoadScene("0-5_지하3층_상담실");
-                
+                if(GameProgress.instance.tlProgress.prolog0_3)
+                {
+                    SceneManager.LoadScene("0-5_지하3층_상담실");
+                }
                 break;
 
 
