@@ -80,7 +80,7 @@ public class Dialog_Manager : MonoBehaviour
     {
         if (TLS_Manager.instance.isDialog)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 NextDialog();
             }

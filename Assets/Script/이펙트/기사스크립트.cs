@@ -43,7 +43,7 @@ public class 기사스크립트 : MonoBehaviour
     void Update()
     {
         // 스페이스바 입력 감지 (현재 타이핑 진행 중이 아니고 대화가 진행 중일 때만 반응)
-        if (Input.GetKeyDown(KeyCode.Space) && !isTyping && isTalking)
+        if (Input.GetKeyDown(KeyCode.Z) && !isTyping && isTalking)
         {
             // 다음 대화 문장 출력
             NextDialogue();
