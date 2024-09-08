@@ -49,7 +49,7 @@ public class TLS_Scene_Change_Manager : MonoBehaviour
     public void End_0_5_TLS()
     {
         GameProgress.instance.tlProgress.prolog0_3 = false;
-        SceneManager.LoadScene("지하_6층_배치도");
+        SceneManager.LoadScene("1-1_프롤로그0");
     }
 
     public void End_1_1_TLS()
