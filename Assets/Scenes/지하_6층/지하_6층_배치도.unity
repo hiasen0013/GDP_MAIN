@@ -11025,7 +11025,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: "\uC624\uCE20 \uC624\uC988\uC648\uB4DC (002)"
+    dialog_name: 
+    portrait: {fileID: 21300000, guid: 8ac84b1fe74833142acbec79cc33ae6c, type: 3}
   sphereRadius: 0.5
 --- !u!61 &430734044
 BoxCollider2D:
@@ -20719,7 +20722,7 @@ GameObject:
   - component: {fileID: 725302669}
   - component: {fileID: 725302668}
   m_Layer: 5
-  m_Name: "\uC0C1\uD638\uC791\uC6A9 : F"
+  m_Name: "\uC0C1\uD638\uC791\uC6A9 : X"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20764,7 +20767,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC0C1\uD638\uC791\uC6A9 : F"
+  m_text: "\uC0C1\uD638\uC791\uC6A9 : X"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 519e8183c26d62b40a8fd35209694d3c, type: 2}
   m_sharedMaterial: {fileID: 768743828681443377, guid: 519e8183c26d62b40a8fd35209694d3c, type: 2}
@@ -22372,7 +22375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - dialog: 
+  - dialog: "\uD750\uC74C\u2026 \uD2B9\uC774\uD55C \uB140\uC11D\uC774\uB124?"
     dialog_name: "\uD574\uB9AC"
     portrait: {fileID: 21300000, guid: 56bfafee81a08624681f35b34043a919, type: 3}
   sphereRadius: 1
@@ -25342,7 +25345,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: "\uC790\uAC94 \uD504\uB85C\uC774\uD2B8 (733)"
+    dialog_name: 
+    portrait: {fileID: 21300000, guid: 8ac84b1fe74833142acbec79cc33ae6c, type: 3}
   sphereRadius: 0.5
 --- !u!61 &1003484202
 BoxCollider2D:
@@ -26471,11 +26477,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_Size.x
-      value: 0.8682852
+      value: 0.78280735
       objectReference: {fileID: 0}
     - target: {fileID: 2578936332860194367, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_Offset.x
-      value: -0.024347782
+      value: -0.013267994
       objectReference: {fileID: 0}
     - target: {fileID: 2804602885711927342, guid: a79383e1a0dc0e44699427f0cd4eade3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34107,7 +34113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: "\uD718 (099)"
+    dialog_name: 
+    portrait: {fileID: 21300000, guid: 8ac84b1fe74833142acbec79cc33ae6c, type: 3}
   sphereRadius: 0.5
 --- !u!61 &1320794872
 BoxCollider2D:
@@ -42013,7 +42022,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: "\uD574\uB9AC \uD398\uB354\uC2A8"
+    dialog_name: 
+    portrait: {fileID: 21300000, guid: 8ac84b1fe74833142acbec79cc33ae6c, type: 3}
   sphereRadius: 0.5
 --- !u!61 &1679349148
 BoxCollider2D:
@@ -48264,6 +48276,7 @@ GameObject:
   - component: {fileID: 1946951299}
   - component: {fileID: 1946951298}
   - component: {fileID: 1946951302}
+  - component: {fileID: 1946951303}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -48375,6 +48388,18 @@ MonoBehaviour:
   pauseMenuCanvas: {fileID: 1164633470}
   saveMenuCanvas: {fileID: 868515633}
   loadMenuCanvas: {fileID: 1406179717}
+--- !u!114 &1946951303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946951297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84aad6797100f64faada199767aea1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1950166503
 GameObject:
   m_ObjectHideFlags: 0
@@ -53583,7 +53608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d038e03b9c834ebe9a129882b8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs: []
+  dialogs:
+  - dialog: "\uD734 \uB9C8\uC774\uC5B4\uC2A4 (182)"
+    dialog_name: 
+    portrait: {fileID: 21300000, guid: 8ac84b1fe74833142acbec79cc33ae6c, type: 3}
   sphereRadius: 0.5
 --- !u!1 &2070383702
 GameObject:

@@ -42,7 +42,7 @@ public class InteractWithNote : MonoBehaviour
                 interactText.gameObject.SetActive(true);
 
                 // F 키를 누르면 UI 패널 토글
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.X))
                 {
                     isUIPanelActive = !isUIPanelActive;
                     uiPanel.SetActive(isUIPanelActive);

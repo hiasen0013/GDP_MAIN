@@ -25468,11 +25468,12 @@ MonoBehaviour:
   b6_Room_203: {fileID: 23059598}
   b6_Room_204: {fileID: 1060342229}
   b6_Room_205: {fileID: 1950166503}
-  b6_Corridor_1: {fileID: 962549475}
-  b6_Corridor_2: {fileID: 83478990}
+  b6_Corridor_Left: {fileID: 0}
+  b6_Corridor_Right: {fileID: 0}
   b6_lobby: {fileID: 1966842102}
   b6_counseling_room: {fileID: 2037379753}
   b6_laboratory: {fileID: 142681648}
+  testmovePos: 0
 --- !u!1 &1003484199
 GameObject:
   m_ObjectHideFlags: 0

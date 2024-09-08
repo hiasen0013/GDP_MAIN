@@ -28,7 +28,7 @@ public class PlayerController_상호작용 : MonoBehaviour
         ScanForObject();
 
         // 스페이스바 입력 처리
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             // 대화가 진행 중인 경우
             if (isTalking)
