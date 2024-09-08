@@ -58,8 +58,8 @@ public class TimeLineProgress
     [Header("프롤로그 0 진행상황")] // 프롤로그 0,
     public bool prolog0_0 = true; // 
     public bool prolog0_1 = false; // 
-    public bool prolog0_2 = true; // 
-    public bool prolog0_3 = true; // 
+    public bool prolog0_2 = false; // 
+    public bool prolog0_3 = false; // 
     public bool prolog1_0 = false;
 }
 
