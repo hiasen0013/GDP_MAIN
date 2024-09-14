@@ -88,7 +88,7 @@ public class System_Message_test : MonoBehaviour
     {
         if (TLS_Manager.instance.isDialog && canNextsym)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 NextSym();
             }
