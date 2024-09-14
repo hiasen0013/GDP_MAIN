@@ -48,6 +48,12 @@ public class System_Message_test : MonoBehaviour
             SymUI_OnOff(false);
             TLS_Manager.instance.isDialog = false;
         }
+
+        if (sym_count == 2)
+        {
+            Debug.Log("true");
+            TLS_YesOrNo_prologue_0_0.instance.select_obj.SetActive(true);
+        }
     }
 
     private IEnumerator TypeEffect(string text)
@@ -88,14 +94,6 @@ public class System_Message_test : MonoBehaviour
             }
         }
         Debug.Log("시스템 메세지 : "+sym_count);
-
-        if (sym_count == 2)
-        {
-            Debug.Log("true");
-            TLS_YesOrNo_prologue_0_0.instance.selecting = true;
-        }
-        else
-            Debug.Log("false");
     }
 }
 

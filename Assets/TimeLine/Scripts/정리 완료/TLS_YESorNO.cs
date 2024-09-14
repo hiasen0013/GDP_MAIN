@@ -7,7 +7,6 @@ using Unity.VisualScripting;
 public class TLS_YesorNo : MonoBehaviour
 {
     public bool selecting = false;
-    public GameObject select_obj;
     [SerializeField] protected Button yesBtn;
     [SerializeField] protected Button noBtn;
     [SerializeField] protected Button selectedBtn;
@@ -18,13 +17,6 @@ public class TLS_YesorNo : MonoBehaviour
         selectedBtn = yesBtn;
         SetButtonTextColor(selectedBtn, Color.red);
         selectedBtn.Select();
-    }
-
-    protected virtual void Select_Obj(bool value)
-    {
-        select_obj.gameObject.SetActive(value);
-        yesBtn.gameObject.SetActive(value);
-        noBtn.gameObject.SetActive(value);
     }
 
 
@@ -42,13 +34,13 @@ public class TLS_YesorNo : MonoBehaviour
                 if(selectedBtn == yesBtn)
                 {
                     yes_no_value = 1;
-                    select_obj.SetActive(false);
+                    //select_obj.SetActive(false);
                     selecting = false;
                 }
                 else if (selectedBtn == noBtn)
                 {
                     yes_no_value = 2;
-                    select_obj.SetActive(false);
+                    //select_obj.SetActive(false);
                 }
             }
         }

@@ -2326,12 +2326,12 @@ GameObject:
   - component: {fileID: 834163321}
   - component: {fileID: 834163320}
   m_Layer: 5
-  m_Name: Yes_Or_No_TextBox
+  m_Name: Yes_Or_No_Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &834163319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5233,7 +5233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1963508651
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5268,11 +5268,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selecting: 0
-  select_obj: {fileID: 834163318}
   yesBtn: {fileID: 2136956055}
   noBtn: {fileID: 99099530}
   selectedBtn: {fileID: 0}
   oatesCutScene: {fileID: 1337970709}
+  select_obj: {fileID: 834163318}
 --- !u!1 &2017340733
 GameObject:
   m_ObjectHideFlags: 0
