@@ -57,7 +57,6 @@ public class MovingObject : MonoBehaviour
             currentWalkCount++;
             yield return new WaitForSeconds(0.01f);
         }
-
         currentWalkCount = 0;
     }
 }

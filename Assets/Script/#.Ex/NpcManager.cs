@@ -25,12 +25,12 @@ public class NpcManager : MovingObject_Ex
 
     public void SetMove()
     {
-
+        // 추후에 필요 시 SetMove 함수에 스크립트 작성
     }
 
     public void SetNotMove()
     {
-
+        // 추후에 필요 시 SetNotMove 함수에 스크립트 작성
     }
 
     IEnumerator MoveCoroutine()

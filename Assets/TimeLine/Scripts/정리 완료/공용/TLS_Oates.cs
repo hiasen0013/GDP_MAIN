@@ -5,6 +5,7 @@ using UnityEngine;
 public class TLS_Oates : TLS_AnimatorController
 {
     [SerializeField] private int index;
+
     protected override void Start()
     {
         base.Start();
@@ -111,4 +112,3 @@ public class TLS_Oates : TLS_AnimatorController
         }
     }
 }
-

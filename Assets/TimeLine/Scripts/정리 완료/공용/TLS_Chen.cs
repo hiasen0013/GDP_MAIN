@@ -77,7 +77,6 @@ public class TLS_Chen : TLS_AnimatorController
             case 4:
                 anim.SetTrigger("1_2_Down_Idle2");
                 break;
-
         }
     }
 }

@@ -21,6 +21,6 @@ public class DontDestroy : MonoBehaviour
 
     void Update()
     {
-        
+        // 추후에 필요 시 업데이트 함수에 스크립트 작성
     }
 }

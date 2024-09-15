@@ -59,7 +59,6 @@ public class MovingObject_Ex : MonoBehaviour
         currentWalkCount = 0;
         if(_frequency != 5)
         {
-
             animator.SetBool("Walking", false);
         }
         npcCanMove = true;

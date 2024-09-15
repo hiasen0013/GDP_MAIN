@@ -62,7 +62,6 @@ public class TLS_5_Chen : TLS_Move
         }
     }
 
-
     public void IsTrue()
     {
         isTrue[index] = true;

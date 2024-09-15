@@ -25,7 +25,8 @@ public class TLS2_HarryMove : MonoBehaviour
         scene2_HarryMove = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         if(other.CompareTag("movePosA"))
         {
             scene2_HarryMove = false;

@@ -34,8 +34,8 @@ public class FadeOutIn : MonoBehaviour
         {
             yield return null;
         }
+
         yield return StartCoroutine(Fade(1,0));
-        
     }
 
     private IEnumerator FadeOutInCoroutine()

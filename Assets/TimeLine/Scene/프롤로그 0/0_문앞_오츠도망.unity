@@ -6200,7 +6200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1952379301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6423,9 +6423,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDialog: 0
   playableDirector: {fileID: 0}
-  yes_btn: {fileID: 0}
-  no_btn: {fileID: 0}
-  System_YorN_textBox: {fileID: 0}
 --- !u!114 &2025164664
 MonoBehaviour:
   m_ObjectHideFlags: 0

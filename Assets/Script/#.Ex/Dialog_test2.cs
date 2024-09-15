@@ -14,5 +14,4 @@ public class Dialog_test2 : MonoBehaviour
 
         //UnityEditor.EditorApplication.ExitPlaymode();
     }
-    
 }

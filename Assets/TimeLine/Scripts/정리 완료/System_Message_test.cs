@@ -14,11 +14,11 @@ public class System_Message_test : MonoBehaviour
     public float typingSpeed = 100f;
     public bool canNextsym = true; 
 
-
     private void Awake()
     {
         instance = this;
     }
+
     public void ShowSym()
     {
         SymUI_OnOff(true);
@@ -36,7 +36,6 @@ public class System_Message_test : MonoBehaviour
             isTyping = false;
             return;
         }
-
         if (sym_count < syms.Length)
         {
             StartCoroutine(TypeEffect(syms[sym_count].systemMsg));

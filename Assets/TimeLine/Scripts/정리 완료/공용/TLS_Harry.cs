@@ -14,15 +14,18 @@ public class TLS_Harry : TLS_AnimatorController
     {
         SetAnimTrigger();
     }
+
     public void WakeUp_Anim()
     {
         anim.SetTrigger("isWakeUp");
     }
+
     public void WakeUp_Move()
     {
         anim.SetTrigger("isWakeUp2");
         this.gameObject.transform.localPosition = new Vector2 (2.732f, 0.04f);
     }
+
     public void WakeUP_Move2()
     {
         anim.SetTrigger("isWakeUp3");
@@ -133,10 +136,8 @@ public class TLS_Harry : TLS_AnimatorController
                 this.gameObject.transform.localPosition = new Vector3(80.02f,-9.089f, 0);
                 anim.SetTrigger("2-1_Down_Idle");
                 break;
-            
         }
     }
-
 
     public void TLS_Oates_Event_1_Anim()
     {
@@ -149,4 +150,3 @@ public class TLS_Harry : TLS_AnimatorController
         }
     }
 }
-    

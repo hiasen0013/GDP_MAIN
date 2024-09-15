@@ -23,12 +23,10 @@ public class TLS_YesOrNo_prologue_0_0 : TLS_YesorNo
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ToggleBtn();
-                
             }
 
             if (Input.GetKeyDown(KeyCode.Z))
             {
-            
                 if (selectedBtn == yesBtn)
                 {
                     yes_no_value = 1;

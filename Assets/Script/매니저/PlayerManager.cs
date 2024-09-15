@@ -44,7 +44,6 @@ public class PlayerManager : MovingObject_Ex
                 yield return null;
                 continue;
             }
-
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 applyRunSpeed = runSpeed;
@@ -78,7 +77,6 @@ public class PlayerManager : MovingObject_Ex
                 canMove = true;
                 yield break;
             }
-
             yield return null;
         }
     }

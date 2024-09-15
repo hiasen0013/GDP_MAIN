@@ -5,19 +5,21 @@ using UnityEngine.Playables;
 
 public class TLS_Manager : MonoBehaviour
 {
-
     public static TLS_Manager instance;
     public bool isDialog;
     //타임라인 컨트롤러
     public PlayableDirector playableDirector;
 
-
     void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+        }
         else
+        {
             Destroy(gameObject);
+        }
     }
 
     void Start()
@@ -42,6 +44,7 @@ public class TLS_Manager : MonoBehaviour
     {
         playableDirector.Stop();
         this.gameObject.SetActive(false);
+        
         TLS_Sequence_Manager.instance.is_First_TLS = false;
         TLS_Sequence_Manager.instance.is_Second_TLS = false;
         TLS_Sequence_Manager.instance.is_Thrid_TLS = false;

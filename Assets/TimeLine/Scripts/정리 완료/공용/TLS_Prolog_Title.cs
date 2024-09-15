@@ -36,7 +36,6 @@ public class TLS_Prolog_Title : MonoBehaviour
                 title_fade_start = false;
             }
         }
-
     }
 
     // Update is called once per frame

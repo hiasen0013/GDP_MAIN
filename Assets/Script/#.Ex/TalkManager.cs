@@ -16,7 +16,7 @@ public class TalkManager : MonoBehaviour
         GenerateData();
     }
 
-    void GenerateData()
+    void GenerateData() // 각각의 오브젝트에도 고유의 id를 부여해서 각각의 오브젝트와의 상호작용을 편하게 구현 가능
     {
         talkData.Add(100, new string[]
         {

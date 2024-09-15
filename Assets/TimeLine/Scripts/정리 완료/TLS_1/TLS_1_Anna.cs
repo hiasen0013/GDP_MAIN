@@ -21,11 +21,14 @@ public class TLS_1_Anna : MonoBehaviour
     void Update()
     {
         if(isStartAnim && index < movePos.Count)
+        {
             MoveTowardsDestination();
+        }
         
         if(isGoBackAnim && index < movePos.Count)
+        {
             MoveBackTowardsDestination();
-        
+        }
     }
 
     void MoveTowardsDestination()
@@ -58,6 +61,7 @@ public class TLS_1_Anna : MonoBehaviour
             OnReachDestination();
         }
     }
+
     void OnReachDestination()
     {
         if (isStartAnim && index < movePos.Count)

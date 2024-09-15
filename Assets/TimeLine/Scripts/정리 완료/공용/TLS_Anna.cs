@@ -15,7 +15,6 @@ public class TLS_Anna : TLS_AnimatorController
         SetAnimTrigger();
     }
 
-    // 0-5_지하3층_상담실
     public void TLS_5_Anna_Anim() // 0-5_지하3층_상담실
     {
         index ++;

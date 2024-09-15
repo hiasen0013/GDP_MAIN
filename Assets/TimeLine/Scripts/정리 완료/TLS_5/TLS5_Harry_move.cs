@@ -12,10 +12,13 @@ public class TLS5_Harry_move : TLS_Move
     protected override void Update()
     {
         base.Update();
-    }    protected override void MoveTowardsDestination()
+    }
+    
+    protected override void MoveTowardsDestination()
     {
         base.MoveTowardsDestination();
     }
+
     public override void IsTrue()
     {
         base.IsTrue();
@@ -27,7 +30,6 @@ public class TLS5_Harry_move : TLS_Move
         TLS_Manager.instance.isDialog = false;
     }
 }
- 
 
         /*
         if(isTrue[index])

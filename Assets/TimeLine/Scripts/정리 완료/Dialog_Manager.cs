@@ -30,7 +30,6 @@ public class Dialog_Manager : MonoBehaviour
             isTyping = false;
             return;
         }
-
         if (dialog_count < dialogs.Length)
         {
             StartCoroutine(TypeEffect(dialogs[dialog_count].dialog));

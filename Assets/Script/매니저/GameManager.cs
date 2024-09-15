@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public bool isAction;
     public int talkIndex;
 
-    void Start()
+    void Start() // GameManager는 게임 시작 시 SetActive가 무조건 false로 되어있다가 나중에 상호작용 & 필요할 때 켜져야함
     {
         talkPanel.SetActive(false);
     }

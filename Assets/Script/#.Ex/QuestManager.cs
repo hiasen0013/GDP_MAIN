@@ -16,7 +16,7 @@ public class QuestManager : MonoBehaviour
         GenerateData();
     }
 
-    void GenerateData()
+    void GenerateData() // 각 이벤트 별로 별도의 퀘스트 id를 부여해 스토리 진행이 매끄럽게 이어지도록 사용
     {
         questList.Add(10, new QuestData("첸과 대화하기", new int[] { 1000, 2000 }));
 

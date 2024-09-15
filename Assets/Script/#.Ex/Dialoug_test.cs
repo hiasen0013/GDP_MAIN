@@ -33,7 +33,6 @@ public class Dialoug_test : MonoBehaviour
             SetUp(); // 초기화 시키고 캐릭터 이미지는 활성화, 대사 관련 UI는 모두 비활성화
             if(isAutoStart)SetNextDialog(); //자동재생으로 설정되어 있으면 첫 번째 대사 재생
                 isFirst = false;
-
             if(Input.GetKeyDown(KeyCode.Space)) // 대사가 남아 있는 경우 스페이스 바를 눌러서 다음 대사 진행
             {
                 if(dialogs.Length > currentDialogIndex + 1)
@@ -48,7 +47,6 @@ public class Dialoug_test : MonoBehaviour
                     SetActiveObjects(speakers[i], false); //SetActiveObjects()에 캐릭터 이미지를 보이지 않게 하는 부분이 없기 때문에 별도로 호출
                     speakers[i].portraitImage.gameObject.SetActive(false);
                 }
-
                 return true;
             }
         }
@@ -92,4 +90,3 @@ public class Dialoug_test : MonoBehaviour
         [TextArea(3, 5)]
         public string dialogue;
     }
-

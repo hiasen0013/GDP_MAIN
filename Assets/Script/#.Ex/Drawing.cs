@@ -6,7 +6,7 @@ public class Drawing : MonoBehaviour
 {
     public Camera cam;
     public Material defaultMaterial;
-    public float lineWidth = 0.01f;  // ÀÎ½ºÆåÅÍ¿¡¼­ Á¶Àı °¡´ÉÇÑ º¯¼ö
+    public float lineWidth = 0.01f;  // ï¿½Î½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     private LineRenderer curLine;
     private int positionCount = 2;
@@ -14,7 +14,7 @@ public class Drawing : MonoBehaviour
 
     void Start()
     {
-
+        // ì¶”í›„ì— í•„ìš” ì‹œ ìŠ¤íƒ€íŠ¸ í•¨ìˆ˜ì— ìŠ¤í¬ë¦½íŠ¸ ì‘ì„±
     }
 
     void Update()
@@ -25,7 +25,7 @@ public class Drawing : MonoBehaviour
 
     void DrawMouse()
     {
-        // ZÃà °ªÀ» 10À¸·Î ¼³Á¤ÇÏ¿© Ä«¸Ş¶ó¿Í ¿ÀºêÁ§Æ®ÀÇ °Å¸®¸¦ À¯ÁöÇÕ´Ï´Ù.
+        // Zï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ Ä«ï¿½Ş¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Å¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
         Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam.nearClipPlane + 0.01f));
 
         if (Input.GetMouseButtonDown(0))
@@ -44,11 +44,11 @@ public class Drawing : MonoBehaviour
         GameObject line = new GameObject("Line");
         LineRenderer lineRend = line.AddComponent<LineRenderer>();
 
-        // LineRendererÀÇ Á¤·Ä ¼ø¼­¸¦ ¼³Á¤ÇÏ¿© ´Ù¸¥ ¿ÀºêÁ§Æ®¿¡ °¡·ÁÁöÁö ¾Ê°Ô ÇÕ´Ï´Ù.
+        // LineRendererï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½Õ´Ï´ï¿½.
         lineRend.sortingOrder = 1;
 
-        lineRend.startWidth = lineWidth;  // ÀÎ½ºÆåÅÍ¿¡¼­ ¼³Á¤µÈ µÎ²² »ç¿ë
-        lineRend.endWidth = lineWidth;    // ÀÎ½ºÆåÅÍ¿¡¼­ ¼³Á¤µÈ µÎ²² »ç¿ë
+        lineRend.startWidth = lineWidth;  // ï¿½Î½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î²ï¿½ ï¿½ï¿½ï¿½
+        lineRend.endWidth = lineWidth;    // ï¿½Î½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î²ï¿½ ï¿½ï¿½ï¿½
         lineRend.numCornerVertices = 5;
         lineRend.numCapVertices = 5;
         lineRend.material = defaultMaterial;
@@ -58,7 +58,7 @@ public class Drawing : MonoBehaviour
         lineRend.SetPosition(1, mousePos);
 
         curLine = lineRend;
-        prevPos = mousePos;  // ÀÌÀü À§Ä¡¸¦ ÇöÀç ¸¶¿ì½º À§Ä¡·Î ¼³Á¤ÇÕ´Ï´Ù.
+        prevPos = mousePos;  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ì½º ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
     }
 
     void ConnectLine(Vector3 mousePos)
@@ -78,7 +78,7 @@ public class Drawing : MonoBehaviour
         {
             Vector3 mousePos = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam.nearClipPlane + 0.01f));
 
-            // ¸ğµç ¶óÀÎÀ» °Ë»çÇÏ¿© Å¬¸¯µÈ À§Ä¡¿Í °¡±î¿î ¶óÀÎÀ» »èÁ¦ÇÕ´Ï´Ù.
+            // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Ï¿ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
             LineRenderer[] allLines = FindObjectsOfType<LineRenderer>();
             foreach (LineRenderer line in allLines)
             {

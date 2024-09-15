@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-
 public class SystemMessage : MonoBehaviour
 {
     public static SystemMessage instance;
@@ -76,7 +75,6 @@ public class SystemMessage : MonoBehaviour
             System_MessageOnOff(false);
             oatesCutScene.SetActive(false); 
         }
-
         if(Input.GetKeyDown(KeyCode.Space) && !isSpace && TLS_Sequence_Manager.instance.system_msg_count == 7)
         {
             system_msg_text.text =
@@ -90,4 +88,3 @@ public class SystemMessage : MonoBehaviour
         instance = this;
     }
 }
-
