@@ -71,7 +71,7 @@ public class SystemMessage : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isSpace && !TLS_YesOrNo_prologue_0_0.instance.selecting)
+        if(Input.GetKeyDown(KeyCode.Space) && isSpace && !TLS_YesOrNo_prologue_0_0.instance.isSelecting)
         {
             System_MessageOnOff(false);
             oatesCutScene.SetActive(false); 
