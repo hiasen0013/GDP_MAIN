@@ -15,12 +15,15 @@ public class InteractWithNote : MonoBehaviour
     private bool isUIPanelActive = false; // UI 패널 활성화 상태
     private int currentImageIndex = 0; // 현재 보여지는 이미지의 인덱스
 
-    bool IsPause;
-
+    private bool isPaused;
 
     void Start()
     {
-        IsPause = false;
+        isPaused = false;
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(false);
+        }
     }
 
     void Update()
@@ -36,49 +39,25 @@ public class InteractWithNote : MonoBehaviour
             // 상호작용 거리 이내에 있을 때
             if (distance <= interactionDistance)
             {
-                // 텍스트를 서서히 나타나게 함
-                currentAlpha = Mathf.Lerp(currentAlpha, 1f, fadeSpeed * Time.deltaTime);
-                interactText.color = new Color(interactText.color.r, interactText.color.g, interactText.color.b, currentAlpha);
-                interactText.gameObject.SetActive(true);
+                // Check if interactText is assigned
+                if (interactText != null)
+                {
+                    // 텍스트를 서서히 나타나게 함
+                    currentAlpha = Mathf.Lerp(currentAlpha, 1f, fadeSpeed * Time.deltaTime);
+                    interactText.color = new Color(interactText.color.r, interactText.color.g, interactText.color.b, currentAlpha);
+                    interactText.gameObject.SetActive(true);
+                }
 
                 // F 키를 누르면 UI 패널 토글
                 if (Input.GetKeyDown(KeyCode.X))
                 {
-                    isUIPanelActive = !isUIPanelActive;
-                    uiPanel.SetActive(isUIPanelActive);
-
-                    if(IsPause == false)
-                    {
-                        Time.timeScale = 0;
-                        IsPause = true;
-
-                        return;
-                    }
-
-                    if(IsPause == true)
-                    {
-                        Time.timeScale = 1;
-                        IsPause = false;
-
-                        return;
-                    }
+                    ToggleUIPanel();
                 }
 
                 // Space 키를 누르면 다음 이미지로 이동
                 if (isUIPanelActive && Input.GetButtonDown("Jump"))
                 {
-                    currentImageIndex++;
-                    if (currentImageIndex >= imageList.Count)
-                    {
-                        currentImageIndex = 0; // 마지막 이미지면 처음으로 돌아감
-                    }
-
-                    // 모든 이미지를 비활성화하고 현재 이미지만 활성화
-                    foreach (Image image in imageList)
-                    {
-                        image.gameObject.SetActive(false);
-                    }
-                    imageList[currentImageIndex].gameObject.SetActive(true);
+                    ChangeImage();
                 }
 
                 return;
@@ -86,13 +65,54 @@ public class InteractWithNote : MonoBehaviour
         }
 
         // 상호작용 거리 밖에 있을 때
-        // 텍스트를 서서히 사라지게 함
-        currentAlpha = Mathf.Lerp(currentAlpha, 0f, fadeSpeed * Time.deltaTime);
-        interactText.color = new Color(interactText.color.r, interactText.color.g, interactText.color.b, currentAlpha);
-        // 완전히 사라지면 오브젝트 비활성화
-        if (currentAlpha <= 0f)
+        FadeOutInteractText();
+    }
+
+    private void ToggleUIPanel()
+    {
+        isUIPanelActive = !isUIPanelActive;
+        uiPanel.SetActive(isUIPanelActive);
+
+        if (isPaused)
         {
-            interactText.gameObject.SetActive(false);
+            Time.timeScale = 1;
+            isPaused = false;
+        }
+        else
+        {
+            Time.timeScale = 0;
+            isPaused = true;
+        }
+    }
+
+    private void ChangeImage()
+    {
+        currentImageIndex++;
+        if (currentImageIndex >= imageList.Count)
+        {
+            currentImageIndex = 0; // 마지막 이미지면 처음으로 돌아감
+        }
+
+        // 모든 이미지를 비활성화하고 현재 이미지만 활성화
+        foreach (Image image in imageList)
+        {
+            image.gameObject.SetActive(false);
+        }
+        imageList[currentImageIndex].gameObject.SetActive(true);
+    }
+
+    private void FadeOutInteractText()
+    {
+        if (interactText != null)
+        {
+            // 텍스트를 서서히 사라지게 함
+            currentAlpha = Mathf.Lerp(currentAlpha, 0f, fadeSpeed * Time.deltaTime);
+            interactText.color = new Color(interactText.color.r, interactText.color.g, interactText.color.b, currentAlpha);
+            // 완전히 사라지면 오브젝트 비활성화
+            if (currentAlpha <= 0f)
+            {
+                interactText.gameObject.SetActive(false);
+            }
         }
     }
 }

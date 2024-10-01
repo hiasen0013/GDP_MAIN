@@ -52,3 +52,6 @@ TagManager:
   - name: CutScene_Image
     uniqueID: 1286724889
     locked: 0
+  - name: UI
+    uniqueID: 1888071259
+    locked: 0

@@ -15,10 +15,10 @@ public class Item
 
     public enum ItemType
     {
-        Use,
-        Equip,
-        Quest,
-        ETC
+        Use, // 소모품
+        Equip, // 장비 아이템
+        Quest, // 퀘스트 아이템
+        ETC // 기타 아이템
     }
 
     public Item(int _itemID, string _itemName, string _itemDes, ItemType _itemType, int _itemCount = 1)
